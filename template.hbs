@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+{{#resume.SkillsPassport.LearnerInfo}}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Curriculum Vitae - {{#Identification.PersonName}}{{FirstName}} {{Surname}}{{/Identification.PersonName}}</title>
+    <!-- 	<script src="/editors/static/ewa/libraries/onedrive/wl.js?version=5.0.25"></script>
+    <script type="text/javascript" src="/editors/static/ewa/libraries/touch/touche-20140704-TRUNK.js?version=5.0.25"></script> -->
+    <!--<link rel="shortcut icon" href="https://europass.cedefop.europa.eu/editors/static/ewa/images/favicon.ico">-->
+    <!--<link rel="icon" href="https://europass.cedefop.europa.eu/editors/static/ewa/images/favicon.gif" type="image/gif">-->
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+</head>
+
+<body style="display: block;" data-feedly-mini="yes">
+    <div>
+        <section class="effective-content-area" id="main-content-area">
+
+            <section id="MainArea:SkillsPassport" class="main-area" style="display: block;">
+                <section id="Compose:SkillsPassport" class="navigation-area wysiwyg Compose">
+
+                    <div class="cv compose">
+                       
+                        <dl id="Compose:LearnerInfo.Identification" class="section item opens-modal-form personal" data-rel-doc="cv" data-rel-clazz="PersonalInfoFormView" data-rel-form="Form:LearnerInfo.Identification" data-rel-section="SkillsPassport.LearnerInfo.Identification"
+                            data-rel-help-section="Help.SkillsPassport.LearnerInfo.Identification" data-rel-index="" data-validation-field="date currentDate">
+                             {{#Identification}}
+                            <dt class="label">
+                                <span class="title">INFORMAZIONI PERSONALI</span>
+
+                                <div class="clear"></div>
+
+                                <div class="Photo active opens-modal-form nested-modal " data-rel-doc="cv" data-rel-clazz="PhotoFormView" data-rel-form="Form:LearnerInfo.Identification.Photo" data-rel-section="SkillsPassport.LearnerInfo.Identification.Photo" data-rel-help-section="Help.SkillsPassport.LearnerInfo.Identification.Photo" data-rel-index="" rel="tooltip">
+
+                                    <div class="photo-preview-area">
+                                        <img style="height:110px;" 
+                                            src="data:{{Photo.MimeType}};base64, {{Photo.Data}}" alt="EditorPlaceholder[LearnerInfo.Identification.Photo]">
+                                    </div>
+                                </div>
+                            </dt>
+
+                            <dd class="personal-details value personal">
+
+                                <div class="name value PersonName LearnerInfo.Identification.PersonName">
+
+                                    <span id="LearnerInfo.Identification.PersonName.Surname" class=" Surname">{{PersonName.Surname}}</span>
+                                    <span id="LearnerInfo.Identification.PersonName.FirstName" class=" FirstName">{{PersonName.FirstName}}</span>
+                                </div>
+
+                                <div class="PersonalBasic">
+{{#ContactInfo}}
+                                    <div class="value Address" id="LearnerInfo.Identification.ContactInfo.Address">
+                                        <span class="Address">
+                                            {{#Address.Contact}}{{AddressLine}}, {{PostalCode}} {{Municipality}}, ({{Country.Label}}){{/Address.Contact}}</span>
+                                    </div>
+
+                                    <div class="value Telephone ">
+                                        {{#each Telephone}}		
+
+                                        <div class="item 0  {{Use.code}}  ">
+                                            <span class="Use" style="display:none">{{Use.Label}}</span>
+                                            <span class="Contact">{{Contact}}</span>
+                                        </div>
+			{{/each}}
+                                        
+                                    </div>
+
+                                    <div class="value Email">
+                                        <span class="Use" style="display:none">Email</span>
+                                        <span class="Contact"><a href="mailto:{{Email.Contact}}" target="_blank">{{Email.Contact}}</a></span>
+                                    </div>
+
+                                    <div class="value Website">
+                                        {{#each Website}}
+                                        <div class="item {{@index}}">
+                                            <span class="Use"></span>
+                                            <span class="Contact"><a title="{{Contact}}" href="{{Contact}}" target="_blank">{{Contact}}</a></span>
+                                        </div>	
+                                        {{/each}}
+                                        
+                                    </div>
+
+                                    <div class="value InstantMessaging">
+                                        {{#each InstantMessaging}}
+                                        
+                                        <div class="item {{@index}}">
+                                            <span class="Use">{{Use.Label}}</span>
+                                            <span class="Contact">{{Contact}}</span>
+                                        </div>
+                                        {{/each}}
+                                    </div>
+                                    {{/ContactInfo}}
+                                </div>
+
+                                <div class="PersonalDetails">
+                                    {{#Demographics}}
+                                    
+                                    <dl class="Gender">
+                                        <dt class="label">Sesso</dt>
+                                        <dd class="value">
+                                            <span class="Gender">{{Gender.Label}}</span>
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="Birthdate">
+                                        <dt class="label">Data di nascita</dt>
+                                        <dd class="value">
+                                            <span class="Birthdate">
+                                                {{#Birthdate}}{{Day}}/{{Month}}/{{Year}}{{/Birthdate}}</span>
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="Nationality">
+                                        <dt class="label">Nazionalità</dt>
+                                        <dd class="value">
+                                            <span class="Nationality">
+                                        {{#each Nationality}}
+                                               {{#if @index}}, {{/if}}
+                                                {{Label}}
+                                        {{/each}}
+                                                </span>
+                                        </dd>
+                                    </dl>
+                                    {{/Demographics}}
+                                </div>
+                            </dd>
+                            {{/Identification}}
+                        </dl>
+                        <dl id="Compose:LearnerInfo.Headline" class="section item opens-modal-form nested-modal clickeffect" data-rel-doc="cv" data-rel-clazz="HeadlineFormView" data-rel-form="Form:LearnerInfo.Headline" data-rel-section="SkillsPassport.LearnerInfo.Headline" data-rel-help-section="Help.SkillsPassport.LearnerInfo.Headline"
+                            data-rel-index="">
+                            <dt class="label">
+
+                                <span class="title">{{Headline.Type.Label}}</span>
+                            </dt>
+
+                            <dd class="value rich-content Description">
+                                <div class="value Description Label">{{{Headline.Description.Label}}}</div>
+                            </dd>
+                        </dl>
+                        <div class="work-education-experiences-area">
+                            <dl id="Compose:LearnerInfo.WorkExperience" class="section work-education subsection-container Work switch">
+
+                                <dt class="label list section-heading">
+
+                                    <span class="title">ESPERIENZA PROFESSIONALE</span>
+                                </dt>
+                                <dd class="line"></dd>
+                                <ol class="sortable compose-list ui-sortable" id="List:SkillsPassport.LearnerInfo.WorkExperience" data-rel-section="SkillsPassport.LearnerInfo.WorkExperience">
+{{#each WorkExperience}}
+                                    <li class="compose-list list-item opens-modal-form" id="ListItem:LearnerInfo.WorkExperience[0]" data-index="0" data-rel-doc="cv" data-rel-clazz="WorkExperienceFormView" data-rel-form="Form:WorkExperience[0]" data-rel-section="SkillsPassport.LearnerInfo.WorkExperience[0]"
+                                        data-rel-help-section="Help.SkillsPassport.LearnerInfo.WorkExperience" data-rel-index="0" data-validation-field="date period">
+
+                                        <dd class="content-label Period">
+                                            <span class="PeriodRange">
+                                                <span class="period">{{#Period.From}}{{Day}}/{{Month}}/{{Year}}{{/Period.From}}</span>
+                                                {{#if Period.Current}}
+                                                <span class="period">–alla data attuale </span>
+                                                {{else}}
+                                                <span class="period">- {{#Period.To}}{{Day}}/{{Month}}/{{Year}}{{/Period.To}}</span>                                                
+                                                {{/if}}
+                                            </span>
+                                        </dd>
+
+                                        <dd class="value Position">
+                                            <span class="Position">{{Position.Label}}</span>
+                                        </dd>
+
+                                        <dd class="value Employer">
+                                            {{#Employer}}
+                                            <span class="Name">
+                                                {{#if ContactInfo.Website}}
+                                                <a title="{{Name}}" href="{{ContactInfo.Website.Contact}}" target="_blank">{{Name}}</a>
+                                                {{else}}
+                                                {{Name}}
+                                                {{/if}}
+                                                </span>
+                                            {{#ContactInfo}}
+                                            {{#if Address.Contact.AddressLine}}
+                                            <div class="Address">
+                                                {{else}}
+                                            <div class="Address minimal">. 
+                                            {{/if}}
+                                                <span class="Address">
+                                                    {{#if Address.Contact.AddressLine}}
+                                                        {{Address.Contact.AddressLine}},
+                                                    {{/if}}
+                                                    {{#if Address.Contact.PostalCode}}
+                                                        {{Address.Contact.PostalCode}},
+                                                    {{/if}}
+                                                     {{Address.Contact.Municipality}} ({{Address.Contact.Country.Label}})</span>
+                                            </div>
+
+                                            {{/ContactInfo}}
+                                            {{/Employer}}
+                                        </dd>
+
+
+                                        <dd class="value rich-content Activities">
+                                            {{{Activities}}}
+                                        </dd>
+
+                                    </li>
+{{/each}}
+                                </ol>
+                            </dl>
+                            <dl id="Compose:LearnerInfo.Education" class="section work-education subsection-container Education">
+                                <dt class="label list section-heading">
+
+                                    <span class="title">ISTRUZIONE E FORMAZIONE</span>
+                                </dt>
+                                <dd class="line"></dd>
+                                <ol class="sortable compose-list ui-sortable" id="List:SkillsPassport.LearnerInfo.Education" data-rel-section="SkillsPassport.LearnerInfo.Education">
+
+                                    <li class="compose-list list-item opens-modal-form" id="ListItem:LearnerInfo.Education[0]" data-index="0" data-rel-doc="cv" data-rel-clazz="EducationFormView" data-rel-form="Form:LearnerInfo.Education[0]" data-rel-section="SkillsPassport.LearnerInfo.Education[0]"
+                                        data-rel-help-section="Help.SkillsPassport.LearnerInfo.Education" data-validation-field="date period" data-rel-index="0">
+
+                                        <dd class="content-label Period ">
+                                            <span class="PeriodRange"><span class="period">Set. 05</span><span class="period">–Set. 13</span></span>
+                                        </dd>
+
+                                        <dd class="value Title">
+                                            <span class="Title">Dott. Magistrale in Ingegneria Informatica</span>
+                                        </dd>
+
+                                        <dd class="value Level">
+                                            <span class="Level">Livello 7 QEQ</span>
+                                        </dd>
+
+                                        <dd class="value Organisation">
+                                            <span class="Name">Università degli Studi di Trieste</span>
+
+                                            <div class="Address minimal">
+
+                                                <span class="comma-separator">, </span>
+
+                                                <span class="Address"> Trieste (Italia)</span>
+                                            </div>
+                                        </dd>
+
+                                        <dd class="value rich-content Activities">
+                                            <p><b>Tesi:</b> Design of a Cloud Architecture for Data Storage and Analysis Services in the Electronic Industry​​</p>
+                                        </dd>
+
+                                        <dd class="value Field">
+                                            <span class="Field">Ingegneria e studi correlati</span>
+                                        </dd>
+                                    </li>
+
+                                    <li class="compose-list list-item opens-modal-form" id="ListItem:LearnerInfo.Education[1]" data-index="1" data-rel-doc="cv" data-rel-clazz="EducationFormView" data-rel-form="Form:LearnerInfo.Education[1]" data-rel-section="SkillsPassport.LearnerInfo.Education[1]"
+                                        data-rel-help-section="Help.SkillsPassport.LearnerInfo.Education" data-validation-field="date period" data-rel-index="1">
+
+                                        <dd class="content-label Period ">
+                                            <span class="PeriodRange"><span class="period">Set. 02</span><span class="period">–Mar. 05</span></span>
+                                        </dd>
+
+                                        <dd class="value Title">
+                                            <span class="Title">Dott. Ingegneria Elettronica</span>
+                                        </dd>
+
+                                        <dd class="value Level">
+                                            <span class="Level">Livello 6 QEQ</span>
+                                        </dd>
+
+                                        <dd class="value Organisation">
+                                            <span class="Name">Università degli Studi di Trieste</span>
+
+                                            <div class="Address minimal">
+
+                                                <span class="comma-separator">, </span>
+
+                                                <span class="Address"> Trieste (Italia)</span>
+                                            </div>
+                                        </dd>
+
+                                        <dd class="value Field">
+                                            <span class="Field">Ingegneria e studi correlati</span>
+                                        </dd>
+                                    </li>
+                                </ol>
+                            </dl>
+                        </div>
+                        <dl id="Compose:LearnerInfo.Skills" class="section subsection-container personalskills">
+                            <dt class="label section-heading">
+                                <span class="title">COMPETENZE PERSONALI</span>
+                            </dt>
+                            <dd class="line"></dd>
+                            <dd>
+                                <dl id="Compose:LearnerInfo.Skills.Linguistic.MotherTongue" class="subsection item skills opens-modal-form" data-rel-doc="cv" data-rel-clazz="MotherTongueFormView" data-rel-form="Form:LearnerInfo.Skills.Linguistic.MotherTongue" data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.MotherTongue"
+                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Skills.Linguistic.MotherTongue" data-rel-index="">
+                                    <dt class="label">
+                                        <span class="title">Lingua madre</span>
+                                    </dt>
+
+                                    <dd class="value">
+
+                                        <div class="MotherTongue content-label">
+                                            <span class="MotherTongue">italiano</span>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <dl id="Compose:LearnerInfo.Skills.Linguistic.ForeignLanguage" class="subsection skills foreign-language-skills opens-modal-form-lang-empty">
+                                    <dt class="" style="display:none">Altre lingue</dt>
+                                    <dd class="foreign-language-skills">
+                                        <table cellpadding="1" class="languages" id="List:SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage" data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage" data-bind-document="ECV ELP" summary="Altre lingue">
+
+                                            <thead class="open-modal-skippme">
+                                                <tr id="nodnd-1">
+                                                    <th id="nodnd-1-ForeignLanguage" class="no-border sub-heading">
+                                                        <span class="title">Altre lingue</span>
+                                                    </th>
+                                                    <th id="nodnd-1-ProficiencyLevel.Understanding" colspan="2" align="center">COMPRENSIONE</th>
+                                                    <th id="nodnd-1-ProficiencyLevel.Speaking" colspan="2" align="center">PARLATO</th>
+                                                    <th id="nodnd-1-ProficiencyLevel.Writing" align="center">PRODUZIONE SCRITTA</th>
+                                                    <th id="nodnd-1-menu-placeholder" class="menu-placeholder">&nbsp;</th>
+                                                </tr>
+                                                <tr id="nodnd-2">
+                                                    <th id="nodnd-2-no-border" class="no-border">&nbsp;</th>
+                                                    <th id="nodnd-2-Listening" class="Listening">Ascolto</th>
+                                                    <th id="nodnd-2-Reading" class="Reading">Lettura</th>
+                                                    <th id="nodnd-2-SpokenInteraction" class="SpokenInteraction">Interazione</th>
+                                                    <th id="nodnd-2-SpokenProduction" class="SpokenProduction">Produzione orale</th>
+                                                    <th id="nodnd-2-Writing" class="Writing">&nbsp;</th>
+                                                    <th id="nodnd-2-menu-placeholder" class="menu-placeholder">&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage" data-bind-group="^(LearnerInfo\.Skills\.Linguistic\.ForeignLanguage\[(\d)\])([\S]*)$" class="ui-sortable">
+
+                                                <tr id="language-0" class="language compose-list list-item opens-modal-form" data-nested-tds="7" data-rel-doc="cv" data-rel-clazz="ForeignLanguageFormView" data-rel-form="Form:LearnerInfo.Skills.Linguistic.ForeignLanguage[0]" data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage[0]"
+                                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage" data-rel-index="0">
+                                                    <td class="label" headers="nodnd-1-ForeignLanguage">
+                                                        <div class="language-title">
+
+
+
+
+                                                            spagnolo
+                                                        </div>
+                                                    </td>
+                                                    <td colspan="5" headers="nodnd-1-ForeignLanguage">
+                                                        <table id="ProficiencyLevel" cellpadding="0" width="100%" summary="spagnolo">
+
+                                                            <tbody>
+                                                                <tr class="self-evaluation">
+                                                                    <td id="language-0-ProficiencyLevel.Listening" class="Listening">
+                                                                        C1
+                                                                    </td>
+                                                                    <td id="language-0-ProficiencyLevel.Reading" class="Reading">
+                                                                        C1
+                                                                    </td>
+                                                                    <td id="language-0-ProficiencyLevel.SpokenInteraction" class="SpokenInteraction">
+                                                                        C1
+                                                                    </td>
+                                                                    <td id="language-0-ProficiencyLevel.SpokenProduction" class="SpokenProduction">
+                                                                        C1
+                                                                    </td>
+                                                                    <td id="language-0-ProficiencyLevel.Writing" class="Writing">
+                                                                        C1
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td class="menu-placeholder" headers="nodnd-1-menu-placeholder"></td>
+                                                </tr>
+
+                                                <tr id="language-1" class="language compose-list list-item opens-modal-form" data-nested-tds="7" data-rel-doc="cv" data-rel-clazz="ForeignLanguageFormView" data-rel-form="Form:LearnerInfo.Skills.Linguistic.ForeignLanguage[1]" data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage[1]"
+                                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage" data-rel-index="1">
+                                                    <td class="label" headers="nodnd-1-ForeignLanguage">
+                                                        <div class="language-title">
+                                                            <!-- 									<span class="sortable_placeholder tip spot" data-tip.position="top-left"> -->
+                                                            <!-- 										  	 <span class="data-title" style="display:none;">Trascina e inserisci per modificare l'ordine delle voci</span>	 -->
+                                                            <!-- 										  +</span> -->
+                                                            inglese
+                                                        </div>
+                                                    </td>
+                                                    <td colspan="5" headers="nodnd-1-ForeignLanguage">
+                                                        <table id="ProficiencyLevel" cellpadding="0" width="100%" summary="inglese">
+
+                                                            <tbody>
+                                                                <tr class="self-evaluation">
+                                                                    <td id="language-1-ProficiencyLevel.Listening" class="Listening">
+                                                                        B1
+                                                                    </td>
+                                                                    <td id="language-1-ProficiencyLevel.Reading" class="Reading">
+                                                                        B2
+                                                                    </td>
+                                                                    <td id="language-1-ProficiencyLevel.SpokenInteraction" class="SpokenInteraction">
+                                                                        B2
+                                                                    </td>
+                                                                    <td id="language-1-ProficiencyLevel.SpokenProduction" class="SpokenProduction">
+                                                                        B2
+                                                                    </td>
+                                                                    <td id="language-1-ProficiencyLevel.Writing" class="Writing">
+                                                                        B2
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td class="menu-placeholder" headers="nodnd-1-menu-placeholder"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </dd>
+                                </dl>
+
+                                <dl id="Compose:LearnerInfo.Skills.Communication" class="subsection item skills opens-modal-form" data-rel-doc="cv" data-rel-clazz="GenericSkillsFormView" data-rel-form="Form:LearnerInfo.Skills.Communication" data-rel-section="SkillsPassport.LearnerInfo.Skills.Communication"
+                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Skills.Communication" data-rel-subsection="Communication" data-rel-index="">
+                                    <dt class="label">
+                                        <span class="title">Competenze comunicative</span>
+                                    </dt>
+                                    <dd class="value rich-content">
+                                        <div class="value description">
+                                            <p>Buona capacità di raccolta e definizione di requisiti ​dovute all'esperienza fatta come consulente presso i vari clienti per cui ho lavorato</p>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <dl id="Compose:LearnerInfo.Skills.Organisational" class="subsection item skills opens-modal-form" data-rel-doc="cv" data-rel-clazz="GenericSkillsFormView" data-rel-form="Form:LearnerInfo.Skills.Organisational" data-rel-section="SkillsPassport.LearnerInfo.Skills.Organisational"
+                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Skills.Organisational" data-rel-subsection="Organisational" data-rel-index="">
+                                    <dt class="label">
+                                        <span class="title">Competenze organizzative e gestionali</span>
+                                    </dt>
+                                    <dd class="value rich-content">
+                                        <div class="description">
+                                            <p>
+                                                Quale appassionato di Agile, cerco di adottare un approccio iterativo in quello che faccio, cercando di facilitare nel contempo la comunicazione tra i colleghi e tra i diversi gruppi coinvolti nello sviluppo delle funzionalità
+                                            </p>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <dl id="Compose:LearnerInfo.Skills.JobRelated" class="subsection item skills opens-modal-form" data-rel-doc="cv" data-rel-clazz="GenericSkillsFormView" data-rel-form="Form:LearnerInfo.Skills.JobRelated" data-rel-section="SkillsPassport.LearnerInfo.Skills.JobRelated"
+                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Skills.JobRelated" data-rel-subsection="JobRelated" data-rel-index="">
+                                    <dt class="label">
+                                        <span class="title">Competenze professionali</span>
+                                    </dt>
+                                </dl>
+
+                                <dl id="Compose:LearnerInfo.Skills.Computer" class="subsection item skills opens-modal-form ict empty" data-rel-doc="cv" data-rel-clazz="ComputerSkillsFormView" data-rel-form="Form:LearnerInfo.Skills.Computer" data-rel-section="SkillsPassport.LearnerInfo.Skills.Computer"
+                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Skills.Computer" data-rel-subsection="Computer" data-rel-index="">
+                                    <dt class="label">
+                                        <span class="title">Competenze digitali</span>
+                                    </dt>
+                                    <dd class="value">
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+
+                        <dl id="Compose:LearnerInfo.Achievement" class="section subsection-container additional">
+                            <dt class="label list section-heading">
+                                <span class="title">ULTERIORI INFORMAZIONI</span>
+                            </dt>
+
+                            <dd class="line"></dd>
+                            <ol class="sortable compose-list ui-sortable" id="List:SkillsPassport.LearnerInfo.Achievement" data-rel-section="SkillsPassport.LearnerInfo.Achievement">
+
+                                <li class="compose-list list-item opens-modal-form" id="ListItem:LearnerInfo.Achievement[0]" data-index="0" data-rel-doc="cv" data-rel-clazz="AchievementFormView" data-rel-form="Form:LearnerInfo.Achievement[0]" data-rel-section="SkillsPassport.LearnerInfo.Achievement[0]"
+                                    data-rel-help-section="Help.SkillsPassport.LearnerInfo.Achievement" data-rel-index="0">
+                                    <dd class="content-label Achievement">Certificazioni</dd>
+
+                                    <dd class="value rich-content Achievement">
+                                        <p>
+                                            MCSD: Web Applications<br> Microsoft, Da Gennaio 2016 a Gennaio 2018
+                                        </p>
+                                    </dd>
+                                    <dd class="value rich-content Achievement">
+                                        <p>
+                                            ​MS: Programming in HTML5 with JavaScript and CSS3<br> Microsoft, Da Ottobre 2015
+                                        </p>
+                                    </dd>
+                                    <dd class="value rich-content Achievement">
+                                        <p>
+                                            MCPS: Microsoft Certified Professional<br> Microsoft, Da Ottobre 2015
+                                        </p>
+                                    </dd>
+                                </li>
+
+                            </ol>
+                        </dl>
+                    </div>
+                    <!--  footer -->
+                </section>
+            </section>
+        </section>
+    </div>
+
+    <div id="feedly-mini" title="feedly Mini tookit"></div>
+</body>
+
+{{/resume.SkillsPassport.LearnerInfo}}
+</html>

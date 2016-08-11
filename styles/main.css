@@ -1,0 +1,2793 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    line-height: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    /* padding-top: 0.3em; */
+}
+
+body {
+    line-height: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.button.upload.blue span.title {
+    background: url(http://localhost:65300/images/sprites/locations_fileformats_upload.png?version=5.0.25) 10px -1190px no-repeat transparent;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.email-note a,
+.rich-content a,
+fieldset .rich-editor a,
+.description a {
+    color: inherit;
+}
+
+menu button {
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+button.delete {
+    background-image: url(http://localhost:65300/images/discard.png?version=5.0.25);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.upload-area menu.choose-file .button.upload.blue > .title {
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+#main-content-area .dropzone .drop.here .dropMsg {
+    font-size: 22px;
+}
+
+input:focus,
+button,
+a {
+    outline: none;
+}
+
+#header-logo-moto-small .title {
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 42px 0;
+}
+
+#PostToJobPortalsForm .job-portals-info #share-cloud .btn-share-cloud .title {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+nav.europass-documents .document.active a,
+nav.europass-documents .document.active a:hover {
+    color: #1093cb;
+    font-weight: 700;
+    position: relative;
+    background: #FFF;
+}
+
+nav.europass-documents .document.active a .tooltip,
+nav.europass-documents .document.active a:hover .tooltip {
+    font-weight: 400;
+}
+
+nav.europass-documents .document.active a::before {
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.effective-content-area {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    left: 20%;
+    top: 0;
+    background: #FFF;
+    margin: auto;
+    width: 70%;
+}
+
+.effective-content-area .main-area {
+    /* width: 71%; */
+    padding-top: 30px;
+}
+
+.section,
+.subsection,
+ol.compose-list > li.list-item {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: none 0 0 repeat scroll transparent;
+    margin: .4rem 0 -.1rem;
+    padding: 40px 0 17px;
+}
+
+.esp .compose,
+.section,
+.subsection,
+ol.compose-list > li.list-item {
+    padding: 10px 0 10px;
+}
+
+.subsection.foreign-language-skills {
+    margin-bottom: -2px;
+}
+
+.cl.compose .section,
+.elp.compose .section,
+.cl.compose .subsection,
+.elp.compose .subsection,
+.cl.compose ol.compose-list > li.list-item,
+.elp.compose ol.compose-list > li.list-item {
+    border-radius: 0;
+    margin: .4rem 0 .8rem;
+}
+
+.opens-modal-form:hover {}
+
+.cv .section > .label,
+.cv .section .subsection > .label {
+    width: 30%;
+    margin-right: -.4rem;
+    color: #84b9de;
+    font-weight: 400;
+    text-align: right;
+    vertical-align: top;
+    line-height: 15px;
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    padding: 0 5% 0 0;
+}
+
+.cv .section .Email a,
+.cl .section .Email a {
+    text-decoration: none;
+}
+
+.cv .section > .value,
+.cv .subsection.skills > .value {
+    width: 65%;
+    vertical-align: top;
+    /* margin-top: -3px; */
+}
+
+.cv .section ol.compose-list li.compose-list {
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.cv .section > dd.line::after {
+    bottom: 0;
+    content: "";
+    height: .7rem;
+    position: absolute;
+    right: 0;
+    width: .8rem;
+    background: none 0 0 repeat scroll #1093cb;
+}
+
+.cv .section > dd.line {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #1093cb;
+    width: 65%;
+    height: 10px;
+    position: relative;
+}
+
+.cv.compose menu.section.manage button.delete {
+    top: 0 !important;
+}
+
+.cv.compose .sortable.compose-list {
+    margin-top: 1rem;
+}
+
+.work-education-experiences-area {
+    padding-top: 42px;
+    position: relative;
+}
+
+.work-education-experiences-area .label.list.section-heading {
+    display: inline-block;
+    top: -12px;
+}
+
+.work-education-experiences-area .label.list.section-heading button.autoSort.byDate {
+    overflow: visible;
+    text-indent: -9999px;
+    border: none;
+    border-radius: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 49;
+    background-color: transparent;
+    background-position: 0 -10px;
+    background-repeat: no-repeat;
+}
+
+.work-education-experiences-area .label.list.section-heading button.autoSort.byDate:hover,
+.work-education-experiences-area .label.list.section-heading button.autoSort.byDate.tap-hover {
+    background-position: 0 -50px;
+}
+
+.work-education-experiences-area ol#List\:SkillsPassport\.LearnerInfo\.Education dd.Level {
+    height: auto;
+    position: absolute;
+    width: 21%;
+    left: 44%;
+    top: 0;
+}
+
+.work-education-experiences-area ol#List\:SkillsPassport\.LearnerInfo\.Education dd.Level span.Level {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 80%;
+    top: 2.2rem;
+}
+
+.work-education-experiences-area ol#List\:SkillsPassport\.LearnerInfo\.Education dd.Title {
+    width: 42%;
+}
+
+.cv .section.subsection-container {
+    border-radius: 0;
+    margin-top: 0;
+}
+
+.cv .section.subsection-container.work-education {
+    margin-top: -3px;
+    padding-top: 0;
+}
+
+.ui-sortable .is-being-dragged:hover {
+    border: none;
+    background: none !important;
+}
+
+.section.empty.item:hover div.empty.add,
+.section.empty.item.tap-hover div.empty.add,
+.subsection.empty.item:hover div.empty.add,
+.subsection.empty.item.tap-hover div.empty.add,
+table.list-actions td.empty:hover div.empty.add,
+table.list-actions td.empty.tap-hover div.empty.add,
+.opens-modal-form-lang-empty.empty:hover div.empty.add,
+.opens-modal-form-lang-empty.empty.tap-hover div.empty.add {
+    min-height: 21px;
+    background-image: url(http://localhost:65300/images/sprites/round_plus_icons.png?version=5.0.25);
+    background-position: 0 -21px;
+    background-repeat: no-repeat;
+}
+
+.section.empty.item:hover div.empty.add span,
+.section.empty.item.tap-hover div.empty.add span,
+.subsection.empty.item:hover div.empty.add span,
+.subsection.empty.item.tap-hover div.empty.add span,
+table.list-actions td.empty:hover div.empty.add span,
+table.list-actions td.empty.tap-hover div.empty.add span,
+.opens-modal-form-lang-empty.empty:hover div.empty.add span,
+.opens-modal-form-lang-empty.empty.tap-hover div.empty.add span {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: normal;
+    margin-left: 3px;
+    color: #2a7ab9;
+}
+
+.cv .section .subsection.foreign-language-skills.empty:hover,
+.cv .section .subsection.foreign-language-skills.empty.tap-hover {
+    background-color: #f3f3f3;
+    border-color: transparent;
+}
+
+.section ol.compose-list > li.empty {
+    border: none;
+    background: none;
+}
+
+.cv-span-dv,
+.compose span.default-value {
+    color: #c2c2c2;
+}
+
+.empty-add-button,
+.compose div.empty.add {
+    min-height: 21px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    vertical-align: middle;
+    border: none;
+    background-image: url(http://localhost:65300/images/sprites/round_plus_icons.png?version=5.0.25);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 0 0 0 30px;
+}
+
+.empty-add-button span,
+.compose div.empty.add span {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: normal;
+    margin-left: 3px;
+}
+
+.compose div.empty.add span {
+    padding: 0;
+}
+
+.cv-section-subsection-button,
+.cv .section.subsection-container button.opens-modal-form.add,
+button.opens-modal-form.add {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 0 -.2rem;
+    padding: 17px 0 17px 35% !important;
+}
+
+.cv-section-subsection-button span,
+.cv .section.subsection-container button.opens-modal-form.add span,
+button.opens-modal-form.add span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: normal;
+    transition: none;
+    text-align: left;
+    border: none;
+    vertical-align: bottom;
+}
+
+.cv.compose .section.subsection-container button.opens-modal-form.add {
+    margin-bottom: 1rem;
+}
+
+.section.subsection-container.personalskills {
+    padding-top: 31px;
+}
+
+.section.personal button.names.switch {
+    border: 0;
+    color: transparent;
+    width: 33px;
+    height: 17px;
+    overflow: visible;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url(http://localhost:65300/images/sprites/switch_names.png?version=5.0.25) 5px -17px no-repeat scroll transparent;
+}
+
+.section.personal button.names.switch:hover,
+.section.personal button.names.switch.tap-hover {
+    background: url(http://localhost:65300/images/sprites/switch_names.png?version=5.0.25) 5px 0 no-repeat scroll transparent;
+}
+
+.compose .current-drag {
+    opacity: 1;
+    background-color: #FFF;
+}
+
+.compose .current-drag .draggable-item-overlay {
+    border: 1px solid #0487d0 !important;
+    background: 0 to(rgba(255, 255, 255, 0.498039))) !important;
+}
+
+.compose .draggable-item-overlay:not(.current-drag) {
+    background: 0 to(rgba(255, 255, 255, 0.4)));
+}
+
+.cv .table-item-re-ordering {
+    border-radius: 4px;
+}
+
+.cv > .section .Photo {
+    border: 2px dashed transparent;
+    height: 110px;
+    width: 95px;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    border-radius: 0;
+    background: none 0 0 no-repeat scroll transparent;
+    margin: 20px 0 0 70px;
+}
+
+.cv > .section .Photo.active.nophoto {
+    border: 2px dashed #c2c2c2;
+    border-color: #c2c2c2;
+    margin: 0 0 0 70px;
+}
+
+.cv .section.item:hover .Photo.active {
+    background: #FFF;
+}
+
+.cv .section.item:hover .Photo.active > span.upload-prompt,
+.cv .section.item.tap-hover .Photo.active > span.upload-prompt,
+.cv > .section .Photo.active.nophoto > span.upload-prompt,
+.cv > .section .Photo.active:hover > span.upload-prompt .cv > .section .Photo.active.tap-hover > span.upload-prompt {
+    font-size: 14px;
+    left: 5px;
+    top: 30px;
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 12px;
+    background: url(http://localhost:65300/images/upload_arrow_grey_11.png?version=5.0.25) 0 0 no-repeat scroll transparent;
+}
+
+.cv > .section .Photo.active:hover > span.upload-prompt,
+.cv > .section .Photo.active.tap-hover > span.upload-prompt {
+    color: #f5f5f5;
+    background-image: url(http://localhost:65300/images/upload_arrow_light_grey_11.png?version=5.0.25);
+}
+
+.PersonalBasic.personal-details.value {
+    min-height: 110px;
+    z-index: 10;
+}
+
+.cv-section-pd-span,
+.compose .section .personal-details div.name span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.5rem;
+}
+
+.compose > .section > .value.PersonName span {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: .05px;
+}
+
+.cv-section-pn-empty,
+.compose > .section > .value.PersonName span.emptyFirstName,
+.compose > .section > .value.PersonName span.emptySurname {
+    color: #CCC;
+    font-style: italic;
+    letter-spacing: .05px;
+}
+
+.compose > .section > .value.PersonName span.FirstName,
+.compose > .section > .value.PersonName span.Surname {
+    color: #2f2e2d;
+}
+
+.cv-section-values-bg,
+.compose > .section .value.Address,
+.compose > .section .value.Email,
+.compose > .section .value.Telephone.default-value,
+.compose > .section .value.InstantMessaging,
+.compose > .section .value.Website {
+    padding-left: 20px;
+    background-color: transparent;
+    background-position: 0 11px;
+    background-repeat: no-repeat;
+}
+
+.cv-section-value-address-bi,
+.compose > .section .value.Address {
+    background-image: url(icon-location.png);
+}
+
+.cv-section-value-email-bi,
+.compose > .section .value.Email {
+    padding-right: 8px;
+    background-image: url(icon-envelope.png);
+}
+
+.cv-section-value-im-bi,
+.compose > .section .value.InstantMessaging {
+    padding-left: 20px;
+    background-image: url(icon-im.png);
+}
+
+.cv-section-value-telephone-item,
+.compose > .section .value.Telephone .item {
+    min-height: 15px;
+    padding-left: 20px;
+    padding-right: 8px;
+    background-color: transparent;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+}
+
+.cv-section-value-telephone-item-bi,
+.compose > .section .value.Telephone.default-value,
+.compose > .section .value.Telephone .item {
+    background-image: url(icon-home.png);
+}
+
+.compose > .section .value.Telephone .item span.Contact {
+    display: inline-block;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.cv-section-value-telephone-item-mobile-bi,
+.compose > .section .value.Telephone .item.mobile {
+    background: url(icon-mobile.png) 0 4px no-repeat;
+}
+
+.cv-section-value-telephone-item-work-bi,
+.compose > .section .value.Telephone .item.work {
+    background: url(icon-work.png) 0 3px no-repeat;
+}
+
+.cv .section .PersonalDetails {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.cv .section .PersonalDetails dl + dl {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #2fa1d2;
+    padding-left: 5px;
+}
+
+.cv ol.compose-list > li.list-item {
+    min-height: 50px;
+    position: relative;
+    top: 2px;
+    margin: 10px 0;
+}
+
+.cv ol.compose-list > li.compose-list > dd.content-label {
+    width: 30%;
+    margin-right: -.4rem;
+    color: #2a7ab9;
+    text-align: right;
+    position: absolute;
+    padding: 0 5% 0 0;
+}
+
+.cv ol.compose-list > li.compose-list > dd.value {
+    width: 65%;
+    margin-left: 35%;
+    padding-bottom: .6rem;
+}
+
+menu.section.manage,
+menu.subsection.manage {
+    border: none;
+    position: absolute;
+    top: 0;
+    display: none;
+    right: 0;
+    z-index: 100;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+menu.section.manage:hover > .edit,
+menu.subsection.manage:hover > .edit,
+menu.section.manage.tap-hover > .edit,
+menu.subsection.manage.tap-hover > .edit {
+    background-color: transparent;
+}
+
+menu.section.manage:hover > .edit span,
+menu.subsection.manage:hover > .edit span,
+menu.section.manage.tap-hover > .edit span,
+menu.subsection.manage.tap-hover > .edit span {
+    color: #fa7d23;
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+menu.section.manage > .edit,
+menu.subsection.manage > .edit,
+menu.section.manage > .edit:hover,
+menu.subsection.manage > .edit:hover,
+menu.section.manage > .edit.tap-hover,
+menu.subsection.manage > .edit.tap-hover {
+    border-radius: 0;
+    border: none;
+    font-size: 1rem;
+    width: auto;
+    height: 2.25rem;
+    background-color: #fa7d23;
+    padding: .5rem .8rem;
+}
+
+menu.section.manage > .edit span,
+menu.subsection.manage > .edit span,
+menu.section.manage > .edit:hover span,
+menu.subsection.manage > .edit:hover span,
+menu.section.manage > .edit.tap-hover span,
+menu.subsection.manage > .edit.tap-hover span {
+    color: #FFF;
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-position: 0 -2.5rem;
+    background-repeat: no-repeat;
+    padding: .2rem 0 0 1.5rem;
+}
+
+menu.section.manage > .edit-button.extra,
+menu.subsection.manage > .edit-button.extra {
+    border-radius: 0;
+}
+
+menu.section.manage.delete,
+menu.subsection.manage.delete {
+    right: 5px;
+}
+
+menu.subsection.manage button,
+menu.section.manage button {
+    display: inline-block;
+    margin-left: -.25rem;
+    margin-right: 0 !important;
+}
+
+.cv.compose menu.section.manage button:last-child,
+.cv.compose menu.subsection.manage button:last-child {
+    border-radius: 0 4px 0 0 !important;
+}
+
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage {
+    position: relative;
+    top: -1.2rem;
+    left: -4rem;
+    padding: 0;
+}
+
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button {
+    height: 1.6rem;
+    position: absolute;
+    margin: 0;
+}
+
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.edit {
+    right: 0;
+    top: -2px;
+    width: auto;
+    border-radius: 0 !important;
+    padding: .2rem;
+}
+
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.attach {
+    top: -2px;
+    border-radius: 0 !important;
+    background-position: 50% -78px;
+}
+
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.attach.tap-hover,
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.attach:hover {
+    background-position: 50% -119px;
+}
+
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.delete {
+    left: 2rem;
+    border-radius: 0 4px 0 0 !important;
+    top: -2px !important;
+    background-position: 50% -158px;
+}
+
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.delete.tap-hover,
+table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.delete:hover {
+    background-position: 50% -197px;
+}
+
+menu.subsection.manage a.view,
+menu.section.manage a.view {
+    border: none;
+    border-radius: 0;
+    width: 2.2rem;
+    height: 2.25rem;
+    position: relative;
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-color: transparent;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
+menu.subsection.manage a.view:hover,
+menu.section.manage a.view:hover,
+menu.subsection.manage a.view.tap-hover,
+menu.section.manage a.view.tap-hover {
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-color: #fa7d23;
+    background-position: 50% 0;
+}
+
+menu.subsection.manage button.attach,
+menu.section.manage button.attach {
+    border: none;
+    border-radius: 0;
+    width: 2.2rem;
+    height: 2.25rem;
+    position: relative;
+    overflow: visible;
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-color: transparent;
+    background-position: 50% -75px;
+    background-repeat: no-repeat;
+}
+
+menu.subsection.manage button.attach:hover,
+menu.section.manage button.attach:hover,
+menu.subsection.manage button.attach.tap-hover,
+menu.section.manage button.attach.tap-hover {
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-color: #fa7d23;
+    background-position: 50% -115px;
+}
+
+menu.subsection.manage button.delete,
+menu.section.manage button.delete {
+    border: none;
+    border-radius: 0;
+    width: 2.2rem;
+    height: 2.25rem;
+    position: relative;
+    text-indent: -5000px;
+    white-space: nowrap;
+    overflow: visible !important;
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-color: transparent;
+    background-position: 50% -154px;
+    background-repeat: no-repeat;
+}
+
+li.list-item > menu.subsection.manage button.delete.tip,
+li.list-item > menu.section.manage button.delete.tip,
+li.list-item > dl > menu.section.manage > button.delete.tip {
+    text-indent: 0;
+    top: -8px;
+    overflow: visible !important;
+}
+
+button.attach em.number-of-attachments {
+    left: 22px;
+    position: absolute;
+    top: -4px;
+    padding-top: 0;
+    z-index: 999;
+    background-color: #ff5505;
+    border-color: #d54406;
+}
+
+.Address.minimal {
+    display: inline;
+    position: relative;
+    left: -4px;
+}
+
+.work-education-experiences-area dl.work-education {
+    margin-bottom: 0;
+    border: none;
+}
+
+.cv ol.compose-list > li.compose-list dd.value.Level {
+    text-align: right;
+    color: #84b9de;
+}
+
+.work-education-experiences-area .work-education button.work-education-switch.switch {
+    width: 17px;
+    height: 28px;
+    position: absolute;
+    left: -1.5rem;
+    top: 47%;
+    margin-left: -8px;
+    border: none;
+    box-shadow: #FFF 0 0 0 5px;
+    outline: 0;
+    background: url(http://localhost:65300/images/sprites/switch_sections.png?version=5.0.25) 0 0 no-repeat transparent;
+    padding: 0;
+}
+
+.work-education-experiences-area button.work-education-switch.switch:hover,
+.work-education-experiences-area button.work-education-switch.switch.tap-hover {
+    background: url(http://localhost:65300/images/sprites/switch_sections.png?version=5.0.25) -17px 0 no-repeat transparent;
+}
+
+.cv > .section > .value.Occupation {
+    font-size: 17px;
+}
+
+.cv span.description {
+    display: inline-block;
+    margin-top: -12px;
+    font-size: 17px;
+    position: absolute;
+}
+
+dd.value span.personal-statement {
+    font-size: 10pt;
+}
+
+.cv .subsection-container .foreign-language-skills table.languages {
+    border-collapse: separate;
+    /* padding: 40px 0 17px; */
+}
+
+.elp .foreign-languages-skills:hover > dd.value > .opens-modal-form.empty.add,
+.cv dl.subsection.foreign-language-skills.empty:hover > dd.value > .opens-modal-form.empty.add,
+.elp .foreign-languages-skills.tap-hover > dd.value > .opens-modal-form.empty.add,
+.cv dl.subsection.foreign-language-skills.empty.tap-hover > dd.value > .opens-modal-form.empty.add {
+    transition: none;
+    background-position: 0 -21px !important;
+}
+
+.elp .foreign-languages-skills dd.value > button.opens-modal-form.add,
+.cv dl.subsection.foreign-language-skills.empty dd.value > button.opens-modal-form.add,
+.elp .foreign-languages-skills button.opens-modal-form.add,
+.cv dl.subsection.foreign-language-skills.empty button.opens-modal-form.add {
+    border: none;
+    transition: none;
+    background-position: 0 0 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.elp .foreign-languages-skills dd.value > button.opens-modal-form.add span,
+.cv dl.subsection.foreign-language-skills.empty dd.value > button.opens-modal-form.add span,
+.elp .foreign-languages-skills button.opens-modal-form.add span,
+.cv dl.subsection.foreign-language-skills.empty button.opens-modal-form.add span {
+    color: #fc6e0d;
+}
+
+table.languages > tfoot > tr > td {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: none 0 0 repeat scroll transparent;
+    margin: .4rem 0 -.1rem;
+    padding: 2% 0 0;
+}
+
+table.languages > tfoot > tr > td button.opens-modal-form {
+    width: 100%;
+    text-align: left;
+    margin: 0 !important;
+    padding: 17px 0 17px 34.5% !important;
+}
+
+table.languages > tfoot > tr > td button.opens-modal-form span {
+    display: inline-block;
+    color: #fc6e0d;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: normal;
+    transition: none;
+    text-align: left;
+    border: none;
+    vertical-align: bottom;
+}
+
+table.languages > thead > tr .Listening,
+table.languages > thead > tr .Reading,
+table.languages > thead > tr .SpokenInteraction,
+table.languages > thead > tr .SpokenProduction,
+table.languages > thead > tr .Writing {
+    width: 13%;
+}
+
+table.languages > thead > tr:first-child {
+    text-transform: uppercase;
+}
+
+table.languages th {
+    border: 1px solid #CCC;
+    padding: 5px 3px 4px;
+}
+
+table.languages th.no-border {
+    border: 1px solid transparent;
+    width: 35%;
+    padding: 0 2.3rem 0 0;
+}
+
+table.languages tr.proficiency td.Title {
+    text-align: center;
+    background: #f3f3f3;
+}
+
+.self-evaluation > td {
+    width: 20%;
+}
+
+table.languages tbody tr.certificates td {
+    background: #f4f4f4;
+}
+
+table.languages > tbody > tr > td > ul > li {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #cfd0d2;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c2c3c6;
+    line-height: 30px;
+    background-color: #e7e7e8;
+}
+
+table.languages tr.compose-list td.label .language-title {
+    position: relative;
+    color: #2f2e2d;
+    text-align: right;
+}
+
+table.languages tr.language.compose-list > td {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+table.languages tr.language.compose-list td:first-child {
+    border-radius: 4px 0 0 4px;
+    border-width: 1px 0 1px 1px;
+    padding: 0 2.3rem 0 0;
+}
+
+table.languages tr.language.compose-list td:last-child {
+    border-radius: 0 4px 4px 0;
+    border-width: 1px 1px 1px 0;
+}
+
+table.languages tr.language.compose-list table tr.self-evaluation td,
+table.languages tr.language.compose-list table tr.certificates td,
+table.languages tr.language.compose-list table tr.documentation td {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    border-radius: 0;
+    padding: 6px 0;
+}
+
+table.languages tr.language.compose-list table tr.documentation:last-child td {
+    border-bottom-color: transparent;
+}
+
+.cv.compose table.languages tr.compose-list button.sort-move-up,
+.cv.compose table.languages tr.compose-list button.sort-move-down,
+.cv.compose table.languages tr.compose-list button.sort-move-top {
+    top: -10px;
+}
+
+.cv .computer-skills table.ict-skills {
+    border-collapse: separate;
+    padding: 0;
+}
+
+table.ict-skills th.no-border {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 35%;
+    border-width: 1px;
+    padding: 0 2.3rem 0 0;
+}
+
+dl[id$=ReferenceTo] li.compose-list {
+    min-height: 15px;
+}
+
+dl[id$=ReferenceTo] li.compose-list > a {
+    margin-left: 35%;
+    padding-left: 20px;
+    position: relative;
+}
+
+dl[id$=ReferenceTo] li.compose-list > a::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+footer {
+    clear: both;
+}
+
+.cl.compose * {
+    line-height: normal;
+}
+
+.cl.compose .PersonalBasic * {
+    line-height: 1rem;
+}
+
+.cl.compose .section {
+    padding: 1.5% 0;
+}
+
+.cl.compose .section > div.value.Localisation,
+.cl.compose .section dd {
+    padding: 0 3%;
+}
+
+.cl.compose .section.personal::after {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #1093cb;
+    content: " ";
+    width: 94%;
+    bottom: -.5rem;
+    position: absolute;
+    margin: 0 3%;
+}
+
+.cl.compose .section.personal button.names.switch {
+    margin-left: 0;
+    position: relative;
+    top: 12px;
+    vertical-align: top;
+}
+
+.cl.compose .section div.empty.add {
+    margin-top: 1.2rem;
+    padding-left: 45%;
+    text-align: left;
+    background-position: 45% 0;
+}
+
+.cl.compose .section div.empty.add > span {
+    padding-left: 20.5px;
+}
+
+.cl.compose .section .Signature {
+    border: 2px dashed transparent;
+    width: 300px;
+    position: relative;
+    border-radius: 0;
+    background: none 0 0 no-repeat scroll transparent;
+    margin: 10px 0;
+}
+
+.cl.compose .section .Signature.active.nosignature {
+    border: 2px dashed #c2c2c2;
+    width: 300px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.cl.compose .section .Signature.active:hover.active.nosignature,
+.cl.compose .section .Signature.active.nosignature.active.nosignature,
+.cl.compose .section .Signature.active:hover.active.nosignature:hover,
+.cl.compose .section .Signature.active.nosignature.active.nosignature:hover {
+    border: 2px dashed #c2c2c2;
+}
+
+.cl.compose .section:hover.Signature.active {
+    background: #fa7d23;
+}
+
+.cl.compose .section:hover .Signature.active,
+.cl.compose .section.tap-hover .Signature.active {
+    background: transparent;
+    border-color: #fa7d23;
+    border-style: dashed;
+}
+
+.cl.compose .section menu.manage {
+    margin: 0 !important;
+}
+
+.cl .section.empty.item:hover div.empty.add,
+.cl .section.empty.item.tap-hover div.empty.add,
+.cl .subsection.empty.item:hover div.empty.add,
+.cl .subsection.empty.item.tap-hover div.empty.add {
+    background-position: 45% -21px;
+}
+
+.cl .section div.documentation {
+    padding-left: 20px;
+    background-image: url(http://localhost:65300/images/binder_icon.png?version=5.0.25);
+    background-size: 12px;
+    background-repeat: no-repeat;
+}
+
+.Photo .upload.feedback-area,
+.Signature .upload.feedback-area {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+}
+
+.Photo .upload.feedback-area .notification.error,
+.Signature .upload.feedback-area .notification.error {
+    margin: 1rem 0 0 !important;
+}
+
+.Photo .notification.warning,
+.Signature .notification.warning {
+    background-image: url(http://localhost:65300/images/notifications/msg-warning-indicator.png?version=5.0.25);
+}
+
+.Photo .note,
+.Signature .note {
+    padding: 1rem 0 3rem;
+}
+
+.rich-content,
+.rich-editor,
+.description,
+.email-note {
+    /* line-height: 1.6rem; */
+}
+
+.rich-content ul ul,
+.rich-editor ul ul,
+.description ul ul,
+.email-note ul ul {
+    margin-bottom: 0 !important;
+    padding-left: 1em !important;
+}
+
+.rich-content em,
+.rich-editor em,
+.description em,
+.email-note em,
+.rich-content i,
+.rich-editor i,
+.description i,
+.email-note i {
+    font-style: italic;
+}
+
+.rich-content p.indent1,
+.rich-editor p.indent1,
+.description p.indent1,
+.email-note p.indent1 {
+    margin-left: 20px;
+    margin-bottom: 0 !important;
+}
+
+.rich-content p.indent2,
+.rich-editor p.indent2,
+.description p.indent2,
+.email-note p.indent2 {
+    margin-left: 40px;
+    margin-bottom: 0 !important;
+}
+
+.rich-content p.indent3,
+.rich-editor p.indent3,
+.description p.indent3,
+.email-note p.indent3 {
+    margin-left: 60px;
+    margin-bottom: 0 !important;
+}
+
+.rich-content p.align-justify,
+.rich-editor p.align-justify,
+.description p.align-justify,
+.email-note p.align-justify {
+    text-align: justify;
+}
+
+.rich-content p:last-of-type,
+.rich-editor p:last-of-type,
+.description p:last-of-type,
+.email-note p:last-of-type {
+    padding: 0;
+}
+
+.rich-content blockquote,
+.rich-editor blockquote,
+.description blockquote,
+.email-note blockquote {
+    line-height: 1.4rem;
+    margin-left: 2em !important;
+    padding: 2px 0 19px;
+}
+
+.rich-content > .description {
+    margin-right: 30px;
+}
+
+.esp .thumbnail_container ol.compose-list > li.compose-list {
+    border: 1px solid #d0d0d0;
+    width: 250px !important;
+    height: 353.570007px !important;
+    display: inline-block !important;
+    box-shadow: #EEE 3px 3px !important;
+    border-radius: 0 !important;
+    margin: 0 .7rem 1.1rem 0 !important;
+    padding: 0 !important;
+}
+
+.esp .thumbnail_container .attachment_thumbnail menu.section.manage {
+    position: absolute;
+    top: -1px;
+}
+
+.esp .thumbnail_container .attachment_thumbnail menu.section.manage.delete button.delete {
+    position: absolute;
+    right: -5px;
+    top: 0;
+    border-top-right-radius: 0 !important;
+    overflow: visible !important;
+    margin: 0;
+}
+
+.esp .thumbnail_container .attachment_thumbnail menu.section.manage button.edit {
+    position: absolute;
+    right: 4.4rem;
+}
+
+.esp .thumbnail_container .attachment_thumbnail:hover .title,
+.esp .thumbnail_container .attachment_thumbnail.tap-hover .title {
+    top: 50px;
+    font-size: 16px;
+    color: #737373;
+    font-weight: 800;
+}
+
+.esp .thumbnail_container .attachment_thumbnail:hover .title a,
+.esp .thumbnail_container .attachment_thumbnail.tap-hover .title a {
+    color: #ffa05b;
+}
+
+.esp .thumbnail_container .attachment_thumbnail > button.section {
+    color: #ffa05b;
+    font-size: 14px;
+    font-weight: 700;
+    width: 250px;
+    height: 100%;
+    border: none;
+    position: relative;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.esp .thumbnail_container .attachment_thumbnail > button.section .img-placeholder {
+    display: inline-block;
+    position: absolute;
+}
+
+.esp .thumbnail_container .attachment_thumbnail > button.section span:last-child {
+    padding-left: 30px !important;
+}
+
+.esp .thumbnail_container .attachment_thumbnail .title {
+    width: 230px;
+    height: 40px;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    color: #737373;
+    padding: 0 10px;
+}
+
+.elp .cefrgrid .rich-content {
+    display: inline-block;
+    text-indent: 2rem;
+    font-size: 15px;
+    color: #737373;
+    background: url(http://localhost:65300/images/sprites/cefrgrid.png?version=5.0.25) 0 -514px no-repeat scroll transparent;
+    padding: 1.5rem;
+}
+
+.elp .cefrgrid .rich-content a.cefr-link-main {
+    color: #0487d0;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.elp .cefrgrid .rich-content button.cefr-btn {
+    border: medium none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0487d0;
+    text-indent: 0;
+    background: none 0 0 repeat scroll rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.elp.compose .section,
+.elp.compose .subsection,
+.elp.compose ol.compose-list > li.list-item {
+    border: none;
+    margin-bottom: 2rem;
+    background: none;
+}
+
+.elp .label {
+    color: #063891;
+    font-size: 1rem;
+    padding: .52rem .39rem;
+}
+
+.elp .value {
+    color: #282727;
+    font-size: 1rem;
+    padding: .52rem .39rem;
+}
+
+.elp .elp-overview.section.item {
+    position: relative;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.elp .elp-overview .value {
+    font-size: 1.235rem;
+}
+
+.elp .elp-overview .personal-details {
+    position: relative;
+    display: inline-block;
+    padding-bottom: .325rem;
+    margin-bottom: .325rem;
+}
+
+.elp .elp-overview .personal-details button.names.switch {
+    z-index: 100;
+    vertical-align: bottom;
+}
+
+.elp .elp-overview menu.manage {
+    top: -2px;
+}
+
+.elp .foreign-languages-details .language-list .list-item .foreign-language-title {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #afb1b4;
+    font-size: .91rem;
+    font-weight: 700;
+    color: #282727;
+    margin-top: -36px;
+    background: #f4f4f4;
+    padding: .65rem;
+}
+
+.elp .foreign-languages-details .language-list .empty.compose-list button {
+    border: 0;
+    text-align: center;
+    background-color: transparent;
+    padding: .65rem 0;
+}
+
+.elp .foreign-languages-details .language-list .empty.compose-list button:hover,
+.elp .foreign-languages-details .language-list .empty.compose-list button.tap-hover {
+    background-color: #f3f3f3;
+}
+
+.elp .foreign-languages-details table.self-assessment td.menu-placeholder menu.manage button.edit {
+    position: absolute;
+    right: 34px;
+    top: -7px;
+}
+
+.elp .foreign-languages-details table.linguistic-certificates th.title,
+.elp .foreign-languages-details table.linguistic-certificates td.title {
+    max-width: 33%;
+    min-width: 33%;
+    width: 33%;
+}
+
+.elp .foreign-languages-details table.linguistic-experiences tr > .period {
+    max-width: 30%;
+    min-width: 30%;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder .menu-placeholder menu.section.manage button.edit:not(.language-levels) {
+    position: absolute;
+    right: 2.2rem;
+    top: -7px;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder .menu-placeholder menu.section.manage button.delete {
+    position: absolute;
+    left: -1.8rem;
+    top: -7px;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover > td .dnd,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover > td .dnd {
+    display: block !important;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover > td .dnd .sortable_placeholder,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover > td .dnd .sortable_placeholder {
+    border-radius: 0;
+    height: 39px;
+    left: 6px;
+    top: -26px;
+    width: 2.2rem;
+    display: inline-block !important;
+    background-position: 8px -231px;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover > td .dnd .sortable_placeholder:hover,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover > td .dnd .sortable_placeholder:hover,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover > td .dnd .sortable_placeholder.tap-hover,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover > td .dnd .sortable_placeholder.tap-hover {
+    background-color: #fa7d23;
+    background-position: 8px -271px;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover menu.section.manage button,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover menu.section.manage button {
+    height: 2.2rem;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover td:not(.exp-placeholder):not(.certf-placeholder),
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover td:not(.exp-placeholder):not(.certf-placeholder) {
+    background-color: #ffe9d4;
+}
+
+.elp .foreign-languages-details:not(table).linguistic-certificates.label,
+.elp .foreign-languages-details:not(table).linguistic-experiences.label,
+.elp .foreign-languages-details .self-assessment.label {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    position: relative;
+    border-color: #afb1b4;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: .52rem;
+}
+
+.elp .foreign-languages-details table.linguistic-certificates tr.menu-placeholder:hover .dnd .sortable_placeholder {
+    left: 6px;
+    top: -27px;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: 7px -233px;
+}
+
+.elp .foreign-languages-details table.linguistic-certificates tr.menu-placeholder:hover .dnd .sortable_placeholder:hover {
+    height: 2.2rem;
+    background-color: #fa7d23;
+    background-position: 7px -273px;
+}
+
+* .esp .thumbnail_container .attachment_thumbnail menu.section.manage.delete button.delete {
+    padding-bottom: 0;
+    position: absolute;
+    top: 0;
+    border-top-right-radius: 0 !important;
+    overflow: visible !important;
+    margin: 0;
+}
+
+* menu.subsection.manage button.delete,
+menu.section.manage button.delete {
+    background-position: 9px -152px;
+}
+
+* menu.subsection.manage button.delete:hover,
+menu.section.manage button.delete:hover,
+* menu.subsection.manage button.delete .tap-hover,
+menu.section.manage button.delete .tap-hover {
+    background-position: 9px -192px;
+}
+
+* .cv > .section .Photo button.photo.delete {
+    background-position: 4px -154px;
+}
+
+* .cv > .section .Photo button.photo.delete:hover,
+* .cv > .section .Photo button.photo.delete .tap-hover {
+    background-position: 4px -194px;
+}
+
+* .cl.compose .section .Signature button.signature.delete {
+    background-position: 5px -154px;
+}
+
+* .cl.compose .section .Signature button.signature.delete:hover,
+* .cl.compose .section .Signature button.signature.delete .tap-hover {
+    background-position: 5px -194px;
+}
+
+* table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.delete {
+    background-position: 9px -157px;
+}
+
+* table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.delete:hover,
+* table.languages tr.language.compose-list > td.menu-placeholder menu.manage button.delete .tap-hover {
+    background-position: 9px -197px;
+}
+
+.Period div.overlay {
+    opacity: .6;
+    bottom: 0;
+    left: 0;
+    width: 81%;
+    position: absolute;
+    height: 70px;
+    display: none;
+    background: #f9f9f9;
+}
+
+header > legend {
+    font-family: 'Open Sans', sans-serif;
+}
+
+form fieldset {
+    min-width: inherit;
+}
+
+form > fieldset > fieldset:last-child {
+    margin-bottom: 40px;
+}
+
+fieldset label {
+    font-family: 'Open Sans', sans-serif;
+    color: #9d9d9d;
+    font-size: 17px;
+    font-weight: 400;
+    display: block;
+    line-height: normal !important;
+    margin: 40px 0 15px;
+}
+
+fieldset label::first-letter {
+    text-transform: capitalize;
+}
+
+fieldset.PersonName,
+fieldset.addressFields,
+fieldset.Birthdate-format,
+fieldset.Experience.Dates,
+fieldset.more.details,
+fieldset.Level,
+fieldset.Telephone,
+fieldset.Occupation,
+fieldset.Edu.Website,
+fieldset.Edu.Title,
+fieldset.Addressee {
+    margin-bottom: 2rem;
+}
+
+fieldset.Email {
+    margin-bottom: 4.5rem;
+}
+
+fieldset.Website {
+    margin-bottom: 1.25rem;
+}
+
+fieldset .formfield.Email {
+    filter: none;
+    border: none;
+    box-shadow: #b5c9d4 0 1px 0 inset, #b5c9d4 0 1px 2px inset, #d5e1e8 0 -1px 0 inset;
+    padding-left: 50px;
+    background: url(http://localhost:65300/images/sprites/personal_icons.png?version=5.0.25) 14px -220px no-repeat #eaf1f4;
+}
+
+fieldset .formfield.Website {
+    filter: none;
+    border: none;
+    box-shadow: #b5c9d4 0 1px 0 inset, #b5c9d4 0 1px 2px inset, #d5e1e8 0 -1px 0 inset;
+    padding-left: 50px;
+    background: url(http://localhost:65300/images/sprites/personal_icons.png?version=5.0.25) 14px -282px no-repeat #eaf1f4;
+}
+
+.Experience.Period .composite > *,
+.Birthdate .composite > *,
+.Date .composite > * {
+    float: left;
+    width: 25%;
+    margin-right: 3%;
+}
+
+fieldset.Organisation fieldset.Organisation-Address > fieldset.Municipality {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 2%;
+    width: 42%;
+}
+
+fieldset.Organisation fieldset.Organisation-Address > fieldset.Country {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 55%;
+}
+
+fieldset.Organisation fieldset.Organisation-Address.more > fieldset.AddressLine {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    width: 62%;
+}
+
+fieldset.Organisation fieldset.Organisation-Address.more > fieldset.PostalCode {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+
+fieldset.ecl.InstantMessaging .multipliable.compound > .composite.NoButton > .help.placeholding {
+    width: 66%;
+    margin-right: 0;
+}
+
+.composite.select.Work .help.placeholding .select2-container .select2-choice:not(.select2-default) .select2-chosen {
+    padding-left: 53px;
+    background: url(http://localhost:65300/images/sprites/personal_icons.png?version=5.0.25) 21px -46px no-repeat #e9f0f3;
+}
+
+div.modal div#Control\:LearnerInfo\.Identification\.Demographics\.Gender {
+    padding: 10px 10px 0;
+}
+
+div.modal fieldset[id^=SubForm:LearnerInfo.Education] fieldset.Field label[for=Level] {
+    margin-top: 0;
+}
+
+form[id^=Form:LearnerInfo.Skills.Linguistic.ForeignLanguage] fieldset.Level .level[name=Certificate] .formatSelection span.short-key-label::before,
+form[id^=Form:LearnerInfo.Skills.Linguistic.ForeignLanguage] fieldset[class*=ProficiencyLevel] .level .formatSelection span.short-key-label::before {
+    content: "-";
+    margin-left: -1px;
+    margin-right: 4px;
+}
+
+form[id=Form:LearnerInfo.Skills.Computer] fieldset.Level .level[name=Certificate] .formatSelection span.short-key-label::before,
+form[id=Form:LearnerInfo.Skills.Computer] fieldset[class*=ProficiencyLevel] .level .formatSelection span.short-key-label::before {
+    margin-left: -1px;
+    margin-right: 4px;
+}
+
+fieldset.Level .level[name=Certificate] .formatSelection span.level::before,
+fieldset[class*=ProficiencyLevel] .level .formatSelection span.level::before {
+    content: "(";
+}
+
+fieldset.Level .level[name=Certificate] .formatSelection span.level::after,
+fieldset[class*=ProficiencyLevel] .level .formatSelection span.level::after {
+    content: ")";
+}
+
+.ICTSelfAssesment ul.options > li > span.Label {
+    border-left-style: none !important;
+}
+
+fieldset.ProficiencyLevel fieldset.Listening,
+fieldset.ProficiencyLevel fieldset.Reading,
+fieldset.ProficiencyLevel fieldset.SpokenProduction,
+fieldset.ProficiencyLevel fieldset.SpokenInteraction,
+fieldset.ProficiencyLevel fieldset.Writing > div.level {
+    padding-left: 35px;
+}
+
+fieldset.ProficiencyLevel fieldset.Listening {
+    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+fieldset.ProficiencyLevel fieldset.Reading {
+    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
+    background-color: transparent;
+    background-position: 0 -60px;
+    background-repeat: no-repeat;
+}
+
+fieldset.ProficiencyLevel fieldset.SpokenInteraction {
+    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
+    background-color: transparent;
+    background-position: 0 -185px;
+    background-repeat: no-repeat;
+}
+
+fieldset.ProficiencyLevel fieldset.SpokenProduction {
+    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
+    background-color: transparent;
+    background-position: 0 -245px;
+    background-repeat: no-repeat;
+}
+
+fieldset.ProficiencyLevel fieldset.Writing > div.level {
+    margin-bottom: 15px;
+    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
+    background-color: transparent;
+    background-position: 0 -375px;
+    background-repeat: no-repeat;
+}
+
+ul.drivingLicense li.empty:hover {
+    background: none;
+}
+
+ul.drivingLicense li.empty .icon {
+    background: transparent;
+}
+
+div.context-recommendations-list.tooltip .tooltip-arrow .context-list li.phrase .description {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#ExportWizardForm .process .preview .graphic-step .title {
+    display: block;
+    position: absolute;
+    padding-left: 5%;
+    width: 80%;
+}
+
+#ExportWizardForm .step4 fieldset.Email .validation-feedback {
+    display: block;
+    font-size: .96rem;
+    background-color: #f4f4f4;
+    background-position: 1rem 1rem;
+    background-repeat: no-repeat;
+    margin: 2rem 0 0;
+    padding: 1.2rem 1rem 1.2rem 3.5rem;
+}
+
+#ExportWizardForm .step4 fieldset.Email .validation-feedback.invalid {
+    display: block;
+    color: #e40707;
+    font-size: .96rem;
+    background-image: url(http://localhost:65300/images/notifications/msg-error-indicator.png?version=5.0.25);
+    margin: 2rem 0;
+    padding: 1.2rem 1rem 1.2rem 3.5rem;
+}
+
+#ExportWizardForm .step4 fieldset.Email .validation-feedback.valid {
+    color: #666;
+    background-image: url(http://localhost:65300/images/notifications/msg-success-indicator.png?version=5.0.25);
+}
+
+span.fancySelect.clear {
+    right: 1.4rem;
+    top: 1.7rem;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-top: -7px;
+    opacity: .3;
+    background: url(http://localhost:65300/images/sprites/close_small.png?version=5.0.25);
+}
+
+div.level.select div.fancy-select ul.options li span.Label {
+    display: inline-block;
+    width: 87%;
+    color: #494848;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #d0d0d0;
+    padding: .3rem 0 .3rem .5rem;
+}
+
+div.level.select div.fancy-select ul.options li span.Label span.short-key-label {
+    color: #034ea2;
+    font-weight: 700;
+}
+
+.tt-input.empty {
+    color: #bdbdbd;
+}
+
+span.typeahead.clear {
+    right: 3.8rem;
+    top: 1.7rem;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-top: -7px;
+    opacity: .3;
+    background: url(http://localhost:65300/images/sprites/close_small.png?version=5.0.25) 0 0 no-repeat scroll;
+}
+
+div[name=CoverLetter.Addressee.PersonName.Title.Label] span.typeahead.clear {
+    right: 2.2rem !important;
+}
+
+.existing-photo-details .photo-editing-area .photo-cropping-preview .photo-wysiwyg .photo-preview-area {
+    border: 1px solid #c2c2c2;
+    display: inline-block;
+}
+
+.photo-preview-area {
+    width: 95px;
+    height: 110px;
+    overflow: hidden;
+}
+
+.select2-drop.cefr-level .select2-results span.Label {
+    display: inline-block;
+    width: 87%;
+    color: #494848;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #d0d0d0;
+    padding: .5rem 0 .5rem .5rem;
+}
+
+.select2-drop.cefr-level .select2-results span.Code + span.Label {
+    height: 100%;
+}
+
+#redactor-modal-tabber a.active {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #DDD;
+    border-color: #DDD;
+}
+
+sup {
+    top: 0;
+    vertical-align: top;
+}
+
+sub {
+    top: 8px;
+}
+
+sup,
+sub {
+    line-height: 0;
+    position: relative;
+    font-size: xx-small !important;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+.cl.compose .inline-values,
+form[id=Form:LearnerInfo.Skills.Computer] ul.options.open li span.Label .short-key-label {
+    display: block;
+}
+
+.description strong,
+.email-note strong,
+.rich-content strong,
+fieldset .rich-editor strong,
+.description b,
+.email-note b,
+.rich-content b,
+fieldset .rich-editor b,
+.Photo .notification.warning b,
+.Signature .notification.warning b {
+    font-weight: 700;
+}
+
+.upload-area menu.choose-file .button.upload.blue.uploading > .title,
+.upload-area menu.choose-file .button.upload.blue.uploading > .input,
+.cv > .section .Photo.active > span.upload-prompt,
+table.languages th.no-display,
+table caption,
+dl.computer-skills:hover tr.ictSkills:not(:hover) menu.section.manage,
+dl.computer-skills.tap-hover tr.ictSkills:not(.tap-hover) menu.section.manage,
+.cl.compose .section.Signature.active span.upload-prompt,
+form[id=Form:LearnerInfo.Skills.Computer] fieldset.Level .level[name=Certificate] .formatSelection span.Code,
+form[id=Form:LearnerInfo.Skills.Computer] fieldset[class*=ProficiencyLevel] .level .formatSelection span.Code,
+.select2.cefr-level .select2-choice span.Label {
+    display: none;
+}
+
+.section,
+.subsection,
+.compose .section .personal-details.value,
+.elp ol.compose-list li.list-item,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder .menu-placeholder,
+fieldset.Period {
+    position: relative;
+}
+
+.cv .section dt.label span.title,
+.foreign-language-skills span.title,
+.cv ol.compose-list > li.compose-list dd.value.Title,
+.cv ol.compose-list > li.compose-list dd.value.Position,
+.elp .foreign-languages-skills:hover > dd.value > .opens-modal-form.empty.add span,
+.cv dl.subsection.foreign-language-skills.empty:hover > dd.value > .opens-modal-form.empty.add span,
+.elp .foreign-languages-skills.tap-hover > dd.value > .opens-modal-form.empty.add span,
+.cv dl.subsection.foreign-language-skills.empty.tap-hover > dd.value > .opens-modal-form.empty.add span,
+table.languages > thead > tr {
+    color: #2a7ab9;
+}
+
+.cv .section a,
+.cl .section a,
+.cv .section a:visited,
+.cl .section a:visited {
+    color: #000;
+}
+
+.cv .section > .label,
+.cv .section > .value,
+.cv .subsection > .label,
+.cv .subsection > .value,
+.cv ol.compose-list > li.compose-list > dd.value,
+.cv .section > dd.line,
+.display-sorting-btns-mixin .sort-move-up,
+.display-sorting-btns-mixin .sort-move-down,
+.display-sorting-btns-mixin .sort-move-top,
+.section.item:hover .sort-move-up,
+.section.item.tap-hover .sort-move-up,
+.elp table.list-actions > tbody > tr.item.tap-hover .sort-move-up,
+.subsection.item:hover .sort-move-up,
+.subsection.item.tap-hover .sort-move-up,
+.section .compose-list > li.list-item:hover .sort-move-up,
+.section .compose-list > li.list-item.tap-hover .sort-move-up,
+ol.compose-list > li.compose-list:hover .sort-move-up,
+ol.compose-list > li.compose-list.tap-hover .sort-move-up,
+ol.compose-list.tap-hover > li.compose-list .sort-move-up,
+.tap-hover.list-item.opens-modal-form .sort-move-up,
+.tap-hover .sort-move-up,
+.section.item:hover .sort-move-down,
+.section.item.tap-hover .sort-move-down,
+.elp table.list-actions > tbody > tr.item.tap-hover .sort-move-down,
+.subsection.item:hover .sort-move-down,
+.subsection.item.tap-hover .sort-move-down,
+.section .compose-list > li.list-item:hover .sort-move-down,
+.section .compose-list > li.list-item.tap-hover .sort-move-down,
+ol.compose-list > li.compose-list:hover .sort-move-down,
+ol.compose-list > li.compose-list.tap-hover .sort-move-down,
+ol.compose-list.tap-hover > li.compose-list .sort-move-down,
+.tap-hover.list-item.opens-modal-form .sort-move-down,
+.tap-hover .sort-move-down,
+.section.item:hover .sort-move-top,
+.section.item.tap-hover .sort-move-top,
+.elp table.list-actions > tbody > tr.item.tap-hover .sort-move-top,
+.subsection.item:hover .sort-move-top,
+.subsection.item.tap-hover .sort-move-top,
+.section .compose-list > li.list-item:hover .sort-move-top,
+.section .compose-list > li.list-item.tap-hover .sort-move-top,
+ol.compose-list > li.compose-list:hover .sort-move-top,
+ol.compose-list > li.compose-list.tap-hover .sort-move-top,
+ol.compose-list.tap-hover > li.compose-list .sort-move-top,
+.tap-hover.list-item.opens-modal-form .sort-move-top,
+.tap-hover .sort-move-top,
+.section > ol.compose-list > li.list-item:hover .sortable_placeholder:not(.list-item-sortable),
+ol.compose-list > li.list-item:hover .sortable_placeholder:not(.list-item-sortable),
+.section > ol.compose-list > li.list-item.tap-hover .sortable_placeholder:not(.list-item-sortable),
+ol.compose-list > li.list-item.tap-hover .sortable_placeholder:not(.list-item-sortable),
+.cv > .section .Photo.active.nophoto > span.upload-prompt,
+.cv > .section .Photo.active:hover > span.upload-prompt,
+.cv > .section .Photo.active.tap-hover > span.upload-prompt,
+.cv .section .personal-details.value,
+.cv .section .value > .item,
+.cv .section .PersonalDetails > .Birthdate,
+.cv .section .PersonalDetails > .Birthdate > *,
+.cv .section .PersonalDetails > .Gender,
+.cv .section .PersonalDetails > .Gender > *,
+.cv .section .PersonalDetails > .Nationality,
+.cv .section .PersonalDetails > .Nationality > *,
+.compose .section.item:hover menu,
+.compose .section.item.tap-hover menu,
+.compose .subsection.item:hover menu,
+.compose .subsection.item.tap-hover menu,
+.compose ol.compose-list > li.list-item:hover > menu .compose ol.compose-list > li.list-item.tap-hover > menu,
+table.languages tr.compose-list:hover .sort-move-up,
+li.compose-list:hover .sort-move-up,
+table.languages tr.compose-list.tap-hover .sort-move-up,
+li.compose-list.tap-hover .sort-move-up,
+table.languages tr.compose-list:hover .sort-move-down,
+li.compose-list:hover .sort-move-down,
+table.languages tr.compose-list.tap-hover .sort-move-down,
+li.compose-list.tap-hover .sort-move-down,
+table.languages tr.compose-list:hover .sort-move-top,
+li.compose-list:hover .sort-move-top,
+table.languages tr.compose-list.tap-hover .sort-move-top,
+li.compose-list.tap-hover .sort-move-top,
+table.languages tr.compose-list:hover menu.section.manage,
+li.compose-list:hover menu.section.manage,
+table.languages tr.compose-list.tap-hover menu.section.manage,
+li.compose-list.tap-hover menu.section.manage,
+.cl.compose .section.Signature.active:hover span.upload-prompt,
+.cl.compose .inline-values > .value,
+.cl.compose .inline-values > .value > .item,
+.elp.compose .section:hover .sort-move-up,
+.elp.compose .subsection:hover .sort-move-up,
+.elp.compose ol.compose-list > li.list-item:hover .sort-move-up,
+.elp.compose .section.tap-hover .sort-move-up,
+.elp.compose .subsection.tap-hover .sort-move-up,
+.elp.compose ol.compose-list > li.list-item.tap-hover .sort-move-up,
+.elp.compose .section:hover .sort-move-down,
+.elp.compose .subsection:hover .sort-move-down,
+.elp.compose ol.compose-list > li.list-item:hover .sort-move-down,
+.elp.compose .section.tap-hover .sort-move-down,
+.elp.compose .subsection.tap-hover .sort-move-down,
+.elp.compose ol.compose-list > li.list-item.tap-hover .sort-move-down,
+.elp.compose .section:hover .sort-move-top,
+.elp.compose .subsection:hover .sort-move-top,
+.elp.compose ol.compose-list > li.list-item:hover .sort-move-top,
+.elp.compose .section.tap-hover .sort-move-top,
+.elp.compose .subsection.tap-hover .sort-move-top,
+.elp.compose ol.compose-list > li.list-item.tap-hover .sort-move-top,
+.existing-photo-details .photo-editing-area .photo-cropping-preview .photo-wysiwyg .fit .photo-preview-area {
+    display: inline-block;
+}
+
+.sorting-btns-mixin button.sort-move-down,
+.work-education-experiences-area button.sort-move-down,
+.section.additional button.sort-move-down,
+.section.annexes button.sort-move-down,
+table.languages tr.compose-list button.sort-move-down,
+li.compose-list button.sort-move-down,
+.elp .foreign-languages-details .language-list .list-item .foreign-language-details button.sort-move-down {
+    background-color: transparent;
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+    display: none;
+    height: 40px;
+    left: 0;
+    overflow: visible;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 40px;
+    z-index: 49;
+}
+
+.sorting-btns-mixin button.sort-move-down.inactive,
+.sorting-btns-mixin button.sort-move-up.inactive,
+.sorting-btns-mixin button.sort-move-top.inactive,
+.work-education-experiences-area button.sort-move-down.inactive,
+.work-education-experiences-area button.sort-move-up.inactive,
+.work-education-experiences-area button.sort-move-top.inactive,
+.section.additional button.sort-move-down.inactive,
+.section.annexes button.sort-move-down.inactive,
+.section.additional button.sort-move-up.inactive,
+.section.annexes button.sort-move-up.inactive,
+.section.additional button.sort-move-top.inactive,
+.section.annexes button.sort-move-top.inactive,
+table.languages tr.compose-list button.sort-move-down.inactive,
+li.compose-list button.sort-move-down.inactive,
+table.languages tr.compose-list button.sort-move-up.inactive,
+li.compose-list button.sort-move-up.inactive,
+table.languages tr.compose-list button.sort-move-top.inactive,
+li.compose-list button.sort-move-top.inactive,
+.elp .foreign-languages-details .language-list .list-item .foreign-language-details button.sort-move-down.inactive,
+.elp .foreign-languages-details .language-list .list-item .foreign-language-details button.sort-move-up.inactive,
+.elp .foreign-languages-details .language-list .list-item .foreign-language-details button.sort-move-top.inactive {
+    opacity: .3;
+}
+
+.sorting-btns-mixin button.sort-move-up,
+.work-education-experiences-area button.sort-move-up,
+.section.additional button.sort-move-up,
+.section.annexes button.sort-move-up,
+table.languages tr.compose-list button.sort-move-up,
+li.compose-list button.sort-move-up,
+.elp .foreign-languages-details .language-list .list-item .foreign-language-details button.sort-move-up {
+    background-color: transparent;
+    background-position: 0 -140px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+    display: none;
+    height: 40px;
+    left: 25px;
+    overflow: visible;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 40px;
+    z-index: 49;
+}
+
+.sorting-btns-mixin button.sort-move-top,
+.work-education-experiences-area button.sort-move-top,
+.section.additional button.sort-move-top,
+.section.annexes button.sort-move-top,
+table.languages tr.compose-list button.sort-move-top,
+li.compose-list button.sort-move-top,
+.elp .foreign-languages-details .language-list .list-item .foreign-language-details button.sort-move-top {
+    background-color: transparent;
+    background-position: 0 -175px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+    display: none;
+    height: 40px;
+    left: 50px;
+    overflow: visible;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    width: 40px;
+    z-index: 49;
+}
+
+.list-item.frst-animation-start button.sort-move-up,
+.list-item.frst-animation-start button.sort-move-down,
+.list-item.frst-animation-start button.sort-move-top,
+.list-item.frst-animation-start menu.section.manage,
+.list-item.frst-animation-start > td .label > .language-title button.sort-move-up,
+.list-item.frst-animation-start > td .label > .language-title button.sort-move-down,
+.list-item.frst-animation-start > td .label > .language-title button.sort-move-top,
+.list-item.frst-animation-start > td .menu-placeholder menu.section.manage {
+    display: inline-block !important;
+    opacity: 1 !important;
+}
+
+.list-item.frst-animation-start button.sort-move-up.inactive,
+.list-item.frst-animation-start button.sort-move-down.inactive,
+.list-item.frst-animation-start button.sort-move-top.inactive,
+.list-item.frst-animation-start > td .label > .language-title button.sort-move-up.inactive,
+.list-item.frst-animation-start > td .label > .language-title button.sort-move-down.inactive,
+.list-item.frst-animation-start > td .label > .language-title button.sort-move-top.inactive,
+.list-item.scnd-animation-start button.sort-move-up.inactive,
+.list-item.scnd-animation-start button.sort-move-down.inactive,
+.list-item.scnd-animation-start button.sort-move-top.inactive,
+.list-item.scnd-animation-start > td .label > .language-title button.sort-move-up.inactive,
+.list-item.scnd-animation-start > td .label > .language-title button.sort-move-down.inactive,
+.list-item.scnd-animation-start > td .label > .language-title button.sort-move-top.inactive {
+    opacity: .3 !important;
+}
+
+.list-item.scnd-animation-start button.sort-move-up,
+.list-item.scnd-animation-start button.sort-move-down,
+.list-item.scnd-animation-start button.sort-move-top,
+.list-item.scnd-animation-start menu.section.manage,
+.list-item.scnd-animation-start > td .label > .language-title button.sort-move-up,
+.list-item.scnd-animation-start > td .label > .language-title button.sort-move-down,
+.list-item.scnd-animation-start > td .label > .language-title button.sort-move-top,
+.list-item.scnd-animation-start > td .menu-placeholder menu.section.manage {
+    display: inline-block !important;
+    opacity: 0 !important;
+}
+
+.list-item.frst-animation-end button.sort-move-up,
+.list-item.frst-animation-end button.sort-move-down,
+.list-item.frst-animation-end button.sort-move-top,
+.list-item.frst-animation-end menu.section.manage,
+.list-item.frst-animation-end > td .label > .language-title button.sort-move-up,
+.list-item.frst-animation-end > td .label > .language-title button.sort-move-down,
+.list-item.frst-animation-end > td .label > .language-title button.sort-move-top,
+.list-item.frst-animation-end > td .menu-placeholder menu.section.manage {
+    display: inline-block !important;
+    opacity: 0 !important;
+    transition: opacity 1s ease-out;
+}
+
+.list-item.frst-animation-end button.sort-move-up.inactive,
+.list-item.frst-animation-end button.sort-move-down.inactive,
+.list-item.frst-animation-end button.sort-move-top.inactive,
+.list-item.frst-animation-end > td .label > .language-title button.sort-move-up.inactive,
+.list-item.frst-animation-end > td .label > .language-title button.sort-move-down.inactive,
+.list-item.frst-animation-end > td .label > .language-title button.sort-move-top.inactive,
+.list-item.scnd-animation-end button.sort-move-up.inactive,
+.list-item.scnd-animation-end button.sort-move-down.inactive,
+.list-item.scnd-animation-end button.sort-move-top.inactive,
+.list-item.scnd-animation-end > td .label > .language-title button.sort-move-up.inactive,
+.list-item.scnd-animation-end > td .label > .language-title button.sort-move-down.inactive,
+.list-item.scnd-animation-end > td .label > .language-title button.sort-move-top.inactive {
+    opacity: .3 !important;
+    transition: opacity 1s ease-out;
+}
+
+.list-item.scnd-animation-end button.sort-move-up,
+.list-item.scnd-animation-end button.sort-move-down,
+.list-item.scnd-animation-end button.sort-move-top,
+.list-item.scnd-animation-end menu.section.manage,
+.list-item.scnd-animation-end > td .label > .language-title button.sort-move-up,
+.list-item.scnd-animation-end > td .label > .language-title button.sort-move-down,
+.list-item.scnd-animation-end > td .label > .language-title button.sort-move-top,
+.list-item.scnd-animation-end > td .menu-placeholder menu.section.manage {
+    display: inline-block !important;
+    opacity: 1 !important;
+    transition: opacity 1s ease-out;
+}
+
+.ui-sortable .is-being-dragged:hover menu.section.manage,
+.ui-sortable .is-being-dragged:hover .sortable_placeholder,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.disable-editing menu.section.manage {
+    display: none !important;
+}
+
+.section.empty.item:hover,
+.section.empty.item.tap-hover,
+.subsection.empty.item:hover,
+.subsection.empty.item.tap-hover,
+table.list-actions td.empty:hover,
+table.list-actions td.empty.tap-hover,
+.opens-modal-form-lang-empty.empty:hover,
+.opens-modal-form-lang-empty.empty.tap-hover,
+.cv-section-subsection-button-hover,
+.cv .section.subsection-container li.compose-list button.opens-modal-form.add:hover,
+.cv dl.subsection.foreign-language-skills button.opens-modal-form.add:hover,
+.cv dl.subsection.foreign-language-skills:hover > dd.value > button.opens-modal-form.add,
+button.opens-modal-form.add:hover,
+button.opens-modal-form.add.tap-hover,
+.cv .section.subsection-container button.opens-modal-form.add.tap-hover,
+table.languages > tfoot > tr > td button.opens-modal-form:hover {
+    background-color: #f3f3f3;
+    border-color: transparent;
+}
+
+.cv-section-subsection-button span.img-placeholder,
+.cv .section.subsection-container button.opens-modal-form.add span.img-placeholder,
+button.opens-modal-form.add span.img-placeholder,
+table.languages > tfoot > tr > td button.opens-modal-form span.img-placeholder {
+    background-image: url(http://localhost:65300/images/sprites/round_plus_icons.png?version=5.0.25);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    min-height: 21px;
+    width: 30px;
+}
+
+.cv-section-subsection-button-hover span,
+.cv .section.subsection-container li.compose-list button.opens-modal-form.add:hover span,
+.cv dl.subsection.foreign-language-skills button.opens-modal-form.add:hover span,
+.cv dl.subsection.foreign-language-skills:hover > dd.value > button.opens-modal-form.add span,
+button.opens-modal-form.add:hover span,
+button.opens-modal-form.add.tap-hover span,
+.cv .section.subsection-container button.opens-modal-form.add.tap-hover span,
+table.languages > tfoot > tr > td button.opens-modal-form:hover span {
+    border: none;
+    color: #2a7ab9;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    transition: none;
+    vertical-align: bottom;
+}
+
+.cv-section-subsection-button-hover span.img-placeholder,
+.cv .section.subsection-container li.compose-list button.opens-modal-form.add:hover span.img-placeholder,
+.cv dl.subsection.foreign-language-skills button.opens-modal-form.add:hover span.img-placeholder,
+.cv dl.subsection.foreign-language-skills:hover > dd.value > button.opens-modal-form.add span.img-placeholder,
+button.opens-modal-form.add:hover span.img-placeholder,
+button.opens-modal-form.add.tap-hover span.img-placeholder,
+.cv .section.subsection-container button.opens-modal-form.add.tap-hover span.img-placeholder,
+table.languages > tfoot > tr > td button.opens-modal-form:hover span.img-placeholder {
+    background-image: url(http://localhost:65300/images/sprites/round_plus_icons.png?version=5.0.25);
+    background-position: 0 -21px;
+    background-repeat: no-repeat;
+    min-height: 21px;
+    width: 30px;
+}
+
+.cv > .section .Photo button.photo.delete,
+.cl.compose .section .Signature button.signature.delete {
+    background-color: transparent;
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-position: 50% -154px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+    color: transparent;
+    display: none;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+}
+
+.cv > .section .Photo button.photo.delete:hover,
+.cv > .section .Photo button.photo.delete.tap-hover,
+menu.subsection.manage button.delete:hover,
+menu.section.manage button.delete:hover,
+menu.subsection.manage button.delete.tap-hover,
+menu.section.manage button.delete.tap-hover,
+.cl.compose .section .Signature button.signature.delete:hover,
+.cl.compose .section .Signature button.signature.delete.tap-hover {
+    background-color: #fa7d23;
+    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
+    background-position: 50% -193px;
+}
+
+.cv > .section .Photo:hover button.photo.delete,
+.cv > .section .Photo.tap-hover button.photo.delete,
+.cl.compose .section:hover .Signature button.signature.delete,
+.cl.compose .section.tap-hover .Signature button.signature.delete {
+    display: inline-block;
+}
+
+.cv > .section .Photo.active:hover img,
+.cv > .section .Photo.active.tap-hover img,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover > td,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover > td {
+    background-color: #FFF;
+}
+
+.compose .section .personal-details div.name span.default-value,
+.elp .elp-overview.section .default-value,
+#ExportWizardForm .process[data-active-step=1] .preview .graphic-step.step2 .title,
+#ExportWizardForm .process[data-active-step=1] .preview .graphic-step.step3 .title,
+#ExportWizardForm .process[data-active-step=2] .preview .graphic-step.step3 .title {
+    color: #d0d0d0;
+}
+
+.compose > .section .value.Address,
+.compose > .section .value.Email,
+.compose > .section .value.Telephone,
+.compose > .section .value.Telephone.default-value,
+.compose > .section .value.InstantMessaging,
+.compose > .section .value.Website,
+.cv .section .PersonalBasic {
+    padding-top: 10px;
+}
+
+.compose > .section .value.Website,
+.Telephone .composite.select .help.placeholding .select2-container .select2-default.select2-choice .select2-chosen {
+    padding-left: 20px;
+}
+
+.cv-section-value-im-use,
+.compose > .section .value.InstantMessaging .Use,
+.Birthdate .label,
+.Gender .label,
+.Nationality .label,
+.inner-content-label,
+.cl .section div.documentation > span {
+    color: #2fa1d2;
+}
+
+dd.value.attachment,
+dl.skills > dd.value > div.attachment,
+tr.documentation > td > div.attachment,
+.cl.compose .right-align {
+    text-align: right;
+}
+
+table.languages th.sub-heading,
+table.languages th .label,
+table.ict-skills th.sub-heading,
+table.ict-skills th .label {
+    color: #2a7ab9;
+    text-align: right;
+    width: 30%;
+}
+
+table.languages > thead > tr > th span.title,
+table.ict-skills > thead > tr > th span.title {
+    text-transform: none;
+}
+
+table.languages th.menu-placeholder,
+table.ict-skills th.menu-placeholder {
+    border-color: transparent;
+    padding: 0;
+}
+
+table.languages tr.language td,
+.Photo .browse-file-area,
+.Signature .browse-file-area {
+    text-align: center;
+}
+
+.cl.compose .section .Signature.active:hover span.upload-prompt,
+.cl.compose .section .Signature.active.nosignature span.upload-prompt,
+.cl.compose .section:hover.Signature.active span.upload-prompt,
+.cl.compose .section.Signature.active:hover span.upload-prompt {
+    background: url(http://localhost:65300/images/upload_arrow_grey_11.png?version=5.0.25) 0 0 no-repeat scroll transparent;
+    color: #CCC;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 100px;
+    left: 5px;
+    padding-left: 12px;
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+
+.Photo .notification.warning > em,
+.Signature .notification.warning > em,
+.Photo .note > p,
+.Signature .note > p,
+#ExportWizardForm .step4 fieldset.Email label {
+    color: #9d9d9d;
+}
+
+.rich-content ol,
+.rich-editor ol,
+.description ol,
+.email-note ol,
+.rich-content ol li.nesting ol,
+.rich-editor ol li.nesting ol,
+.description ol li.nesting ol,
+.email-note ol li.nesting ol,
+.rich-content ol li.nesting ul,
+.rich-editor ol li.nesting ul,
+.description ol li.nesting ul,
+.email-note ol li.nesting ul,
+.rich-content ul,
+.rich-editor ul,
+.description ul,
+.email-note ul,
+.rich-content ul li.nesting ol,
+.rich-editor ul li.nesting ol,
+.description ul li.nesting ol,
+.email-note ul li.nesting ol,
+.rich-content ul li.nesting ul,
+.rich-editor ul li.nesting ul,
+.description ul li.nesting ul,
+.email-note ul li.nesting ul {
+    padding-left: 10px !important;
+}
+
+.rich-content ol li,
+.rich-editor ol li,
+.description ol li,
+.email-note ol li,
+.rich-content ul li,
+.rich-editor ul li,
+.description ul li,
+.email-note ul li {
+    margin-left: 1em;
+    position: relative;
+}
+
+.rich-content ol li::before,
+.rich-editor ol li::before,
+.description ol li::before,
+.email-note ol li::before,
+.rich-content ul li::before,
+.rich-editor ul li::before,
+.description ul li::before,
+.email-note ul li::before {
+    content: "-";
+    left: -1em;
+    position: absolute;
+    top: 0;
+    padding-top: inherit;
+}
+
+.rich-content ol li p,
+.rich-editor ol li p,
+.description ol li p,
+.email-note ol li p,
+.rich-content ul li p,
+.rich-editor ul li p,
+.description ul li p,
+.email-note ul li p,
+.elp .elp-overview menu.manage.subsection {
+    margin: 0;
+}
+
+.rich-content ol ol li::before,
+.rich-editor ol ol li::before,
+.description ol ol li::before,
+.email-note ol ol li::before,
+.rich-content ol ol ol ol li::before,
+.rich-editor ol ol ol ol li::before,
+.description ol ol ol ol li::before,
+.email-note ol ol ol ol li::before,
+.rich-content ol ol ol ol ol ol li::before,
+.rich-editor ol ol ol ol ol ol li::before,
+.description ol ol ol ol ol ol li::before,
+.email-note ol ol ol ol ol ol li::before,
+.rich-content ol ol ol ol ol ol ol ol li::before,
+.rich-editor ol ol ol ol ol ol ol ol li::before,
+.description ol ol ol ol ol ol ol ol li::before,
+.email-note ol ol ol ol ol ol ol ol li::before,
+.rich-content ol ol ol ol ol ol ol ol ol ol li::before,
+.rich-editor ol ol ol ol ol ol ol ol ol ol li::before,
+.description ol ol ol ol ol ol ol ol ol ol li::before,
+.email-note ol ol ol ol ol ol ol ol ol ol li::before,
+.rich-content ul ul li::before,
+.rich-editor ul ul li::before,
+.description ul ul li::before,
+.email-note ul ul li::before,
+.rich-content ul ul ul ul li::before,
+.rich-editor ul ul ul ul li::before,
+.description ul ul ul ul li::before,
+.email-note ul ul ul ul li::before,
+.rich-content ul ul ul ul ul ul li::before,
+.rich-editor ul ul ul ul ul ul li::before,
+.description ul ul ul ul ul ul li::before,
+.email-note ul ul ul ul ul ul li::before,
+.rich-content ul ul ul ul ul ul ul ul li::before,
+.rich-editor ul ul ul ul ul ul ul ul li::before,
+.description ul ul ul ul ul ul ul ul li::before,
+.email-note ul ul ul ul ul ul ul ul li::before,
+.rich-content ul ul ul ul ul ul ul ul ul ul li::before,
+.rich-editor ul ul ul ul ul ul ul ul ul ul li::before,
+.description ul ul ul ul ul ul ul ul ul ul li::before,
+.email-note ul ul ul ul ul ul ul ul ul ul li::before {
+    content: "□";
+}
+
+.rich-content ol ol ol li::before,
+.rich-editor ol ol ol li::before,
+.description ol ol ol li::before,
+.email-note ol ol ol li::before,
+.rich-content ol ol ol ol ol li::before,
+.rich-editor ol ol ol ol ol li::before,
+.description ol ol ol ol ol li::before,
+.email-note ol ol ol ol ol li::before,
+.rich-content ol ol ol ol ol ol ol li::before,
+.rich-editor ol ol ol ol ol ol ol li::before,
+.description ol ol ol ol ol ol ol li::before,
+.email-note ol ol ol ol ol ol ol li::before,
+.rich-content ol ol ol ol ol ol ol ol ol li::before,
+.rich-editor ol ol ol ol ol ol ol ol ol li::before,
+.description ol ol ol ol ol ol ol ol ol li::before,
+.email-note ol ol ol ol ol ol ol ol ol li::before,
+.rich-content ul ul ul li::before,
+.rich-editor ul ul ul li::before,
+.description ul ul ul li::before,
+.email-note ul ul ul li::before,
+.rich-content ul ul ul ul ul li::before,
+.rich-editor ul ul ul ul ul li::before,
+.description ul ul ul ul ul li::before,
+.email-note ul ul ul ul ul li::before,
+.rich-content ul ul ul ul ul ul ul li::before,
+.rich-editor ul ul ul ul ul ul ul li::before,
+.description ul ul ul ul ul ul ul li::before,
+.email-note ul ul ul ul ul ul ul li::before,
+.rich-content ul ul ul ul ul ul ul ul ul li::before,
+.rich-editor ul ul ul ul ul ul ul ul ul li::before,
+.description ul ul ul ul ul ul ul ul ul li::before,
+.email-note ul ul ul ul ul ul ul ul ul li::before {
+    content: "■";
+}
+
+.rich-content br,
+.rich-editor br,
+.description br,
+.email-note br,
+.rich-content p,
+.rich-editor p,
+.description p,
+.email-note p {
+    line-height: 1.4rem;
+    padding: 0em 0 .5em;
+}
+
+.elp .elp-overview.section.item:hover,
+.elp .foreign-languages-details .language-list .list-item .foreign-language-title:hover + dl {
+    background-color: #ffe9d5;
+}
+
+.elp dl.section.foreign-languages-details > ol.language-list > li.list-item > dl.foreign-language-details > dd.self-assessment.tap-hover > table > tbody > tr.menu-placeholder > td > menu.section.manage,
+.elp dl.section.foreign-languages-details > ol.language-list > li.list-item > dl.foreign-language-details > dd.linguistic-certificates > table > tbody > tr.menu-placeholder.list-item.opens-modal-form.tap-hover > td > menu.section.manage,
+.elp dl.section.foreign-languages-details > ol.language-list > li.list-item > dl.foreign-language-details > dd.linguistic-experiences > table > tbody > tr.menu-placeholder.list-item.opens-modal-form.tap-hover > td > menu.section.manage,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder:hover menu.section.manage,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder.tap-hover menu.section.manage {
+    display: block !important;
+    right: 3px;
+}
+
+.elp .foreign-languages-details table.linguistic-certificates th.value,
+.elp .foreign-languages-details table.linguistic-certificates td.value,
+.elp .foreign-languages-details table.linguistic-experiences tr td.value,
+.elp .foreign-languages-details table.linguistic-experiences tr th.value {
+    line-height: 1.2rem;
+}
+
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder .menu-placeholder menu.section.manage,
+.elp .foreign-languages-details table.list-actions tr.menu-placeholder .menu-placeholder .dnd {
+    display: none !important;
+    position: absolute;
+}
+
+form[id^=Form:LearnerInfo.Skills.Linguistic.ForeignLanguage] fieldset.Level .level[name=Certificate] .formatSelection span,
+form[id^=Form:LearnerInfo.Skills.Linguistic.ForeignLanguage] fieldset[class*=ProficiencyLevel] .level .formatSelection span,
+form[id=Form:LearnerInfo.Skills.Computer] fieldset.Level .level[name=Certificate] .formatSelection span,
+form[id=Form:LearnerInfo.Skills.Computer] fieldset[class*=ProficiencyLevel] .level .formatSelection span {
+    display: inline-block;
+    margin-right: 0;
+}
+
+.wizardform .button-like-options-step fieldset label .title,
+#ImportWizardForm .button-like-options-step fieldset label .title,
+#ImportWizardForm .process .step1 fieldset label .title,
+#ExportWizardForm .button-like-options-step fieldset label .title,
+#ExportWizardForm .step2 fieldset label .title,
+#ExportWizardForm .step3 fieldset label .title {
+    position: relative;
+    top: -1rem;
+}
+
+.wizardform .button-like-options-step fieldset input[type=checkbox].css-checkbox + label.css-label .title,
+.wizardform .button-like-options-step fieldset input[type=radio].css-checkbox + label.css-label .title,
+#ImportWizardForm .button-like-options-step fieldset input[type=checkbox].css-checkbox + label.css-label .title,
+#ImportWizardForm .button-like-options-step fieldset input[type=radio].css-checkbox + label.css-label .title,
+#ImportWizardForm .process .step1 fieldset input[type=checkbox].css-checkbox + label.css-label .title,
+#ImportWizardForm .process .step1 fieldset input[type=radio].css-checkbox + label.css-label .title,
+#ExportWizardForm .button-like-options-step fieldset input[type=checkbox].css-checkbox + label.css-label .title,
+#ExportWizardForm .button-like-options-step fieldset input[type=radio].css-checkbox + label.css-label .title,
+#ExportWizardForm .step2 fieldset input[type=checkbox].css-checkbox + label.css-label .title,
+#ExportWizardForm .step2 fieldset input[type=radio].css-checkbox + label.css-label .title,
+#ExportWizardForm .step3 fieldset input[type=checkbox].css-checkbox + label.css-label .title,
+#ExportWizardForm .step3 fieldset input[type=radio].css-checkbox + label.css-label .title {
+    color: #666;
+}
+
+.wizardform .button-like-options-step fieldset input[type=checkbox].css-checkbox:checked + label.css-label .title,
+.wizardform .button-like-options-step fieldset input[type=radio].css-checkbox:checked + label.css-label .title,
+#ImportWizardForm .button-like-options-step fieldset input[type=checkbox].css-checkbox:checked + label.css-label .title,
+#ImportWizardForm .button-like-options-step fieldset input[type=radio].css-checkbox:checked + label.css-label .title,
+#ImportWizardForm .process .step1 fieldset input[type=checkbox].css-checkbox:checked + label.css-label .title,
+#ImportWizardForm .process .step1 fieldset input[type=radio].css-checkbox:checked + label.css-label .title,
+#ExportWizardForm .button-like-options-step fieldset input[type=checkbox].css-checkbox:checked + label.css-label .title,
+#ExportWizardForm .button-like-options-step fieldset input[type=radio].css-checkbox:checked + label.css-label .title,
+#ExportWizardForm .step2 fieldset input[type=checkbox].css-checkbox:checked + label.css-label .title,
+#ExportWizardForm .step2 fieldset input[type=radio].css-checkbox:checked + label.css-label .title,
+#ExportWizardForm .step3 fieldset input[type=checkbox].css-checkbox:checked + label.css-label .title,
+#ExportWizardForm .step3 fieldset input[type=radio].css-checkbox:checked + label.css-label .title {
+    color: #FFF;
+}
+
+#ExportWizardForm .process[data-active-step=1] .preview .graphic-step.step1 .title,
+#ExportWizardForm .process[data-active-step=2] .preview .graphic-step.step1 .title,
+#ExportWizardForm .process[data-active-step=2] .preview .graphic-step.step2 .title,
+#ExportWizardForm .process[data-active-step=3] .preview .graphic-step.step1 .title,
+#ExportWizardForm .process[data-active-step=3] .preview .graphic-step.step2 .title,
+#ExportWizardForm .process[data-active-step=3] .preview .graphic-step.step3 .title {
+    color: #2c85bf;
+}
+
+span.fancySelect.clear:hover,
+span.typeahead.clear:hover {
+    background: url(http://localhost:65300/images/sprites/close_small.png?version=5.0.25);
+    opacity: .5;
+}
+
+div.level.select div.fancy-select ul.options li.selected span.Label,
+div.level.select div.fancy-select ul.options li.hover span.Label,
+.select2-drop .select2-results .select2-result.select2-highlighted span.Label,
+.select2-drop .select2-results .select2-result:hover span.Label {
+    color: #0487d0;
+}
+
+.blue-upload-button-browse-uploading .button.upload.blue > span.title,
+menu.choose-file.Attachment .button.upload.blue > span.title {
+    background: transparent;
+    padding: 1rem;
+}
+
+.blue-upload-button-browse-uploading .button.upload.blue > span.title > span,
+menu.choose-file.Attachment .button.upload.blue > span.title > span {
+    background: url(http://localhost:65300/images/sprites/round_plus_icons.png?version=5.0.25) 0 -42px no-repeat transparent;
+    display: inline-block;
+    line-height: 22px;
+    padding-left: 30px;
+}
