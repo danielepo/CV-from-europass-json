@@ -215,7 +215,7 @@
                 "Title": "Dott. Magistrale in Ingegneria Informatica",
                 "Activities": "<p><b>Tesi:</b> Design of a Cloud Architecture for Data Storage and Analysis Services in the Electronic Industry??</p>",
                 "Organisation": {
-                    "Name": "Universit� degli Studi di Trieste",
+                    "Name": "Università degli Studi di Trieste",
                     "ContactInfo": {
                         "Address": {
                             "Contact": {
@@ -250,7 +250,7 @@
                 },
                 "Title": "Dott. Ingegneria Elettronica",
                 "Organisation": {
-                    "Name": "Universit� degli Studi di Trieste",
+                    "Name": "Università degli Studi di Trieste",
                     "ContactInfo": {
                         "Address": {
                             "Contact": {
@@ -279,20 +279,13 @@
                             "Code": "it",
                             "Label": "italiano"
                         }
-                    }],
-                    "ForeignLanguage": [{
+                    }, {
                         "Description": {
                             "Code": "es",
                             "Label": "spagnolo"
-                        },
-                        "ProficiencyLevel": {
-                            "Listening": "C1",
-                            "Reading": "C1",
-                            "SpokenInteraction": "C1",
-                            "SpokenProduction": "C1",
-                            "Writing": "C1"
                         }
-                    }, {
+                    }],
+                    "ForeignLanguage": [{
                         "Description": {
                             "Code": "en",
                             "Label": "inglese"
@@ -307,13 +300,13 @@
                     }]
                 },
                 "Communication": {
-                    "Description": "<p>Buona capacit� di raccolta e definizione di requisiti ?dovute all&#39;esperienza fatta come consulente presso i vari clienti per cui ho lavorato</p>"
+                    "Description": "<p>Buona capacità di raccolta e definizione di requisiti ?dovute all&#39;esperienza fatta come consulente presso i vari clienti per cui ho lavorato</p>"
                 },
                 "Organisational": {
-                    "Description": "<p>Quale appassionato di Agile, cerco di adottare un approccio iterativo in quello che faccio, cercando di facilitare nel contempo la comunicazione tra i colleghi e tra i diversi gruppi coinvolti nello sviluppo delle funzionalit�</p>"
+                    "Description": "<p>Quale appassionato di Agile, cerco di adottare un approccio iterativo in quello che faccio, cercando di facilitare nel contempo la comunicazione tra i colleghi e tra i diversi gruppi coinvolti nello sviluppo delle funzionalità</p>"
                 },
                 "JobRelated": {
-                    "Description": "<p><b>Programmazione</b></p><ul><li>Appassionato di Software Desing, attualmente uso la metodologia Scrum per la raccolta di requisiti, suddivisione delle attivit� in iterazioni e miglioramento del coordinamento tra i colleghi</li><li>Lavoro attualmente con tecnologie Microsoft quali asp.Net e C# e varie libreri javascript per la parte di front end; in precedenza ho lavorato con C/C&#43;&#43;, PHP, JavaScript (e framework jQuery), HTML, CSS;</li><li>Sviluppo piccoli progetti personale in vari linguaggi/tecnologie per aggiornato, ad esempio, ultimamente ho sviluppato una Dashboard BI in FSharp e ho utilizzato servizi Azure per la persistenza e l&#39;analisi dei dati</li></ul><p><b>Tools</b></p><ul><li>Visual Studio, TFS, VSTS, Git, VS Code</li><li>Eclipse, NetBeans, RadStudio C&#43;&#43; Builder</li></ul><p><b>DBMS</b></p><ul><li>Sviluppo e progettazione di database MySql?</li></ul>"
+                    "Description": "<p><b>Programmazione</b></p><ul><li>Appassionato di Software Desing, attualmente uso la metodologia Scrum per la raccolta di requisiti, suddivisione delle attività in iterazioni e miglioramento del coordinamento tra i colleghi</li><li>Lavoro attualmente con tecnologie Microsoft quali asp.Net e C# e varie libreri javascript per la parte di front end; in precedenza ho lavorato con C/C&#43;&#43;, PHP, JavaScript (e framework jQuery), HTML, CSS;</li><li>Sviluppo piccoli progetti personale in vari linguaggi/tecnologie per aggiornato, ad esempio, ultimamente ho sviluppato una Dashboard BI in FSharp e ho utilizzato servizi Azure per la persistenza e l&#39;analisi dei dati</li></ul><p><b>Tools</b></p><ul><li>Visual Studio, TFS, VSTS, Git, VS Code</li><li>Eclipse, NetBeans, RadStudio C&#43;&#43; Builder</li></ul><p><b>DBMS</b></p><ul><li>Sviluppo e progettazione di database MySql?</li></ul>"
                 }
             },
             "Achievement": [{
