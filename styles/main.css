@@ -211,7 +211,7 @@ nav.europass-documents .document.active a::before {
     top: 0;
     background: #FFF;
     margin: 3em auto;
-    width: 70%;
+    width: 95%;
 }
 
 .effective-content-area .main-area {
@@ -282,26 +282,6 @@ ol.compose-list li.compose-list {
     padding-bottom: 0;
     margin: 0;
 }
-
-div.line::after {
-    bottom: 0;
-    content: "";
-    height: .7rem;
-    position: absolute;
-    right: 0;
-    width: .8rem;
-    background: none 0 0 repeat scroll #1093cb;
-}
-
-div.line {
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #1093cb;
-    width: 65%;
-    height: 10px;
-    position: relative;
-}
-
 .cv.compose menu.section.manage button.delete {
     top: 0 !important;
 }
@@ -2580,12 +2560,9 @@ menu.choose-file.Attachment .button.upload.blue > span.title > span {
     width: 30%;
     margin-right: -.4rem;
     color: #84b9de;
-    /*font-weight: 400;*/
-    text-align: right;
+    text-align: center;
     vertical-align: top;
-    /*line-height: 15px;*/
     display: inline-block;
-    /*font-size: 1rem;*/
     position: relative;
 }
 
@@ -2614,4 +2591,83 @@ menu.choose-file.Attachment .button.upload.blue > span.title > span {
 
 .row {
     margin-top: 15px;
+}
+
+
+div.line::after {
+    bottom: 0;
+    content: "";
+    height: .7rem;
+    position: absolute;
+    right: 0;
+    width: .8rem;
+    background: none 0 0 repeat scroll #1093cb;
+}
+
+div.line {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #1093cb;
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+table.languages{
+    display: none
+}
+
+div.languages{
+    display: block
+}
+img{
+    width: 100%;
+}
+div.PersonName .Surname, div.PersonName .FirstName{
+    font-size:4em;
+}
+@media (min-wid1th: 992px) {  
+    div.line::after {
+        bottom: 0;
+        content: "";
+        height: .7rem;
+        position: absolute;
+        right: 0;
+        width: .8rem;
+        background: none 0 0 repeat scroll #1093cb;
+    }
+
+    div.line {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: #1093cb;
+        width: 65%;
+        height: 10px;
+        position: relative;
+    }
+    .titles {
+        text-align: right;
+    }
+
+    img {
+    vertical-align: middle;
+    position: absolute;
+    right: 0px;
+    }
+    
+    table.languages{
+        display: none
+    }
+
+    div.languages{
+        display: block
+    }
+
+}
+
+
+@media (min-width: 1000px) {  
+    .effective-content-area {
+        width: 70%;
+    }
 }
