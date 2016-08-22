@@ -204,7 +204,7 @@
                             {{#Period}}
                             <span class="PeriodRange ">
                                 <span class="period ">{{From.Month}}/{{From.Year}}</span>
-                                <span class="period ">–{{To.Month}}/{{To.Year}}</span>
+                            <span class="period ">–{{To.Month}}/{{To.Year}}</span>
                             </span>
                             {{/Period}}
                         </div>
@@ -378,31 +378,31 @@
                             <span class="title ">ULTERIORI INFORMAZIONI</span>
                         </div>
                         <div class="line col-md-8 col-xs-6"></div>
-                        </div>
-                        {{#each Achievement}}
-                        <div id="Compose:LearnerInfo.Achievement " class="row">
+                    </div>
+                    {{#each Achievement}}
+                    <div id="Compose:LearnerInfo.Achievement " class="row">
 
-                            {{#if Title}}
-                            <div class="col-md-4 col-xs-6">
-                                <span class="title ">{{Title.Label}}</span>
-                            </div>
-                            <div class="col-md-8 col-xs-6">
-                                {{else}}
-                                <div class="col-md-8 col-xs-6 col-md-offset-4">
-                                    {{/if}}
-                                    <!-- -->
-                                    {{{Description}}}
-                                    <!-- -->
-                                    {{#if Title}}
-                                </div>
-                                {{else}}
-                            </div>
-                            {{/if}}
-                            <!-- -->
+                        {{#if Title}}
+                        <div class="col-md-4 col-xs-6">
+                            <span class="title ">{{Title.Label}}</span>
                         </div>
-                            {{/each}}
+                        <div class="col-md-8 col-xs-6">
+                            {{else}}
+                            <div class="col-md-8 col-xs-6 col-md-offset-4">
+                                {{/if}}
+                                <!-- -->
+                                {{{Description}}}
+                                <!-- -->
+                                {{#if Title}}
+                            </div>
+                            {{else}}
+                        </div>
+                        {{/if}}
+                        <!-- -->
+                    </div>
+                    {{/each}}
 
-                        <!--  footer -->
+                    <!--  footer -->
         </section>
         </div>
 
