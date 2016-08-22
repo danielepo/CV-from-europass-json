@@ -22,7 +22,7 @@
 
                 <div id="Compose:LearnerInfo.Identification" class="row">
                     {{#Identification}}
-                    <div class=" col-md-4 col-xs-6">
+                    <div class=" col-md-4">
                         <span class="title">INFORMAZIONI PERSONALI</span>
                         <div class="Photo active opens-modal-form nested-modal " data-rel-doc="cv" data-rel-clazz="PhotoFormView" data-rel-form="Form:LearnerInfo.Identification.Photo"
                             data-rel-section="SkillsPassport.LearnerInfo.Identification.Photo" data-rel-help-section="Help.SkillsPassport.LearnerInfo.Identification.Photo"
@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-8 col-xs-6">
+                    <div class="col-md-8">
 
                         <div class="name value PersonName LearnerInfo.Identification.PersonName">
 
@@ -122,34 +122,34 @@
                     {{/Identification}}
                 </div>
                 <dl id="Compose:LearnerInfo.Headline" class="row">
-                    <div class=" col-md-4 col-xs-6">
+                    <div class=" col-md-4">
                         <span class="title">{{Headline.Type.Label}}</span>
                     </div>
 
-                    <div class="col-md-8 col-xs-6">
+                    <div class="col-md-8">
                         <div class="value Description Label">{{{Headline.Description.Label}}}</div>
                     </div>
                 </dl>
                 <div class="">
                     <div id="Compose:LearnerInfo.WorkExperience" class="row">
 
-                        <div class="col-md-4 col-xs-6">
+                        <div class="col-md-4">
 
                             <span class="title">ESPERIENZA PROFESSIONALE</span>
                         </div>
-                        <div class="col-md-8 col-xs-6 line"></div>
+                        <div class="col-md-8 line"></div>
                     </div>
                     {{#each WorkExperience}}
                     <div id="ListItem:LearnerInfo.WorkExperience[{{@index}}]" class="row">
 
-                        <div class="col-md-4 col-xs-6">
+                        <div class="col-md-4">
                             <span class="PeriodRange">
                                                 <span class="period">{{#Period.From}}{{Day}}/{{Month}}/{{Year}}{{/Period.From}}</span>                            {{#if Period.Current}}
                             <span class="period">–alla data attuale </span> {{else}}
                             <span class="period">- {{#Period.To}}{{Day}}/{{Month}}/{{Year}}{{/Period.To}}</span> {{/if}}
                             </span>
                         </div>
-                        <div class="col-md-8 col-xs-6">
+                        <div class="col-md-8">
 
                             <dd class="value Position">
                                 <span class="Position">{{Position.Label}}</span>
@@ -191,16 +191,16 @@
                     </div>
                     <div id="Compose:LearnerInfo.Education" class="row">
                         <dd class="line"></dd>
-                        <div class="col-md-4 col-xs-6">
+                        <div class="col-md-4">
                             <span class=" title ">ISTRUZIONE E FORMAZIONE</span>
                         </div>
-                        <div class="col-md-8 col-xs-6 line"></div>
+                        <div class="col-md-8 line"></div>
                     </div>
 
                     {{#each Education}}
                     <div id="Compose:LearnerInfo.Education" class="row">
 
-                        <div class="col-md-4 col-xs-6">
+                        <div class="col-md-4">
                             {{#Period}}
                             <span class="PeriodRange ">
                                 <span class="period ">{{From.Month}}/{{From.Year}}</span>
@@ -208,7 +208,7 @@
                             </span>
                             {{/Period}}
                         </div>
-                        <div class="col-md-8 col-xs-6">
+                        <div class="col-md-8">
 
                             <dd class="value Title ">
                                 <span class="Title ">{{Title}}</span>
@@ -242,18 +242,18 @@
                 </div>
                 {{#Skills}}
                 <div class="row">
-                    <div class="col-md-4 col-xs-6">
+                    <div class="col-md-4">
                         <span class="title ">COMPETENZE PERSONALI</span>
                     </div>
-                    <div class="col-md-8 col-xs-6 line"></div>
+                    <div class="col-md-8 line"></div>
                 </div>
                 {{#Linguistic}}
                 <div id="Compose:LearnerInfo.Skills.Linguistic.MotherTongue " class="row">
-                    <div class="col-md-4 col-xs-6">
+                    <div class="col-md-4">
                         <span class="title ">Lingua madre</span>
                     </div>
 
-                    <div class="col-md-8 col-xs-6">
+                    <div class="col-md-8">
 
                         <div class="MotherTongue content-label ">
                             {{#each MotherTongue}}
@@ -267,8 +267,8 @@
                 </div>
 
                 <div id="Compose:LearnerInfo.Skills.Linguistic.ForeignLanguage " class="row">
-                    <div class="col-md-4 col-xs-6">Altre lingue</div>
-                    <div class="col-md-8 col-xs-6">
+                    <div class="col-md-4">Altre lingue</div>
+                    <div class="col-md-8">
                         <table cellpadding="1 " class="languages " id="List:SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage
                             " data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage " data-bind-document="ECV ELP "
                             summary="Altre lingue ">
@@ -336,10 +336,10 @@
                 {{/Linguistic}}
 
                 <dl id="Compose:LearnerInfo.Skills.Communication " class="row">
-                    <div class="col-md-4 col-xs-6">
+                    <div class="col-md-4">
                         <span class="title ">Competenze comunicative</span>
                     </div>
-                    <div class="col-md-8 col-xs-6">
+                    <div class="col-md-8">
                         <div class="value description ">
                             {{{Communication.Description}}}
                         </div>
@@ -347,10 +347,10 @@
                 </dl>
 
                 <div id="Compose:LearnerInfo.Skills.Organisational " class="row">
-                    <div class="col-md-4 col-xs-6">
+                    <div class="col-md-4">
                         <span class="title ">Competenze organizzative e gestionali</span>
                     </div>
-                    <div class="col-md-8 col-xs-6">
+                    <div class="col-md-8">
                         <div class="description ">
                             <p>
                                 {{{Communication.Description}}}
@@ -360,10 +360,10 @@
                     </dl>
 
                     <dl id="Compose:LearnerInfo.Skills.JobRelated " class="row">
-                        <dt class="col-md-4 col-xs-6">
+                        <dt class="col-md-4">
                             <span class="title ">Competenze professionali</span>
                         </dt>
-                        <dd class="col-md-8 col-xs-6">
+                        <dd class="col-md-8">
                             <div class="description ">
                                 <p>
                                     {{{JobRelated.Description}}}
@@ -374,21 +374,21 @@
                     {{/Skills}}
 
                     <div id="Compose:LearnerInfo.Achievement " class="row">
-                        <div class="col-md-4 col-xs-6">
+                        <div class="col-md-4">
                             <span class="title ">ULTERIORI INFORMAZIONI</span>
                         </div>
-                        <div class="line col-md-8 col-xs-6"></div>
+                        <div class="line col-md-8"></div>
                     </div>
                     {{#each Achievement}}
                     <div id="Compose:LearnerInfo.Achievement " class="row">
 
                         {{#if Title}}
-                        <div class="col-md-4 col-xs-6">
+                        <div class="col-md-4">
                             <span class="title ">{{Title.Label}}</span>
                         </div>
-                        <div class="col-md-8 col-xs-6">
+                        <div class="col-md-8">
                             {{else}}
-                            <div class="col-md-8 col-xs-6 col-md-offset-4">
+                            <div class="col-md-8 col-md-offset-4">
                                 {{/if}}
                                 <!-- -->
                                 {{{Description}}}
