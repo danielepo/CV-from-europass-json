@@ -210,7 +210,7 @@ nav.europass-documents .document.active a::before {
     left: 20%;
     top: 0;
     background: #FFF;
-    margin: auto;
+    margin: 3em auto;
     width: 70%;
 }
 
@@ -252,39 +252,38 @@ ol.compose-list > li.list-item {
 
 .opens-modal-form:hover {}
 
-.cv .section > .label,
-.cv .section .subsection > .label {
+.llable,
+.subsection > .llable {
     width: 30%;
-    margin-right: -.4rem;
     color: #84b9de;
     font-weight: 400;
     text-align: right;
     vertical-align: top;
     line-height: 15px;
     display: inline-block;
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     position: relative;
     padding: 0 5% 0 0;
 }
 
-.cv .section .Email a,
+.Email a,
 .cl .section .Email a {
     text-decoration: none;
 }
 
-.cv .section > .value,
+.value,
 .cv .subsection.skills > .value {
-    width: 65%;
+    /*width: 65%;*/
     vertical-align: top;
     /* margin-top: -3px; */
 }
 
-.cv .section ol.compose-list li.compose-list {
+ol.compose-list li.compose-list {
     padding-bottom: 0;
     margin: 0;
 }
 
-.cv .section > dd.line::after {
+div.line::after {
     bottom: 0;
     content: "";
     height: .7rem;
@@ -294,7 +293,7 @@ ol.compose-list > li.list-item {
     background: none 0 0 repeat scroll #1093cb;
 }
 
-.cv .section > dd.line {
+div.line {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #1093cb;
@@ -316,12 +315,12 @@ ol.compose-list > li.list-item {
     position: relative;
 }
 
-.work-education-experiences-area .label.list.section-heading {
+.work-education-experiences-area .llable.list.section-heading {
     display: inline-block;
     top: -12px;
 }
 
-.work-education-experiences-area .label.list.section-heading button.autoSort.byDate {
+.work-education-experiences-area .llable.list.section-heading button.autoSort.byDate {
     overflow: visible;
     text-indent: -9999px;
     border: none;
@@ -334,8 +333,8 @@ ol.compose-list > li.list-item {
     background-repeat: no-repeat;
 }
 
-.work-education-experiences-area .label.list.section-heading button.autoSort.byDate:hover,
-.work-education-experiences-area .label.list.section-heading button.autoSort.byDate.tap-hover {
+.work-education-experiences-area .llable.list.section-heading button.autoSort.byDate:hover,
+.work-education-experiences-area .llable.list.section-heading button.autoSort.byDate.tap-hover {
     background-position: 0 -50px;
 }
 
@@ -405,8 +404,8 @@ table.list-actions td.empty.tap-hover div.empty.add span,
     color: #2a7ab9;
 }
 
-.cv .section .subsection.foreign-language-skills.empty:hover,
-.cv .section .subsection.foreign-language-skills.empty.tap-hover {
+.subsection.foreign-language-skills.empty:hover,
+.subsection.foreign-language-skills.empty.tap-hover {
     background-color: #f3f3f3;
     border-color: transparent;
 }
@@ -502,18 +501,13 @@ button.opens-modal-form.add span {
 
 .compose .current-drag .draggable-item-overlay {
     border: 1px solid #0487d0 !important;
-    background: 0 to(rgba(255, 255, 255, 0.498039))) !important;
-}
-
-.compose .draggable-item-overlay:not(.current-drag) {
-    background: 0 to(rgba(255, 255, 255, 0.4)));
 }
 
 .cv .table-item-re-ordering {
     border-radius: 4px;
 }
 
-.cv > .section .Photo {
+.Photo {
     border: 2px dashed transparent;
     height: 110px;
     width: 95px;
@@ -568,56 +562,51 @@ button.opens-modal-form.add span {
     font-size: 1.5rem;
 }
 
-.compose > .section > .value.PersonName span {
+.value.PersonName span {
     font-size: 17px;
     font-weight: 400;
     letter-spacing: .05px;
 }
 
-.cv-section-pn-empty,
-.compose > .section > .value.PersonName span.emptyFirstName,
-.compose > .section > .value.PersonName span.emptySurname {
+.value.PersonName span.emptyFirstName,
+.value.PersonName span.emptySurname {
     color: #CCC;
     font-style: italic;
     letter-spacing: .05px;
 }
 
-.compose > .section > .value.PersonName span.FirstName,
-.compose > .section > .value.PersonName span.Surname {
+.value.PersonName span.FirstName,
+.value.PersonName span.Surname {
     color: #2f2e2d;
 }
 
-.cv-section-values-bg,
-.compose > .section .value.Address,
-.compose > .section .value.Email,
-.compose > .section .value.Telephone.default-value,
-.compose > .section .value.InstantMessaging,
-.compose > .section .value.Website {
+.value.Address,
+.value.Email,
+.value.Telephone.default-value,
+.value.InstantMessaging,
+.value.Website {
     padding-left: 20px;
     background-color: transparent;
     background-position: 0 11px;
     background-repeat: no-repeat;
 }
 
-.cv-section-value-address-bi,
-.compose > .section .value.Address {
+.value.Address {
     background-image: url(icon-location.png);
 }
 
-.cv-section-value-email-bi,
-.compose > .section .value.Email {
+.value.Email {
     padding-right: 8px;
     background-image: url(icon-envelope.png);
 }
 
-.cv-section-value-im-bi,
-.compose > .section .value.InstantMessaging {
+.value.InstantMessaging {
     padding-left: 20px;
     background-image: url(icon-im.png);
 }
 
 .cv-section-value-telephone-item,
-.compose > .section .value.Telephone .item {
+.value.Telephone .item {
     min-height: 15px;
     padding-left: 20px;
     padding-right: 8px;
@@ -626,34 +615,31 @@ button.opens-modal-form.add span {
     background-repeat: no-repeat;
 }
 
-.cv-section-value-telephone-item-bi,
-.compose > .section .value.Telephone.default-value,
-.compose > .section .value.Telephone .item {
+.value.Telephone.default-value,
+.value.Telephone .item {
     background-image: url(icon-home.png);
 }
 
-.compose > .section .value.Telephone .item span.Contact {
+.value.Telephone .item span.Contact {
     display: inline-block;
     margin-top: 2px;
     margin-right: 2px;
 }
 
-.cv-section-value-telephone-item-mobile-bi,
-.compose > .section .value.Telephone .item.mobile {
+.value.Telephone .item.mobile {
     background: url(icon-mobile.png) 0 4px no-repeat;
 }
 
-.cv-section-value-telephone-item-work-bi,
-.compose > .section .value.Telephone .item.work {
+.value.Telephone .item.work {
     background: url(icon-work.png) 0 3px no-repeat;
 }
 
-.cv .section .PersonalDetails {
+.PersonalDetails {
     padding-top: 18px;
     padding-bottom: 18px;
 }
 
-.cv .section .PersonalDetails dl + dl {
+.PersonalDetails dl + dl {
     border-left-width: 1px;
     border-left-style: solid;
     border-left-color: #2fa1d2;
@@ -1011,9 +997,11 @@ table.languages th {
 }
 
 table.languages th.no-border {
-    border: 1px solid transparent;
-    width: 35%;
+    border-left: 1px solid transparent;
+    width: 10%;
     padding: 0 2.3rem 0 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 table.languages tr.proficiency td.Title {
@@ -1040,7 +1028,7 @@ table.languages > tbody > tr > td > ul > li {
     background-color: #e7e7e8;
 }
 
-table.languages tr.compose-list td.label .language-title {
+table.languages tr.compose-list td.llable .language-title {
     position: relative;
     color: #2f2e2d;
     text-align: right;
@@ -1428,7 +1416,7 @@ footer {
     background: none;
 }
 
-.elp .label {
+.elp .llable {
     color: #063891;
     font-size: 1rem;
     padding: .52rem .39rem;
@@ -1559,9 +1547,9 @@ footer {
     background-color: #ffe9d4;
 }
 
-.elp .foreign-languages-details:not(table).linguistic-certificates.label,
-.elp .foreign-languages-details:not(table).linguistic-experiences.label,
-.elp .foreign-languages-details .self-assessment.label {
+.elp .foreign-languages-details:not(table).linguistic-certificates.llable,
+.elp .foreign-languages-details:not(table).linguistic-experiences.llable,
+.elp .foreign-languages-details .self-assessment.llable {
     display: block;
     text-align: center;
     vertical-align: middle;
@@ -1743,93 +1731,9 @@ fieldset.Organisation fieldset.Organisation-Address.more > fieldset.PostalCode {
     width: 35%;
 }
 
-fieldset.ecl.InstantMessaging .multipliable.compound > .composite.NoButton > .help.placeholding {
-    width: 66%;
-    margin-right: 0;
-}
-
-.composite.select.Work .help.placeholding .select2-container .select2-choice:not(.select2-default) .select2-chosen {
-    padding-left: 53px;
-    background: url(http://localhost:65300/images/sprites/personal_icons.png?version=5.0.25) 21px -46px no-repeat #e9f0f3;
-}
-
-div.modal div#Control\:LearnerInfo\.Identification\.Demographics\.Gender {
-    padding: 10px 10px 0;
-}
-
-div.modal fieldset[id^=SubForm:LearnerInfo.Education] fieldset.Field label[for=Level] {
-    margin-top: 0;
-}
-
-form[id^=Form:LearnerInfo.Skills.Linguistic.ForeignLanguage] fieldset.Level .level[name=Certificate] .formatSelection span.short-key-label::before,
-form[id^=Form:LearnerInfo.Skills.Linguistic.ForeignLanguage] fieldset[class*=ProficiencyLevel] .level .formatSelection span.short-key-label::before {
-    content: "-";
-    margin-left: -1px;
-    margin-right: 4px;
-}
-
-form[id=Form:LearnerInfo.Skills.Computer] fieldset.Level .level[name=Certificate] .formatSelection span.short-key-label::before,
-form[id=Form:LearnerInfo.Skills.Computer] fieldset[class*=ProficiencyLevel] .level .formatSelection span.short-key-label::before {
-    margin-left: -1px;
-    margin-right: 4px;
-}
-
 fieldset.Level .level[name=Certificate] .formatSelection span.level::before,
 fieldset[class*=ProficiencyLevel] .level .formatSelection span.level::before {
     content: "(";
-}
-
-fieldset.Level .level[name=Certificate] .formatSelection span.level::after,
-fieldset[class*=ProficiencyLevel] .level .formatSelection span.level::after {
-    content: ")";
-}
-
-.ICTSelfAssesment ul.options > li > span.Label {
-    border-left-style: none !important;
-}
-
-fieldset.ProficiencyLevel fieldset.Listening,
-fieldset.ProficiencyLevel fieldset.Reading,
-fieldset.ProficiencyLevel fieldset.SpokenProduction,
-fieldset.ProficiencyLevel fieldset.SpokenInteraction,
-fieldset.ProficiencyLevel fieldset.Writing > div.level {
-    padding-left: 35px;
-}
-
-fieldset.ProficiencyLevel fieldset.Listening {
-    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
-    background-color: transparent;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-}
-
-fieldset.ProficiencyLevel fieldset.Reading {
-    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
-    background-color: transparent;
-    background-position: 0 -60px;
-    background-repeat: no-repeat;
-}
-
-fieldset.ProficiencyLevel fieldset.SpokenInteraction {
-    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
-    background-color: transparent;
-    background-position: 0 -185px;
-    background-repeat: no-repeat;
-}
-
-fieldset.ProficiencyLevel fieldset.SpokenProduction {
-    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
-    background-color: transparent;
-    background-position: 0 -245px;
-    background-repeat: no-repeat;
-}
-
-fieldset.ProficiencyLevel fieldset.Writing > div.level {
-    margin-bottom: 15px;
-    background-image: url(http://localhost:65300/images/sprites/icons_self_assessment.png?version=${project.version});
-    background-color: transparent;
-    background-position: 0 -375px;
-    background-repeat: no-repeat;
 }
 
 ul.drivingLicense li.empty:hover {
@@ -1997,20 +1901,6 @@ fieldset .rich-editor b,
     font-weight: 700;
 }
 
-.upload-area menu.choose-file .button.upload.blue.uploading > .title,
-.upload-area menu.choose-file .button.upload.blue.uploading > .input,
-.cv > .section .Photo.active > span.upload-prompt,
-table.languages th.no-display,
-table caption,
-dl.computer-skills:hover tr.ictSkills:not(:hover) menu.section.manage,
-dl.computer-skills.tap-hover tr.ictSkills:not(.tap-hover) menu.section.manage,
-.cl.compose .section.Signature.active span.upload-prompt,
-form[id=Form:LearnerInfo.Skills.Computer] fieldset.Level .level[name=Certificate] .formatSelection span.Code,
-form[id=Form:LearnerInfo.Skills.Computer] fieldset[class*=ProficiencyLevel] .level .formatSelection span.Code,
-.select2.cefr-level .select2-choice span.Label {
-    display: none;
-}
-
 .section,
 .subsection,
 .compose .section .personal-details.value,
@@ -2020,7 +1910,7 @@ fieldset.Period {
     position: relative;
 }
 
-.cv .section dt.label span.title,
+dt.llable span.title,
 .foreign-language-skills span.title,
 .cv ol.compose-list > li.compose-list dd.value.Title,
 .cv ol.compose-list > li.compose-list dd.value.Position,
@@ -2032,117 +1922,11 @@ table.languages > thead > tr {
     color: #2a7ab9;
 }
 
-.cv .section a,
+a,
 .cl .section a,
-.cv .section a:visited,
+a:visited,
 .cl .section a:visited {
     color: #000;
-}
-
-.cv .section > .label,
-.cv .section > .value,
-.cv .subsection > .label,
-.cv .subsection > .value,
-.cv ol.compose-list > li.compose-list > dd.value,
-.cv .section > dd.line,
-.display-sorting-btns-mixin .sort-move-up,
-.display-sorting-btns-mixin .sort-move-down,
-.display-sorting-btns-mixin .sort-move-top,
-.section.item:hover .sort-move-up,
-.section.item.tap-hover .sort-move-up,
-.elp table.list-actions > tbody > tr.item.tap-hover .sort-move-up,
-.subsection.item:hover .sort-move-up,
-.subsection.item.tap-hover .sort-move-up,
-.section .compose-list > li.list-item:hover .sort-move-up,
-.section .compose-list > li.list-item.tap-hover .sort-move-up,
-ol.compose-list > li.compose-list:hover .sort-move-up,
-ol.compose-list > li.compose-list.tap-hover .sort-move-up,
-ol.compose-list.tap-hover > li.compose-list .sort-move-up,
-.tap-hover.list-item.opens-modal-form .sort-move-up,
-.tap-hover .sort-move-up,
-.section.item:hover .sort-move-down,
-.section.item.tap-hover .sort-move-down,
-.elp table.list-actions > tbody > tr.item.tap-hover .sort-move-down,
-.subsection.item:hover .sort-move-down,
-.subsection.item.tap-hover .sort-move-down,
-.section .compose-list > li.list-item:hover .sort-move-down,
-.section .compose-list > li.list-item.tap-hover .sort-move-down,
-ol.compose-list > li.compose-list:hover .sort-move-down,
-ol.compose-list > li.compose-list.tap-hover .sort-move-down,
-ol.compose-list.tap-hover > li.compose-list .sort-move-down,
-.tap-hover.list-item.opens-modal-form .sort-move-down,
-.tap-hover .sort-move-down,
-.section.item:hover .sort-move-top,
-.section.item.tap-hover .sort-move-top,
-.elp table.list-actions > tbody > tr.item.tap-hover .sort-move-top,
-.subsection.item:hover .sort-move-top,
-.subsection.item.tap-hover .sort-move-top,
-.section .compose-list > li.list-item:hover .sort-move-top,
-.section .compose-list > li.list-item.tap-hover .sort-move-top,
-ol.compose-list > li.compose-list:hover .sort-move-top,
-ol.compose-list > li.compose-list.tap-hover .sort-move-top,
-ol.compose-list.tap-hover > li.compose-list .sort-move-top,
-.tap-hover.list-item.opens-modal-form .sort-move-top,
-.tap-hover .sort-move-top,
-.section > ol.compose-list > li.list-item:hover .sortable_placeholder:not(.list-item-sortable),
-ol.compose-list > li.list-item:hover .sortable_placeholder:not(.list-item-sortable),
-.section > ol.compose-list > li.list-item.tap-hover .sortable_placeholder:not(.list-item-sortable),
-ol.compose-list > li.list-item.tap-hover .sortable_placeholder:not(.list-item-sortable),
-.cv > .section .Photo.active.nophoto > span.upload-prompt,
-.cv > .section .Photo.active:hover > span.upload-prompt,
-.cv > .section .Photo.active.tap-hover > span.upload-prompt,
-.cv .section .personal-details.value,
-.cv .section .value > .item,
-.cv .section .PersonalDetails > .Birthdate,
-.cv .section .PersonalDetails > .Birthdate > *,
-.cv .section .PersonalDetails > .Gender,
-.cv .section .PersonalDetails > .Gender > *,
-.cv .section .PersonalDetails > .Nationality,
-.cv .section .PersonalDetails > .Nationality > *,
-.compose .section.item:hover menu,
-.compose .section.item.tap-hover menu,
-.compose .subsection.item:hover menu,
-.compose .subsection.item.tap-hover menu,
-.compose ol.compose-list > li.list-item:hover > menu .compose ol.compose-list > li.list-item.tap-hover > menu,
-table.languages tr.compose-list:hover .sort-move-up,
-li.compose-list:hover .sort-move-up,
-table.languages tr.compose-list.tap-hover .sort-move-up,
-li.compose-list.tap-hover .sort-move-up,
-table.languages tr.compose-list:hover .sort-move-down,
-li.compose-list:hover .sort-move-down,
-table.languages tr.compose-list.tap-hover .sort-move-down,
-li.compose-list.tap-hover .sort-move-down,
-table.languages tr.compose-list:hover .sort-move-top,
-li.compose-list:hover .sort-move-top,
-table.languages tr.compose-list.tap-hover .sort-move-top,
-li.compose-list.tap-hover .sort-move-top,
-table.languages tr.compose-list:hover menu.section.manage,
-li.compose-list:hover menu.section.manage,
-table.languages tr.compose-list.tap-hover menu.section.manage,
-li.compose-list.tap-hover menu.section.manage,
-.cl.compose .section.Signature.active:hover span.upload-prompt,
-.cl.compose .inline-values > .value,
-.cl.compose .inline-values > .value > .item,
-.elp.compose .section:hover .sort-move-up,
-.elp.compose .subsection:hover .sort-move-up,
-.elp.compose ol.compose-list > li.list-item:hover .sort-move-up,
-.elp.compose .section.tap-hover .sort-move-up,
-.elp.compose .subsection.tap-hover .sort-move-up,
-.elp.compose ol.compose-list > li.list-item.tap-hover .sort-move-up,
-.elp.compose .section:hover .sort-move-down,
-.elp.compose .subsection:hover .sort-move-down,
-.elp.compose ol.compose-list > li.list-item:hover .sort-move-down,
-.elp.compose .section.tap-hover .sort-move-down,
-.elp.compose .subsection.tap-hover .sort-move-down,
-.elp.compose ol.compose-list > li.list-item.tap-hover .sort-move-down,
-.elp.compose .section:hover .sort-move-top,
-.elp.compose .subsection:hover .sort-move-top,
-.elp.compose ol.compose-list > li.list-item:hover .sort-move-top,
-.elp.compose .section.tap-hover .sort-move-top,
-.elp.compose .subsection.tap-hover .sort-move-top,
-.elp.compose ol.compose-list > li.list-item.tap-hover .sort-move-top,
-.existing-photo-details .photo-editing-area .photo-cropping-preview .photo-wysiwyg .fit .photo-preview-area {
-    display: inline-block;
 }
 
 .sorting-btns-mixin button.sort-move-down,
@@ -2242,9 +2026,9 @@ li.compose-list button.sort-move-top,
 .list-item.frst-animation-start button.sort-move-down,
 .list-item.frst-animation-start button.sort-move-top,
 .list-item.frst-animation-start menu.section.manage,
-.list-item.frst-animation-start > td .label > .language-title button.sort-move-up,
-.list-item.frst-animation-start > td .label > .language-title button.sort-move-down,
-.list-item.frst-animation-start > td .label > .language-title button.sort-move-top,
+.list-item.frst-animation-start > td .llable > .language-title button.sort-move-up,
+.list-item.frst-animation-start > td .llable > .language-title button.sort-move-down,
+.list-item.frst-animation-start > td .llable > .language-title button.sort-move-top,
 .list-item.frst-animation-start > td .menu-placeholder menu.section.manage {
     display: inline-block !important;
     opacity: 1 !important;
@@ -2253,15 +2037,15 @@ li.compose-list button.sort-move-top,
 .list-item.frst-animation-start button.sort-move-up.inactive,
 .list-item.frst-animation-start button.sort-move-down.inactive,
 .list-item.frst-animation-start button.sort-move-top.inactive,
-.list-item.frst-animation-start > td .label > .language-title button.sort-move-up.inactive,
-.list-item.frst-animation-start > td .label > .language-title button.sort-move-down.inactive,
-.list-item.frst-animation-start > td .label > .language-title button.sort-move-top.inactive,
+.list-item.frst-animation-start > td .llable > .language-title button.sort-move-up.inactive,
+.list-item.frst-animation-start > td .llable > .language-title button.sort-move-down.inactive,
+.list-item.frst-animation-start > td .llable > .language-title button.sort-move-top.inactive,
 .list-item.scnd-animation-start button.sort-move-up.inactive,
 .list-item.scnd-animation-start button.sort-move-down.inactive,
 .list-item.scnd-animation-start button.sort-move-top.inactive,
-.list-item.scnd-animation-start > td .label > .language-title button.sort-move-up.inactive,
-.list-item.scnd-animation-start > td .label > .language-title button.sort-move-down.inactive,
-.list-item.scnd-animation-start > td .label > .language-title button.sort-move-top.inactive {
+.list-item.scnd-animation-start > td .llable > .language-title button.sort-move-up.inactive,
+.list-item.scnd-animation-start > td .llable > .language-title button.sort-move-down.inactive,
+.list-item.scnd-animation-start > td .llable > .language-title button.sort-move-top.inactive {
     opacity: .3 !important;
 }
 
@@ -2269,9 +2053,9 @@ li.compose-list button.sort-move-top,
 .list-item.scnd-animation-start button.sort-move-down,
 .list-item.scnd-animation-start button.sort-move-top,
 .list-item.scnd-animation-start menu.section.manage,
-.list-item.scnd-animation-start > td .label > .language-title button.sort-move-up,
-.list-item.scnd-animation-start > td .label > .language-title button.sort-move-down,
-.list-item.scnd-animation-start > td .label > .language-title button.sort-move-top,
+.list-item.scnd-animation-start > td .llable > .language-title button.sort-move-up,
+.list-item.scnd-animation-start > td .llable > .language-title button.sort-move-down,
+.list-item.scnd-animation-start > td .llable > .language-title button.sort-move-top,
 .list-item.scnd-animation-start > td .menu-placeholder menu.section.manage {
     display: inline-block !important;
     opacity: 0 !important;
@@ -2281,9 +2065,9 @@ li.compose-list button.sort-move-top,
 .list-item.frst-animation-end button.sort-move-down,
 .list-item.frst-animation-end button.sort-move-top,
 .list-item.frst-animation-end menu.section.manage,
-.list-item.frst-animation-end > td .label > .language-title button.sort-move-up,
-.list-item.frst-animation-end > td .label > .language-title button.sort-move-down,
-.list-item.frst-animation-end > td .label > .language-title button.sort-move-top,
+.list-item.frst-animation-end > td .llable > .language-title button.sort-move-up,
+.list-item.frst-animation-end > td .llable > .language-title button.sort-move-down,
+.list-item.frst-animation-end > td .llable > .language-title button.sort-move-top,
 .list-item.frst-animation-end > td .menu-placeholder menu.section.manage {
     display: inline-block !important;
     opacity: 0 !important;
@@ -2293,15 +2077,15 @@ li.compose-list button.sort-move-top,
 .list-item.frst-animation-end button.sort-move-up.inactive,
 .list-item.frst-animation-end button.sort-move-down.inactive,
 .list-item.frst-animation-end button.sort-move-top.inactive,
-.list-item.frst-animation-end > td .label > .language-title button.sort-move-up.inactive,
-.list-item.frst-animation-end > td .label > .language-title button.sort-move-down.inactive,
-.list-item.frst-animation-end > td .label > .language-title button.sort-move-top.inactive,
+.list-item.frst-animation-end > td .llable > .language-title button.sort-move-up.inactive,
+.list-item.frst-animation-end > td .llable > .language-title button.sort-move-down.inactive,
+.list-item.frst-animation-end > td .llable > .language-title button.sort-move-top.inactive,
 .list-item.scnd-animation-end button.sort-move-up.inactive,
 .list-item.scnd-animation-end button.sort-move-down.inactive,
 .list-item.scnd-animation-end button.sort-move-top.inactive,
-.list-item.scnd-animation-end > td .label > .language-title button.sort-move-up.inactive,
-.list-item.scnd-animation-end > td .label > .language-title button.sort-move-down.inactive,
-.list-item.scnd-animation-end > td .label > .language-title button.sort-move-top.inactive {
+.list-item.scnd-animation-end > td .llable > .language-title button.sort-move-up.inactive,
+.list-item.scnd-animation-end > td .llable > .language-title button.sort-move-down.inactive,
+.list-item.scnd-animation-end > td .llable > .language-title button.sort-move-top.inactive {
     opacity: .3 !important;
     transition: opacity 1s ease-out;
 }
@@ -2310,9 +2094,9 @@ li.compose-list button.sort-move-top,
 .list-item.scnd-animation-end button.sort-move-down,
 .list-item.scnd-animation-end button.sort-move-top,
 .list-item.scnd-animation-end menu.section.manage,
-.list-item.scnd-animation-end > td .label > .language-title button.sort-move-up,
-.list-item.scnd-animation-end > td .label > .language-title button.sort-move-down,
-.list-item.scnd-animation-end > td .label > .language-title button.sort-move-top,
+.list-item.scnd-animation-end > td .llable > .language-title button.sort-move-up,
+.list-item.scnd-animation-end > td .llable > .language-title button.sort-move-down,
+.list-item.scnd-animation-end > td .llable > .language-title button.sort-move-top,
 .list-item.scnd-animation-end > td .menu-placeholder menu.section.manage {
     display: inline-block !important;
     opacity: 1 !important;
@@ -2442,26 +2226,26 @@ menu.section.manage button.delete.tap-hover,
     color: #d0d0d0;
 }
 
-.compose > .section .value.Address,
-.compose > .section .value.Email,
-.compose > .section .value.Telephone,
-.compose > .section .value.Telephone.default-value,
-.compose > .section .value.InstantMessaging,
-.compose > .section .value.Website,
-.cv .section .PersonalBasic {
+.value.Address,
+.value.Email,
+.value.Telephone,
+.value.Telephone.default-value,
+.value.InstantMessaging,
+.value.Website,
+.PersonalBasic {
     padding-top: 10px;
 }
 
-.compose > .section .value.Website,
+.value.Website,
 .Telephone .composite.select .help.placeholding .select2-container .select2-default.select2-choice .select2-chosen {
     padding-left: 20px;
 }
 
 .cv-section-value-im-use,
-.compose > .section .value.InstantMessaging .Use,
-.Birthdate .label,
-.Gender .label,
-.Nationality .label,
+.value.InstantMessaging .Use,
+.Birthdate .llable,
+.Gender .llable,
+.Nationality .llable,
 .inner-content-label,
 .cl .section div.documentation > span {
     color: #2fa1d2;
@@ -2475,12 +2259,12 @@ tr.documentation > td > div.attachment,
 }
 
 table.languages th.sub-heading,
-table.languages th .label,
+table.languages th .llable,
 table.ict-skills th.sub-heading,
-table.ict-skills th .label {
+table.ict-skills th .llable {
     color: #2a7ab9;
     text-align: right;
-    width: 30%;
+    /*width: 30%;*/
 }
 
 table.languages > thead > tr > th span.title,
@@ -2790,4 +2574,44 @@ menu.choose-file.Attachment .button.upload.blue > span.title > span {
     display: inline-block;
     line-height: 22px;
     padding-left: 30px;
+}
+
+.titles {
+    width: 30%;
+    margin-right: -.4rem;
+    color: #84b9de;
+    /*font-weight: 400;*/
+    text-align: right;
+    vertical-align: top;
+    /*line-height: 15px;*/
+    display: inline-block;
+    /*font-size: 1rem;*/
+    position: relative;
+}
+
+.titles .title {
+    color: #2a7ab9;
+    font-size: initial;
+}
+
+.name {
+    font-size: 2em;
+    margin-top: -8px;
+}
+
+.PersonalDetails > .Nationality > .title,
+.PersonalDetails > .Gender > .title,
+.PersonalDetails>.Birthdate>.title {
+    color: #84b9de;
+    font-weight: 400;
+    text-align: right;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 1.3rem;
+    position: relative;
+    padding: 0 5% 0 0;
+}
+
+.row {
+    margin-top: 15px;
 }

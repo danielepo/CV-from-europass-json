@@ -11,7 +11,7 @@
     <script type="text/javascript" src="/editors/static/ewa/libraries/touch/touche-20140704-TRUNK.js?version=5.0.25"></script> -->
     <!--<link rel="shortcut icon" href="https://europass.cedefop.europa.eu/editors/static/ewa/images/favicon.ico">-->
     <!--<link rel="icon" href="https://europass.cedefop.europa.eu/editors/static/ewa/images/favicon.gif" type="image/gif">-->
-    <!--<link rel="stylesheet" href="styles/main.css" type="text/css">-->
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
     <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
 </head>
 
@@ -22,10 +22,9 @@
 
                 <div id="Compose:LearnerInfo.Identification" class="row">
                     {{#Identification}}
-                    <div class=" col-md-4">
+                    <div class="titles col-md-4">
                         <span class="title">INFORMAZIONI PERSONALI</span>
-                        <div class="Photo active opens-modal-form nested-modal " data-rel-doc="cv" data-rel-clazz="PhotoFormView" data-rel-form="Form:LearnerInfo.Identification.Photo"
-                            data-rel-section="SkillsPassport.LearnerInfo.Identification.Photo" data-rel-help-section="Help.SkillsPassport.LearnerInfo.Identification.Photo"
+                        <div class="Photo active opens-modal-form nested-modal " data-rel-doc="cv" data-rel-clazz="PhotoFormView" data-rel-form="Form:LearnerInfo.Identification.Photo" data-rel-section="SkillsPassport.LearnerInfo.Identification.Photo" data-rel-help-section="Help.SkillsPassport.LearnerInfo.Identification.Photo"
                             data-rel-index="" rel="tooltip">
 
                             <div class="photo-preview-area">
@@ -52,7 +51,7 @@
                             <div class="value Telephone ">
                                 {{#each Telephone}}
 
-                                <div class="item 0  {{Use.code}}  ">
+                                <div class="item {{@index}}  {{Use.Code}}  ">
                                     <span class="Use" style="display:none">{{Use.Label}}</span>
                                     <span class="Contact">{{Contact}}</span>
                                 </div>
@@ -87,42 +86,42 @@
                             {{/ContactInfo}}
                         </div>
 
-                        <div class="PersonalDetails">
+                        <div class="PersonalDetails row">
                             {{#Demographics}}
 
-                            <dl class="Gender">
-                                <dt class="label">Sesso</dt>
-                                <dd class="value">
+                            <div class="Gender col-sm-3">
+                                <span class="title">Sesso</span>
+                                <span class="value">
                                     <span class="Gender">{{Gender.Label}}</span>
-                                </dd>
-                            </dl>
+                                </span>
+                            </div>
 
-                            <dl class="Birthdate">
-                                <dt class="label">Data di nascita</dt>
-                                <dd class="value">
+                            <div class="Birthdate col-sm-3">
+                                <span class="title">Data di nascita</span>
+                                <span class="value">
                                     <span class="Birthdate">
                                                 {{#Birthdate}}{{Day}}/{{Month}}/{{Year}}{{/Birthdate}}</span>
-                                </dd>
-                            </dl>
+                                </span>
+                            </div>
 
-                            <dl class="Nationality">
-                                <dt class="label">Nazionalità</dt>
-                                <dd class="value">
+                            <div class="Nationality col-sm-6">
+                                <span class="title">Nazionalità</span>
+                                <span class="value">
                                     <span class="Nationality">
                                         {{#each Nationality}}
                                                {{#if @index}}, {{/if}}
                                                 {{Label}}
                                         {{/each}}
                                                 </span>
-                                </dd>
-                            </dl>
+                                </span>
+                            </div>
                             {{/Demographics}}
                         </div>
                     </div>
                     {{/Identification}}
                 </div>
                 <dl id="Compose:LearnerInfo.Headline" class="row">
-                    <div class=" col-md-4">
+                    <div class=" titles col-md-4">
                         <span class="title">{{Headline.Type.Label}}</span>
                     </div>
 
@@ -133,7 +132,7 @@
                 <div class="">
                     <div id="Compose:LearnerInfo.WorkExperience" class="row">
 
-                        <div class="col-md-4">
+                        <div class="titles col-md-4">
 
                             <span class="title">ESPERIENZA PROFESSIONALE</span>
                         </div>
@@ -142,9 +141,9 @@
                     {{#each WorkExperience}}
                     <div id="ListItem:LearnerInfo.WorkExperience[{{@index}}]" class="row">
 
-                        <div class="col-md-4">
+                        <div class="titles col-md-4">
                             <span class="PeriodRange">
-                                                <span class="period">{{#Period.From}}{{Day}}/{{Month}}/{{Year}}{{/Period.From}}</span>                            {{#if Period.Current}}
+                                                <span class="period">{{#Period.From}}{{Day}}/{{Month}}/{{Year}}{{/Period.From}}</span> {{#if Period.Current}}
                             <span class="period">–alla data attuale </span> {{else}}
                             <span class="period">- {{#Period.To}}{{Day}}/{{Month}}/{{Year}}{{/Period.To}}</span> {{/if}}
                             </span>
@@ -190,8 +189,8 @@
                         {{/each}}
                     </div>
                     <div id="Compose:LearnerInfo.Education" class="row">
-                        <dd class="line"></dd>
-                        <div class="col-md-4">
+                        <!--<dd class="line"></dd>-->
+                        <div class="titles col-md-4">
                             <span class=" title ">ISTRUZIONE E FORMAZIONE</span>
                         </div>
                         <div class="col-md-8 line"></div>
@@ -200,7 +199,7 @@
                     {{#each Education}}
                     <div id="Compose:LearnerInfo.Education" class="row">
 
-                        <div class="col-md-4">
+                        <div class="titles col-md-4">
                             {{#Period}}
                             <span class="PeriodRange ">
                                 <span class="period ">{{From.Month}}/{{From.Year}}</span>
@@ -242,20 +241,20 @@
                 </div>
                 {{#Skills}}
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="titles col-md-4">
                         <span class="title ">COMPETENZE PERSONALI</span>
                     </div>
                     <div class="col-md-8 line"></div>
                 </div>
                 {{#Linguistic}}
                 <div id="Compose:LearnerInfo.Skills.Linguistic.MotherTongue " class="row">
-                    <div class="col-md-4">
+                    <div class="titles col-md-4">
                         <span class="title ">Lingua madre</span>
                     </div>
 
                     <div class="col-md-8">
 
-                        <div class="MotherTongue content-label ">
+                        <div class="MotherTongue content-llable ">
                             {{#each MotherTongue}}
                             <!-- -->
                             {{#if @index}} <span class="comma-separator ">, </span>{{/if}}
@@ -267,22 +266,21 @@
                 </div>
 
                 <div id="Compose:LearnerInfo.Skills.Linguistic.ForeignLanguage " class="row">
-                    <div class="col-md-4">Altre lingue</div>
+                    <div class="titles col-md-4">Altre lingue</div>
                     <div class="col-md-8">
                         <table cellpadding="1 " class="languages " id="List:SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage
-                            " data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage " data-bind-document="ECV ELP "
-                            summary="Altre lingue ">
+                            " data-rel-section="SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage " data-bind-document="ECV ELP " summary="Altre lingue ">
 
                             <thead class="open-modal-skippme ">
                                 <tr id="nodnd-1 ">
                                     <th id="nodnd-1-ForeignLanguage " class="no-border sub-heading ">
-                                        <span class="title ">Altre lingue</span>
+
                                     </th>
                                     <th id="nodnd-1-ProficiencyLevel.Understanding " colspan="2
                             " align="center ">COMPRENSIONE</th>
                                     <th id="nodnd-1-ProficiencyLevel.Speaking " colspan="2 " align="center ">PARLATO</th>
                                     <th id="nodnd-1-ProficiencyLevel.Writing " align="center ">PRODUZIONE SCRITTA</th>
-                                    <th id="nodnd-1-menu-placeholder " class="menu-placeholder ">&nbsp;</th>
+                                    <!--<th id="nodnd-1-menu-placeholder " class="menu-placeholder ">&nbsp;</th>-->
                                 </tr>
                                 <tr id="nodnd-2 ">
                                     <th id="nodnd-2-no-border " class="no-border ">&nbsp;</th>
@@ -291,13 +289,13 @@
                                     <th id="nodnd-2-SpokenInteraction " class="SpokenInteraction ">Interazione</th>
                                     <th id="nodnd-2-SpokenProduction " class="SpokenProduction ">Produzione orale</th>
                                     <th id="nodnd-2-Writing " class="Writing ">&nbsp;</th>
-                                    <th id="nodnd-2-menu-placeholder " class="menu-placeholder ">&nbsp;</th>
+                                    <!--<th id="nodnd-2-menu-placeholder " class="menu-placeholder ">&nbsp;</th>-->
                                 </tr>
                             </thead>
                             <tbody class="ui-sortable ">
                                 {{#each ForeignLanguage}}
                                 <tr id="language-1 " class="language compose-list list-item opens-modal-form">
-                                    <td class="label " headers="nodnd-1-ForeignLanguage ">
+                                    <td class="llable " headers="nodnd-1-ForeignLanguage ">
                                         <div class="language-title ">
                                             {{Description.Label}}
                                         </div>
@@ -326,7 +324,7 @@
                                             </tbody>
                                         </table>
                                     </td>
-                                    <td class="menu-placeholder " headers="nodnd-1-menu-placeholder "></td>
+                                    <!--<td class="menu-placeholder " headers="nodnd-1-menu-placeholder "></td>-->
                                 </tr>
                                 {{/each}}
                             </tbody>
@@ -335,8 +333,8 @@
                 </div>
                 {{/Linguistic}}
 
-                <dl id="Compose:LearnerInfo.Skills.Communication " class="row">
-                    <div class="col-md-4">
+                <div id="Compose:LearnerInfo.Skills.Communication " class="row">
+                    <div class="titles col-md-4">
                         <span class="title ">Competenze comunicative</span>
                     </div>
                     <div class="col-md-8">
@@ -344,65 +342,61 @@
                             {{{Communication.Description}}}
                         </div>
                     </div>
-                </dl>
+                </div>
 
                 <div id="Compose:LearnerInfo.Skills.Organisational " class="row">
-                    <div class="col-md-4">
+                    <div class="titles col-md-4">
                         <span class="title ">Competenze organizzative e gestionali</span>
                     </div>
                     <div class="col-md-8">
                         <div class="description ">
-                            <p>
                                 {{{Communication.Description}}}
-                            </p>
                         </div>
                     </div>
-                    </dl>
+                </div>
 
-                    <dl id="Compose:LearnerInfo.Skills.JobRelated " class="row">
-                        <dt class="col-md-4">
-                            <span class="title ">Competenze professionali</span>
-                        </dt>
-                        <dd class="col-md-8">
-                            <div class="description ">
-                                <p>
-                                    {{{JobRelated.Description}}}
-                                </p>
-                            </div>
-                        </dd>
-                    </dl>
-                    {{/Skills}}
-
-                    <div id="Compose:LearnerInfo.Achievement " class="row">
-                        <div class="col-md-4">
-                            <span class="title ">ULTERIORI INFORMAZIONI</span>
-                        </div>
-                        <div class="line col-md-8"></div>
+                <div id="Compose:LearnerInfo.Skills.JobRelated " class="row">
+                    <div class="titles col-md-4">
+                        <span class="title ">Competenze professionali</span>
                     </div>
-                    {{#each Achievement}}
-                    <div id="Compose:LearnerInfo.Achievement " class="row">
-
-                        {{#if Title}}
-                        <div class="col-md-4">
-                            <span class="title ">{{Title.Label}}</span>
+                    <div class="col-md-8">
+                        <div class="description ">
+                                {{{JobRelated.Description}}}
                         </div>
-                        <div class="col-md-8">
-                            {{else}}
-                            <div class="col-md-8 col-md-offset-4">
-                                {{/if}}
-                                <!-- -->
-                                {{{Description}}}
-                                <!-- -->
-                                {{#if Title}}
-                            </div>
-                            {{else}}
-                        </div>
-                        {{/if}}
-                        <!-- -->
                     </div>
-                    {{/each}}
+                </div>
+                {{/Skills}}
 
-                    <!--  footer -->
+                <div id="Compose:LearnerInfo.Achievement " class="row">
+                    <div class="titles col-md-4">
+                        <span class="title ">ULTERIORI INFORMAZIONI</span>
+                    </div>
+                    <div class="line col-md-8"></div>
+                </div>
+                {{#each Achievement}}
+                <div id="Compose:LearnerInfo.Achievement " class="row">
+
+                    {{#if Title}}
+                    <div class="titles col-md-4">
+                        <span class="title ">{{Title.Label}}</span>
+                    </div>
+                    <div class="col-md-8">
+                        {{else}}
+                        <div class="col-md-8 col-md-offset-4">
+                            {{/if}}
+                            <!-- -->
+                            {{{Description}}}
+                            <!-- -->
+                            {{#if Title}}
+                        </div>
+                        {{else}}
+                    </div>
+                    {{/if}}
+                    <!-- -->
+                </div>
+                {{/each}}
+
+                <!--  footer -->
         </section>
         </div>
 
