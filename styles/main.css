@@ -2623,10 +2623,68 @@ div.languages{
 img{
     width: 100%;
 }
+
 div.PersonName .Surname, div.PersonName .FirstName{
     font-size:4em;
 }
-@media (min-wid1th: 992px) {  
+.PersonalBasic, .PersonalDetails {
+    display: none;
+}
+
+@media (min-width: 768px) {  
+    .titles .title{
+        font-size: 2.2em;
+    }
+    .titles .period{
+        font-size: 2em;
+    }
+    div.value{
+        font-size: 2em;
+        
+    }
+}
+@media (min-width: 1000px) {  
+        .titles .title{
+        font-size:initial;
+    }
+    .titles .period{
+        font-size: initial;
+    }
+    div.value{
+        font-size: initial;
+        
+    }
+    .effective-content-area {
+        width: 70%;
+    }
+    div.PersonName .Surname, div.PersonName .FirstName{
+        font-size:initial;
+    }
+    img{
+        width: 40%;
+        position: absolute;
+        right: 0px;
+    }
+}
+@media (min-width: 992px) {  
+        .titles .title{
+        font-size:initial;
+    }
+    .titles .period{
+        font-size: initial;
+    }
+    div.value{
+        font-size: initial;
+        
+    }
+    div.PersonName .Surname, div.PersonName .FirstName{
+        font-size:initial;
+    }
+    img{
+        width: 40%;
+        position: absolute;
+        right: 0px;
+    }
     div.line::after {
         bottom: 0;
         content: "";
@@ -2665,9 +2723,3 @@ div.PersonName .Surname, div.PersonName .FirstName{
 
 }
 
-
-@media (min-width: 1000px) {  
-    .effective-content-area {
-        width: 70%;
-    }
-}

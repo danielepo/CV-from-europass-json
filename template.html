@@ -33,7 +33,7 @@
                     <div class=" col-xs-4 col-md-4">
                         <img src="data:{{Photo.MimeType}};base64, {{Photo.Data}}" alt="EditorPlaceholder[LearnerInfo.Identification.Photo]">
                     </div>
-                    <div class="col-xs-6 col-md-8">
+                    <div class="ContactInfo col-xs-8 col-md-8">
 
                         <div class="name value PersonName LearnerInfo.Identification.PersonName">
 
@@ -152,11 +152,11 @@
                     </div>
                     <div class="col-xs-12 col-md-8">
 
-                        <dd class="value Position">
+                        <div class="value Position">
                             <span class="Position">{{Position.Label}}</span>
-                        </dd>
+                        </div>
 
-                        <dd class="value Employer">
+                        <div class="value Employer">
                             {{#Employer}}
                             <span class="Name">
                                                 {{#if ContactInfo.Website}}
@@ -179,12 +179,12 @@
                                 </div>
 
                                 {{/ContactInfo}} {{/Employer}}
-                        </dd>
+                        </div>
 
 
-                        <dd class="value rich-content Activities">
+                        <div class="value rich-content Activities">
                             {{{Activities}}}
-                        </dd>
+                        </div>
 
                         </div>
                     </div>
@@ -211,15 +211,15 @@
                     </div>
                     <div class="col-xs-12 col-md-8">
 
-                        <dd class="value Title ">
+                        <div class="value Title ">
                             <span class="Title ">{{Title}}</span>
-                        </dd>
+                        </div>
 
-                        <dd class="value Level ">
+                        <div class="value Level ">
                             {{#if Level.Label}} <span class="Level ">{{Level.Label}}</span>{{/if}}
-                        </dd>
+                        </div>
 
-                        <dd class="value Organisation ">
+                        <div class="value Organisation ">
                             <span class="Name ">{{Organisation.Name}}</span>
 
                             <div class="Address minimal ">
@@ -228,15 +228,15 @@
 
                                 <span class="Address "> {{#Organisation.ContactInfo.Address.Contact}}{{Municipality}} ({{Country.Label}}){{/Organisation.ContactInfo.Address.Contact}}</span>
                             </div>
-                        </dd>
+                        </div>
 
-                        <dd class="value rich-content Activities ">
+                        <div class="value rich-content Activities ">
                             {{{Activities}}}
-                        </dd>
+                        </div>
 
-                        <dd class="value Field ">
+                        <div class="value Field ">
                             <span class="Field ">{{Field.Label}}</span>
-                        </dd>
+                        </div>
                     </div>
                 </div>
                 {{/each}}
