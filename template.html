@@ -11,6 +11,7 @@
     <script type="text/javascript" src="/editors/static/ewa/libraries/touch/touche-20140704-TRUNK.js?version=5.0.25"></script> -->
     <!--<link rel="shortcut icon" href="https://europass.cedefop.europa.eu/editors/static/ewa/images/favicon.ico">-->
     <!--<link rel="icon" href="https://europass.cedefop.europa.eu/editors/static/ewa/images/favicon.gif" type="image/gif">-->
+    <link rel="stylesheet" href="styles/clean.css" type="text/css">
     <link rel="stylesheet" href="styles/main.css" type="text/css">
     <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
 </head>
@@ -315,7 +316,6 @@
                             " align="center ">COMPRENSIONE</th>
                                 <th id="nodnd-1-ProficiencyLevel.Speaking " colspan="2 " align="center ">PARLATO</th>
                                 <th id="nodnd-1-ProficiencyLevel.Writing " align="center ">PRODUZIONE SCRITTA</th>
-                                <!--<th id="nodnd-1-menu-placeholder " class="menu-placeholder ">&nbsp;</th>-->
                             </tr>
                             <tr id="nodnd-2 ">
                                 <th id="nodnd-2-no-border " class="no-border ">&nbsp;</th>
@@ -324,7 +324,6 @@
                                 <th id="nodnd-2-SpokenInteraction " class="SpokenInteraction ">Interazione</th>
                                 <th id="nodnd-2-SpokenProduction " class="SpokenProduction ">Produzione orale</th>
                                 <th id="nodnd-2-Writing " class="Writing ">&nbsp;</th>
-                                <!--<th id="nodnd-2-menu-placeholder " class="menu-placeholder ">&nbsp;</th>-->
                             </tr>
                         </thead>
                         <tbody class="ui-sortable ">
@@ -359,7 +358,6 @@
                                         </tbody>
                                     </table>
                                 </td>
-                                <!--<td class="menu-placeholder " headers="nodnd-1-menu-placeholder "></td>-->
                             </tr>
                             {{/each}}
                         </tbody>
@@ -381,29 +379,29 @@
                 </div>
                 <div class="line col-xs-12 col-md-8"></div>
             </div>
-            {{#each Achievement}} 
+            {{#each Achievement}}
             <div id="Achievement " class="row">
-            {{#if Title}}
+                {{#if Title}}
                 <div class="titles col-xs-12 col-md-4">
                     <span class="title ">{{Title.Label}}</span>
                 </div>
                 <div class="col-xs-12 col-md-8">
                     {{else}}
-                        <div class="col-xs-12 col-md-8 col-xs-12 col-md-offset-4 no-top-margin ">
-                            {{/if}}
-                            <div class="value">
-                                {{{Description}}}
-                            </div>
-                            {{#if Title}}
+                    <div class="col-xs-12 col-md-8 col-xs-12 col-md-offset-4 no-top-margin ">
+                        {{/if}}
+                        <div class="value">
+                            {{{Description}}}
                         </div>
-                        {{else}}
+                        {{#if Title}}
                     </div>
-                    {{/if}}
-                    <!-- -->
+                    {{else}}
                 </div>
-                {{/each}}
+                {{/if}}
+                <!-- -->
+            </div>
+            {{/each}}
 
-                <!--  footer -->
+            <!--  footer -->
         </section>
 
         <div id="feedly-mini " title="feedly Mini tookit "></div>
