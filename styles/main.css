@@ -282,6 +282,7 @@ ol.compose-list li.compose-list {
     padding-bottom: 0;
     margin: 0;
 }
+
 .cv.compose menu.section.manage button.delete {
     top: 0 !important;
 }
@@ -572,16 +573,19 @@ button.opens-modal-form.add span {
 }
 
 .value.Address {
+    background-position-y: initial;
     background-image: url(icon-location.png);
 }
 
 .value.Email {
     padding-right: 8px;
+    background-position-y: initial;
     background-image: url(icon-envelope.png);
 }
 
 .value.InstantMessaging {
     padding-left: 20px;
+    background-position-y: initial;
     background-image: url(icon-im.png);
 }
 
@@ -597,6 +601,7 @@ button.opens-modal-form.add span {
 
 .value.Telephone.default-value,
 .value.Telephone .item {
+    background-position-y: initial;
     background-image: url(icon-home.png);
 }
 
@@ -607,16 +612,13 @@ button.opens-modal-form.add span {
 }
 
 .value.Telephone .item.mobile {
+    background-position-y: initial;
     background: url(icon-mobile.png) 0 4px no-repeat;
 }
 
 .value.Telephone .item.work {
+    background-position-y: initial;
     background: url(icon-work.png) 0 3px no-repeat;
-}
-
-.PersonalDetails {
-    padding-top: 18px;
-    padding-bottom: 18px;
 }
 
 .PersonalDetails dl + dl {
@@ -648,80 +650,6 @@ button.opens-modal-form.add span {
     padding-bottom: .6rem;
 }
 
-menu.section.manage,
-menu.subsection.manage {
-    border: none;
-    position: absolute;
-    top: 0;
-    display: none;
-    right: 0;
-    z-index: 100;
-    background: transparent;
-    margin: 0;
-    padding: 0;
-}
-
-menu.section.manage:hover > .edit,
-menu.subsection.manage:hover > .edit,
-menu.section.manage.tap-hover > .edit,
-menu.subsection.manage.tap-hover > .edit {
-    background-color: transparent;
-}
-
-menu.section.manage:hover > .edit span,
-menu.subsection.manage:hover > .edit span,
-menu.section.manage.tap-hover > .edit span,
-menu.subsection.manage.tap-hover > .edit span {
-    color: #fa7d23;
-    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-}
-
-menu.section.manage > .edit,
-menu.subsection.manage > .edit,
-menu.section.manage > .edit:hover,
-menu.subsection.manage > .edit:hover,
-menu.section.manage > .edit.tap-hover,
-menu.subsection.manage > .edit.tap-hover {
-    border-radius: 0;
-    border: none;
-    font-size: 1rem;
-    width: auto;
-    height: 2.25rem;
-    background-color: #fa7d23;
-    padding: .5rem .8rem;
-}
-
-menu.section.manage > .edit span,
-menu.subsection.manage > .edit span,
-menu.section.manage > .edit:hover span,
-menu.subsection.manage > .edit:hover span,
-menu.section.manage > .edit.tap-hover span,
-menu.subsection.manage > .edit.tap-hover span {
-    color: #FFF;
-    background-image: url(http://localhost:65300/images/sprites/edit_section_sprites.png?version=5.0.25);
-    background-position: 0 -2.5rem;
-    background-repeat: no-repeat;
-    padding: .2rem 0 0 1.5rem;
-}
-
-menu.section.manage > .edit-button.extra,
-menu.subsection.manage > .edit-button.extra {
-    border-radius: 0;
-}
-
-menu.section.manage.delete,
-menu.subsection.manage.delete {
-    right: 5px;
-}
-
-menu.subsection.manage button,
-menu.section.manage button {
-    display: inline-block;
-    margin-left: -.25rem;
-    margin-right: 0 !important;
-}
 
 .cv.compose menu.section.manage button:last-child,
 .cv.compose menu.subsection.manage button:last-child {
@@ -2213,7 +2141,7 @@ menu.section.manage button.delete.tap-hover,
 .value.InstantMessaging,
 .value.Website,
 .PersonalBasic {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
 }
 
 .value.Website,
@@ -2441,7 +2369,7 @@ table.languages tr.language td,
 .rich-editor p,
 .description p,
 .email-note p {
-    line-height: 1.4rem;
+    /*line-height: 1.4rem;*/
     padding: 0em 0 .5em;
 }
 
@@ -2590,9 +2518,20 @@ menu.choose-file.Attachment .button.upload.blue > span.title > span {
 }
 
 .row {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
+.row .no-top-margin {
+    margin-top: 0px;
+}
+
+.row .no-top-margin > div.Title {
+    font-weight: bold;
+}
+
+.row .no-top-margin > div.Level {
+    color: #84b9de;
+}
 
 div.line::after {
     bottom: 0;
@@ -2613,74 +2552,88 @@ div.line {
     position: relative;
 }
 
-table.languages{
-    display: none
-}
-
-div.languages{
-    display: block
-}
-img{
-    width: 100%;
-}
-
-div.PersonName .Surname, div.PersonName .FirstName{
-    font-size:4em;
-}
-.PersonalBasic, .PersonalDetails {
+table.languages {
     display: none;
 }
 
-@media (min-width: 768px) {  
-    .titles .title{
-        font-size: 2.2em;
-    }
-    .titles .period{
-        font-size: 2em;
-    }
-    div.value{
-        font-size: 2em;
-        
-    }
+div.languages {
+    display: block;
 }
-@media (min-width: 1000px) {  
-        .titles .title{
-        font-size:initial;
+
+.languageDesc {
+    font-size: 1.2em;
+}
+
+img {
+    width: 100%;
+}
+
+div.PersonName .Surname,
+div.PersonName .FirstName {
+    font-size: 4em;
+}
+
+.PersonalBasic,
+.PersonalDetails {
+    display: none;
+}
+
+.hide-on-device {
+    display: none !important;
+}
+
+.Position,
+.education > div > div.Title {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    div.PersonName .Surname,
+    div.PersonName .FirstName {
+        font-size: 1em;
     }
-    .titles .period{
-        font-size: initial;
+    .PersonalBasic,
+    .PersonalDetails {
+        display: block;
     }
-    div.value{
-        font-size: initial;
-        
-    }
-    .effective-content-area {
-        width: 70%;
-    }
-    div.PersonName .Surname, div.PersonName .FirstName{
-        font-size:initial;
-    }
-    img{
-        width: 40%;
+    img {
+        width: 60%;
         position: absolute;
         right: 0px;
     }
 }
-@media (min-width: 992px) {  
-        .titles .title{
-        font-size:initial;
+
+@media (min-width: 1000px) {
+    .effective-content-area {
+        width: 70%;
     }
-    .titles .period{
+}
+
+@media (min-width: 992px) {
+    .hide-on-device {
+        display: block !important;
+    }
+    .PersonalBasic,
+    .PersonalDetails {
+        display: block;
+    }
+    .titles .title {
         font-size: initial;
     }
-    div.value{
+    .languageDesc {
         font-size: initial;
-        
     }
-    div.PersonName .Surname, div.PersonName .FirstName{
-        font-size:initial;
+    .titles .period {
+        font-size: initial;
     }
-    img{
+    div.value {
+        font-size: initial;
+    }
+    div.PersonName .Surname,
+    div.PersonName .FirstName {
+        font-size: initial;
+    }
+    img {
         width: 40%;
         position: absolute;
         right: 0px;
@@ -2694,7 +2647,6 @@ div.PersonName .Surname, div.PersonName .FirstName{
         width: .8rem;
         background: none 0 0 repeat scroll #1093cb;
     }
-
     div.line {
         border-bottom-width: 2px;
         border-bottom-style: solid;
@@ -2706,20 +2658,15 @@ div.PersonName .Surname, div.PersonName .FirstName{
     .titles {
         text-align: right;
     }
-
     img {
-    vertical-align: middle;
-    position: absolute;
-    right: 0px;
+        vertical-align: middle;
+        position: absolute;
+        right: 0px;
     }
-    
-    table.languages{
-        display: none
-    }
-
-    div.languages{
+    table.languages {
         display: block
     }
-
+    div.languages {
+        display: none
+    }
 }
-
