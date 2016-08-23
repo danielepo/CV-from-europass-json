@@ -1074,3 +1074,76 @@ div.PersonName .FirstName {
         display: none
     }
 }
+
+@media print {
+    .value.PersonName span.FirstName,
+    .value.PersonName span.Surname {
+        font-size: larger;
+    }
+    .effective-content-area {
+        width: 80%;
+    }
+    .PersonalBasic,
+    .PersonalDetails {
+        display: block;
+    }
+    .titles .title {
+        font-size: initial;
+    }
+    .languageDesc {
+        font-size: initial;
+    }
+    .titles .period {
+        font-size: initial;
+    }
+    div.value {
+        font-size: initial;
+    }
+    div.PersonName .Surname,
+    div.PersonName .FirstName {
+        font-size: initial;
+    }
+    img {
+        width: 60%;
+        position: absolute;
+        right: 0px;
+    }
+    /*div.line::after {
+        bottom: 0;
+        content: "";
+        height: .7rem;
+        position: absolute;
+        right: 0;
+        width: .8rem;
+        background: none 0 0 repeat scroll #1093cb;
+    }*/
+    /*div.line {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: #1093cb;
+        width: 65%;
+        height: 10px;
+        position: relative;
+    }*/
+    /*.titles {
+        text-align: right;
+    }*/
+    img {
+        vertical-align: middle;
+        position: absolute;
+        right: 0px;
+    }
+    table.languages {
+        display: block
+    }
+    div.languages {
+        display: none
+    }
+    .row,
+    .effective-content-area > section.unbroken {
+        page-break-inside: avoid;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+}

@@ -19,157 +19,162 @@
 <body style="display: block;" data-feedly-mini="yes">
     <div>
         <section class="effective-content-area" id="main-content-area">
-
-            <div id="Identification" class="row">
-                {{#Identification}}
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title">INFORMAZIONI PERSONALI</span>
-                </div>
-                <div class="col-xs-12 col-md-8 line"></div>
-            </div>
-
-            <div class=" row">
-
-                <div class=" col-xs-4 col-md-4">
-                    <img src="data:{{Photo.MimeType}};base64, {{Photo.Data}}" alt="EditorPlaceholder[LearnerInfo.Identification.Photo]">
-                </div>
-                <div class="ContactInfo col-xs-8 col-md-8">
-
-                    <div class="name value PersonName LearnerInfo.Identification.PersonName">
-
-                        <span id="LearnerInfo.Identification.PersonName.Surname" class=" Surname">{{PersonName.Surname}}</span>
-                        <span id="LearnerInfo.Identification.PersonName.FirstName" class=" FirstName">{{PersonName.FirstName}}</span>
+            <section>
+                <div id="Identification" class="row">
+                    {{#Identification}}
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title">INFORMAZIONI PERSONALI</span>
                     </div>
+                    <div class="col-xs-12 col-md-8 line"></div>
+                </div>
 
-                    <div class="PersonalBasic">
-                        {{#ContactInfo}}
-                        <div class="value Address" id="LearnerInfo.Identification.ContactInfo.Address">
-                            <span class="Address">
+                <div class=" row">
+
+                    <div class=" col-xs-4 col-md-4">
+                        <img src="data:{{Photo.MimeType}};base64, {{Photo.Data}}" alt="EditorPlaceholder[LearnerInfo.Identification.Photo]">
+                    </div>
+                    <div class="ContactInfo col-xs-8 col-md-8">
+
+                        <div class="name value PersonName LearnerInfo.Identification.PersonName">
+
+                            <span id="LearnerInfo.Identification.PersonName.Surname" class=" Surname">{{PersonName.Surname}}</span>
+                            <span id="LearnerInfo.Identification.PersonName.FirstName" class=" FirstName">{{PersonName.FirstName}}</span>
+                        </div>
+
+                        <div class="PersonalBasic">
+                            {{#ContactInfo}}
+                            <div class="value Address" id="LearnerInfo.Identification.ContactInfo.Address">
+                                <span class="Address">
                                             {{#Address.Contact}}{{AddressLine}}, {{PostalCode}} {{Municipality}}, ({{Country.Label}}){{/Address.Contact}}</span>
-                        </div>
-
-                        <div class="value Telephone ">
-                            {{#each Telephone}}
-
-                            <div class="item {{@index}}  {{Use.Code}}  ">
-                                <span class="Use" style="display:none">{{Use.Label}}</span>
-                                <span class="Contact">{{Contact}}</span>
                             </div>
-                            {{/each}}
 
-                        </div>
+                            <div class="value Telephone ">
+                                {{#each Telephone}}
 
-                        <div class="value Email">
-                            <span class="Use" style="display:none">Email</span>
-                            <span class="Contact"><a href="mailto:{{Email.Contact}}" target="_blank">{{Email.Contact}}</a></span>
-                        </div>
+                                <div class="item {{@index}}  {{Use.Code}}  ">
+                                    <span class="Use" style="display:none">{{Use.Label}}</span>
+                                    <span class="Contact">{{Contact}}</span>
+                                </div>
+                                {{/each}}
 
-                        <div class="value Website">
-                            {{#each Website}}
-                            <div class="item {{@index}}">
-                                <span class="Use"></span>
-                                <span class="Contact"><a title="{{Contact}}" href="{{Contact}}" target="_blank">{{Contact}}</a></span>
                             </div>
-                            {{/each}}
 
-                        </div>
-
-                        <div class="value InstantMessaging">
-                            {{#each InstantMessaging}}
-
-                            <div class="item {{@index}}">
-                                <span class="Use">{{Use.Label}}</span>
-                                <span class="Contact">{{Contact}}</span>
+                            <div class="value Email">
+                                <span class="Use" style="display:none">Email</span>
+                                <span class="Contact"><a href="mailto:{{Email.Contact}}" target="_blank">{{Email.Contact}}</a></span>
                             </div>
-                            {{/each}}
+
+                            <div class="value Website">
+                                {{#each Website}}
+                                <div class="item {{@index}}">
+                                    <span class="Use"></span>
+                                    <span class="Contact"><a title="{{Contact}}" href="{{Contact}}" target="_blank">{{Contact}}</a></span>
+                                </div>
+                                {{/each}}
+
+                            </div>
+
+                            <div class="value InstantMessaging">
+                                {{#each InstantMessaging}}
+
+                                <div class="item {{@index}}">
+                                    <span class="Use">{{Use.Label}}</span>
+                                    <span class="Contact">{{Contact}}</span>
+                                </div>
+                                {{/each}}
+                            </div>
+                            {{/ContactInfo}}
                         </div>
-                        {{/ContactInfo}}
-                    </div>
 
-                    {{#Demographics}}
-                    <div class="PersonalDetails row hide-on-device">
+                        {{#Demographics}}
+                        <div class="PersonalDetails row hide-on-device">
 
-                        <div class="Gender col-sm-3">
-                            <span class="title">Sesso</span>
-                            <span class="value">
+                            <div class="Gender col-sm-3">
+                                <span class="title">Sesso</span>
+                                <span class="value">
                                     <span class="Gender">{{Gender.Label}}</span>
-                            </span>
-                        </div>
+                                </span>
+                            </div>
 
-                        <div class="Birthdate col-sm-3">
-                            <span class="title">Data di nascita</span>
-                            <span class="value">
+                            <div class="Birthdate col-sm-3">
+                                <span class="title">Data di nascita</span>
+                                <span class="value">
                                     <span class="Birthdate">
                                                 {{#Birthdate}}{{Day}}/{{Month}}/{{Year}}{{/Birthdate}}</span>
-                            </span>
-                        </div>
+                                </span>
+                            </div>
 
-                        <div class="Nationality col-sm-6">
-                            <span class="title">Nazionalità</span>
-                            <span class="value">
+                            <div class="Nationality col-sm-6">
+                                <span class="title">Nazionalità</span>
+                                <span class="value">
                                     <span class="Nationality">
                                         {{#each Nationality}}
                                                {{#if @index}}, {{/if}}
                                                 {{Label}}
                                         {{/each}}
                                                 </span>
-                            </span>
+                                </span>
+                            </div>
                         </div>
+                        {{/Demographics}}
                     </div>
-                    {{/Demographics}}
-                </div>
-            </div>
-
-            {{/Identification}}
-            <div id="Headline" class="row">
-                <div class=" titles col-xs-12 col-md-4">
-                    <span class="title">{{Headline.Type.Label}}</span>
-                </div>
-                <div class="col-xs-12 col-md-8 line"></div>
-            </div>
-
-            <div id="Headline" class="row">
-                <div class="col-xs-12 col-md-8 col-md-offset-4">
-                    <div class="value Description Label">{{{Headline.Description.Label}}}</div>
-                </div>
-            </div>
-            <div id="WorkExperience" class="row">
-
-                <div class="non-collapse-title titles col-xs-12 col-md-4">
-                    <span class="title">ESPERIENZA PROFESSIONALE</span>
                 </div>
 
-                <div class="col-xs-12 col-md-8 line"></div>
-            </div>
-            {{#each WorkExperience}}
-            <div id="ListItem:LearnerInfo.WorkExperience[{{@index}}]" class="row">
+                {{/Identification}}
+            </section>
+            <section class="unbroken">
 
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="PeriodRange">
+                <div id="Headline" class="row">
+                    <div class=" titles col-xs-12 col-md-4">
+                        <span class="title">{{Headline.Type.Label}}</span>
+                    </div>
+                    <div class="col-xs-12 col-md-8 line"></div>
+                </div>
+
+                <div id="Headline" class="row">
+                    <div class="col-xs-12 col-md-8 col-md-offset-4">
+                        <div class="value Description Label">{{{Headline.Description.Label}}}</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="WorkExperience" class="row">
+
+                    <div class="non-collapse-title titles col-xs-12 col-md-4">
+                        <span class="title">ESPERIENZA PROFESSIONALE</span>
+                    </div>
+
+                    <div class="col-xs-12 col-md-8 line"></div>
+                </div>
+                {{#each WorkExperience}}
+                <div id="ListItem:LearnerInfo.WorkExperience[{{@index}}]" class="row">
+
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="PeriodRange">
                     <span class="period">{{formatDate Period.From}}</span> {{#if Period.Current}}
-                    <span class="period">–alla data attuale </span> {{else}}
-                    <span class="period">- {{formatDate Period.To}}</span> {{/if}}
-                    </span>
-                </div>
-                <div class="col-xs-12 col-md-8">
-
-                    <div class="value Position">
-                        <span class="Position">{{Position.Label}}</span>
+                        <span class="period">–alla data attuale </span> {{else}}
+                        <span class="period">- {{formatDate Period.To}}</span> {{/if}}
+                        </span>
                     </div>
+                    <div class="col-xs-12 col-md-8">
 
-                    <div class="value Employer">
-                        {{#Employer}}
-                        <span class="Name">
+                        <div class="value Position">
+                            <span class="Position">{{Position.Label}}</span>
+                        </div>
+
+                        <div class="value Employer">
+                            {{#Employer}}
+                            <span class="Name">
                         {{#if ContactInfo.Website}}
                             <a title="{{Name}}" href="{{ContactInfo.Website.Contact}}" target="_blank">{{Name}}</a>
                         {{else}}
                             {{Name}}
                         {{/if}}
                         </span> {{#ContactInfo}} {{#if Address.Contact.AddressLine}}
-                        <div class="Address" style="display:none !important">
-                            {{else}}
-                            <div class="Address minimal" style="display:none !important">. {{/if}}
-                                <span class="Address">
+                            <div class="Address" style="display:none !important">
+                                {{else}}
+                                <div class="Address minimal" style="display:none !important">. {{/if}}
+                                    <span class="Address">
                                     {{#if Address.Contact.AddressLine}}
                                         {{Address.Contact.AddressLine}},
                                     {{/if}}
@@ -177,229 +182,235 @@
                                         {{Address.Contact.PostalCode}},
                                     {{/if}}
                                         {{Address.Contact.Municipality}} ({{Address.Contact.Country.Label}})</span>
-                                <!-- Repeated unnecessary IF just to format correctly-->
-                                {{#if Address.Contact.AddressLine}}
+                                    <!-- Repeated unnecessary IF just to format correctly-->
+                                    {{#if Address.Contact.AddressLine}}
+                                </div>
+                                {{else}}
                             </div>
-                            {{else}}
+                            {{/if}} {{/ContactInfo}} {{/Employer}}
+
+
+                            <div class="value rich-content Activities">
+                                {{{Activities}}}
+                            </div>
+
                         </div>
-                        {{/if}} {{/ContactInfo}} {{/Employer}}
+                    </div>
+                </div>
+                {{/each}}
+            </section>
+            <section class="unbroken">
+                <div id="Education" class="row">
+                    <!--<dd class="line"></dd>-->
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class=" title ">ISTRUZIONE E FORMAZIONE</span>
+                    </div>
+                    <div class="col-xs-12 col-md-8 line"></div>
+                </div>
 
+                {{#each Education}}
+                <div id="Education" class="row education">
 
-                        <div class="value rich-content Activities">
+                    <div class="titles col-xs-12 col-md-4">
+                        {{#Period}}
+                        <span class="PeriodRange ">
+                                <span class="period ">{{formatDate From}}</span>
+                        <span class="period ">–{{formatDate To}}</span>
+                        </span>
+                        {{/Period}}
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <div class="row no-top-margin">
+                            <div class="value Title col-md-8">
+                                <span class="Title ">{{Title}}</span>
+                            </div>
+
+                            <div class="value Level hide-on-device  col-md-4">
+                                {{#if Level.Label}} <span class="Level pull-right">{{Level.Label}}</span>{{/if}}
+                            </div>
+                        </div>
+                        <div class="value Organisation  hide-on-device">
+                            <span class="Name ">{{Organisation.Name}}</span>
+
+                            <div class="Address minimal ">
+
+                                <span class="comma-separator ">, </span>
+
+                                <span class="Address "> {{#Organisation.ContactInfo.Address.Contact}}{{Municipality}} ({{Country.Label}}){{/Organisation.ContactInfo.Address.Contact}}</span>
+                            </div>
+                        </div>
+
+                        <div class="value rich-content Activities ">
                             {{{Activities}}}
                         </div>
 
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-            <div id="Education" class="row">
-                <!--<dd class="line"></dd>-->
-                <div class="titles col-xs-12 col-md-4">
-                    <span class=" title ">ISTRUZIONE E FORMAZIONE</span>
-                </div>
-                <div class="col-xs-12 col-md-8 line"></div>
-            </div>
-
-            {{#each Education}}
-            <div id="Education" class="row education">
-
-                <div class="titles col-xs-12 col-md-4">
-                    {{#Period}}
-                    <span class="PeriodRange ">
-                                <span class="period ">{{formatDate From}}</span>
-                    <span class="period ">–{{formatDate To}}</span>
-                    </span>
-                    {{/Period}}
-                </div>
-                <div class="col-xs-12 col-md-8">
-                    <div class="row no-top-margin">
-                        <div class="value Title col-md-8">
-                            <span class="Title ">{{Title}}</span>
-                        </div>
-
-                        <div class="value Level hide-on-device  col-md-4">
-                            {{#if Level.Label}} <span class="Level pull-right">{{Level.Label}}</span>{{/if}}
+                        <div class="value Field  hide-on-device">
+                            <span class="Field ">{{Field.Label}}</span>
                         </div>
                     </div>
-                    <div class="value Organisation  hide-on-device">
-                        <span class="Name ">{{Organisation.Name}}</span>
+                </div>
+                {{/each}}
+            </section>
+            <section>
+                <!--</div>-->
+                {{#Skills}}
+                <div class="row">
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title ">COMPETENZE PERSONALI</span>
+                    </div>
+                    <div class="col-xs-12 col-md-8 line"></div>
+                </div>
 
-                        <div class="Address minimal ">
-
-                            <span class="comma-separator ">, </span>
-
-                            <span class="Address "> {{#Organisation.ContactInfo.Address.Contact}}{{Municipality}} ({{Country.Label}}){{/Organisation.ContactInfo.Address.Contact}}</span>
+                <div id="Skills.JobRelated " class="row">
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title ">Competenze professionali</span>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <div class="value description ">
+                            {{{JobRelated.Description}}}
                         </div>
                     </div>
-
-                    <div class="value rich-content Activities ">
-                        {{{Activities}}}
+                </div>
+                <div id="Skills.Organisational " class="row">
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title ">Competenze organizzative e gestionali</span>
                     </div>
-
-                    <div class="value Field  hide-on-device">
-                        <span class="Field ">{{Field.Label}}</span>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-            <!--</div>-->
-            {{#Skills}}
-            <div class="row">
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title ">COMPETENZE PERSONALI</span>
-                </div>
-                <div class="col-xs-12 col-md-8 line"></div>
-            </div>
-
-            <div id="Skills.JobRelated " class="row">
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title ">Competenze professionali</span>
-                </div>
-                <div class="col-xs-12 col-md-8">
-                    <div class="value description ">
-                        {{{JobRelated.Description}}}
+                    <div class="col-xs-12 col-md-8">
+                        <div class="value description ">
+                            {{{Communication.Description}}}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="Skills.Organisational " class="row">
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title ">Competenze organizzative e gestionali</span>
-                </div>
-                <div class="col-xs-12 col-md-8">
-                    <div class="value description ">
-                        {{{Communication.Description}}}
+
+                <div id="Skills.Communication " class="row">
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title ">Competenze comunicative</span>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <div class="value description ">
+                            {{{Communication.Description}}}
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div id="Skills.Communication " class="row">
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title ">Competenze comunicative</span>
-                </div>
-                <div class="col-xs-12 col-md-8">
-                    <div class="value description ">
-                        {{{Communication.Description}}}
+                {{#Linguistic}}
+                <div id="Skills.Linguistic.MotherTongue " class="row">
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title ">Lingua madre</span>
                     </div>
-                </div>
-            </div>
-            {{#Linguistic}}
-            <div id="Skills.Linguistic.MotherTongue " class="row">
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title ">Lingua madre</span>
-                </div>
 
-                <div class="col-xs-12 col-md-8">
+                    <div class="col-xs-12 col-md-8">
 
-                    <div class="MotherTongue content-llable ">
-                        {{#each MotherTongue}}
-                        <!-- -->
-                        {{#if @index}} <span class="comma-separator ">, </span>{{/if}}
-                        <span class="languageDesc ">{{Description.Label}}</span>
-                        <!-- -->
-                        {{/each}}
-                    </div>
-                </div>
-            </div>
-
-            <div id="Skills.Linguistic.ForeignLanguage " class="row">
-                <div class="titles col-xs-12 col-md-4">Altre lingue</div>
-                <div class="col-xs-12 col-md-8">
-                    <table cellpadding="1 " class="languages " id="List:SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage" summary="Altre lingue ">
-
-                        <thead class="open-modal-skippme ">
-                            <tr id="nodnd-1 ">
-                                <th id="nodnd-1-ForeignLanguage " class="no-border sub-heading ">
-
-                                </th>
-                                <th id="nodnd-1-ProficiencyLevel.Understanding " colspan="2
-                            " align="center ">COMPRENSIONE</th>
-                                <th id="nodnd-1-ProficiencyLevel.Speaking " colspan="2 " align="center ">PARLATO</th>
-                                <th id="nodnd-1-ProficiencyLevel.Writing " align="center ">PRODUZIONE SCRITTA</th>
-                            </tr>
-                            <tr id="nodnd-2 ">
-                                <th id="nodnd-2-no-border " class="no-border ">&nbsp;</th>
-                                <th id="nodnd-2-Listening " class="Listening ">Ascolto</th>
-                                <th id="nodnd-2-Reading " class="Reading ">Lettura</th>
-                                <th id="nodnd-2-SpokenInteraction " class="SpokenInteraction ">Interazione</th>
-                                <th id="nodnd-2-SpokenProduction " class="SpokenProduction ">Produzione orale</th>
-                                <th id="nodnd-2-Writing " class="Writing ">&nbsp;</th>
-                            </tr>
-                        </thead>
-                        <tbody class="ui-sortable ">
-                            {{#each ForeignLanguage}}
-                            <tr id="language-1 " class="language compose-list list-item opens-modal-form">
-                                <td class="llable " headers="nodnd-1-ForeignLanguage ">
-                                    <div class="language-title ">
-                                        {{Description.Label}}
-                                    </div>
-                                </td>
-                                <td colspan="5 " headers="nodnd-{{@index}}-ForeignLanguage ">
-                                    <table id="ProficiencyLevel " cellpadding="0 " width="100%" summary="{{Description.Label}} ">
-
-                                        <tbody>
-                                            <tr class="self-evaluation ">
-                                                <td id="language-{{@index}}-ProficiencyLevel.Listening" class="Listening ">
-                                                    {{ProficiencyLevel.Listening}}
-                                                </td>
-                                                <td id="language-{{@index}}-ProficiencyLevel.Reading" class="Reading ">
-                                                    {{ProficiencyLevel.Reading}}
-                                                </td>
-                                                <td id="language-{{@index}}-ProficiencyLevel.SpokenInteraction" class="SpokenInteraction ">
-                                                    {{ProficiencyLevel.SpokenInteraction}}
-                                                </td>
-                                                <td id="language-{{@index}}-ProficiencyLevel.SpokenProduction" class="SpokenProduction ">
-                                                    {{ProficiencyLevel.SpokenProduction}}
-                                                </td>
-                                                <td id="language-{{@index}}-ProficiencyLevel.Writing" class="Writing ">
-                                                    {{ProficiencyLevel.Writing}}
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
+                        <div class="MotherTongue content-llable ">
+                            {{#each MotherTongue}}
+                            <!-- -->
+                            {{#if @index}} <span class="comma-separator ">, </span>{{/if}}
+                            <span class="languageDesc ">{{Description.Label}}</span>
+                            <!-- -->
                             {{/each}}
-                        </tbody>
-                    </table>
-                    <div class="languages">
-                        {{#each ForeignLanguage}} {{#if @index}} <span class="comma-separator ">, </span>{{/if}}
-                        <span class="languageDesc ">{{Description.Label}}</span></div>
-                    {{/each}}
-
-                </div>
-            </div>
-
-
-            {{/Linguistic}} {{/Skills}}
-
-            <div id="Achievement " class="row">
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title ">ULTERIORI INFORMAZIONI</span>
-                </div>
-                <div class="line col-xs-12 col-md-8"></div>
-            </div>
-            {{#each Achievement}}
-            <div id="Achievement " class="row">
-                {{#if Title}}
-                <div class="titles col-xs-12 col-md-4">
-                    <span class="title ">{{Title.Label}}</span>
-                </div>
-                <div class="col-xs-12 col-md-8">
-                    {{else}}
-                    <div class="col-xs-12 col-md-8 col-xs-12 col-md-offset-4 no-top-margin ">
-                        {{/if}}
-                        <div class="value">
-                            {{{Description}}}
                         </div>
-                        {{#if Title}}
                     </div>
-                    {{else}}
                 </div>
-                {{/if}}
-                <!-- -->
-            </div>
-            {{/each}}
+
+                <div id="Skills.Linguistic.ForeignLanguage " class="row">
+                    <div class="titles col-xs-12 col-md-4">Altre lingue</div>
+                    <div class="col-xs-12 col-md-8">
+                        <table cellpadding="1 " class="languages " id="List:SkillsPassport.LearnerInfo.Skills.Linguistic.ForeignLanguage" summary="Altre lingue ">
+
+                            <thead class="open-modal-skippme ">
+                                <tr id="nodnd-1 ">
+                                    <th id="nodnd-1-ForeignLanguage " class="no-border sub-heading ">
+
+                                    </th>
+                                    <th id="nodnd-1-ProficiencyLevel.Understanding " colspan="2
+                            " align="center ">COMPRENSIONE</th>
+                                    <th id="nodnd-1-ProficiencyLevel.Speaking " colspan="2 " align="center ">PARLATO</th>
+                                    <th id="nodnd-1-ProficiencyLevel.Writing " align="center ">PRODUZIONE SCRITTA</th>
+                                </tr>
+                                <tr id="nodnd-2 ">
+                                    <th id="nodnd-2-no-border " class="no-border ">&nbsp;</th>
+                                    <th id="nodnd-2-Listening " class="Listening ">Ascolto</th>
+                                    <th id="nodnd-2-Reading " class="Reading ">Lettura</th>
+                                    <th id="nodnd-2-SpokenInteraction " class="SpokenInteraction ">Interazione</th>
+                                    <th id="nodnd-2-SpokenProduction " class="SpokenProduction ">Produzione orale</th>
+                                    <th id="nodnd-2-Writing " class="Writing ">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody class="ui-sortable ">
+                                {{#each ForeignLanguage}}
+                                <tr id="language-1 " class="language compose-list list-item opens-modal-form">
+                                    <td class="llable " headers="nodnd-1-ForeignLanguage ">
+                                        <div class="language-title ">
+                                            {{Description.Label}}
+                                        </div>
+                                    </td>
+                                    <td colspan="5 " headers="nodnd-{{@index}}-ForeignLanguage ">
+                                        <table id="ProficiencyLevel " cellpadding="0 " width="100%" summary="{{Description.Label}} ">
+
+                                            <tbody>
+                                                <tr class="self-evaluation ">
+                                                    <td id="language-{{@index}}-ProficiencyLevel.Listening" class="Listening ">
+                                                        {{ProficiencyLevel.Listening}}
+                                                    </td>
+                                                    <td id="language-{{@index}}-ProficiencyLevel.Reading" class="Reading ">
+                                                        {{ProficiencyLevel.Reading}}
+                                                    </td>
+                                                    <td id="language-{{@index}}-ProficiencyLevel.SpokenInteraction" class="SpokenInteraction ">
+                                                        {{ProficiencyLevel.SpokenInteraction}}
+                                                    </td>
+                                                    <td id="language-{{@index}}-ProficiencyLevel.SpokenProduction" class="SpokenProduction ">
+                                                        {{ProficiencyLevel.SpokenProduction}}
+                                                    </td>
+                                                    <td id="language-{{@index}}-ProficiencyLevel.Writing" class="Writing ">
+                                                        {{ProficiencyLevel.Writing}}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                        <div class="languages">
+                            {{#each ForeignLanguage}} {{#if @index}} <span class="comma-separator ">, </span>{{/if}}
+                            <span class="languageDesc ">{{Description.Label}}</span></div>
+                        {{/each}}
+
+                    </div>
+                </div>
+
+
+                {{/Linguistic}} {{/Skills}}
+            </section>
+            <section class="unbroken">
+                <div id="Achievement " class="row">
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title ">ULTERIORI INFORMAZIONI</span>
+                    </div>
+                    <div class="line col-xs-12 col-md-8"></div>
+                </div>
+                {{#each Achievement}}
+                <div id="Achievement " class="row">
+                    {{#if Title}}
+                    <div class="titles col-xs-12 col-md-4">
+                        <span class="title ">{{Title.Label}}</span>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        {{else}}
+                        <div class="col-xs-12 col-md-8 col-xs-12 col-md-offset-4 no-top-margin ">
+                            {{/if}}
+                            <div class="value">
+                                {{{Description}}}
+                            </div>
+                            {{#if Title}}
+                        </div>
+                        {{else}}
+                    </div>
+                    {{/if}}
+                    <!-- -->
+                </div>
+                {{/each}}
+            </section>
 
             <!--  footer -->
         </section>
