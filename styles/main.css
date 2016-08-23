@@ -1080,8 +1080,25 @@ div.PersonName .FirstName {
     .value.PersonName span.Surname {
         font-size: larger;
     }
-    .effective-content-area {
-        width: 80%;
+    .value{
+        font-size: 0.9em !important;
+    }
+
+    @page  
+    { 
+        size: auto;   /* auto is the initial value */ 
+
+        /* this affects the margin in the printer settings */ 
+        margin: 25mm 25mm 25mm 25mm;  
+    } 
+
+    .effective-content-area
+    { 
+        /* this affects the margin on the content before sending to printer */ 
+        margin: 0px;  
+    }
+    .row{
+        margin-top: 5px;
     }
     .PersonalBasic,
     .PersonalDetails {
@@ -1089,6 +1106,7 @@ div.PersonName .FirstName {
     }
     .titles .title {
         font-size: initial;
+        color:#2a7ab9;
     }
     .languageDesc {
         font-size: initial;
@@ -1104,30 +1122,20 @@ div.PersonName .FirstName {
         font-size: initial;
     }
     img {
-        width: 60%;
+        width: 55%;
         position: absolute;
         right: 0px;
     }
-    /*div.line::after {
-        bottom: 0;
-        content: "";
-        height: .7rem;
-        position: absolute;
-        right: 0;
-        width: .8rem;
-        background: none 0 0 repeat scroll #1093cb;
-    }*/
-    /*div.line {
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
-        border-bottom-color: #1093cb;
-        width: 65%;
-        height: 10px;
-        position: relative;
-    }*/
-    /*.titles {
-        text-align: right;
-    }*/
+    .row .titles {
+        text-align: left;
+    }
+  .row .line {
+    height: 0px;
+    }
+    .value > p{
+            margin: 0 0 5px;
+            padding: 0;
+    }
     img {
         vertical-align: middle;
         position: absolute;
@@ -1139,8 +1147,8 @@ div.PersonName .FirstName {
     div.languages {
         display: none
     }
-    .row,
-    .effective-content-area > section.unbroken {
+    
+    .unbroken {
         page-break-inside: avoid;
     }
     a[href]:after {

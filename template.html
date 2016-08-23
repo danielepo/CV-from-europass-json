@@ -122,9 +122,9 @@
 
                 {{/Identification}}
             </section>
-            <section class="unbroken">
+            <section class="">
 
-                <div id="Headline" class="row">
+                <div id="Headline" class="row ">
                     <div class=" titles col-xs-12 col-md-4">
                         <span class="title">{{Headline.Type.Label}}</span>
                     </div>
@@ -147,7 +147,7 @@
                     <div class="col-xs-12 col-md-8 line"></div>
                 </div>
                 {{#each WorkExperience}}
-                <div id="ListItem:LearnerInfo.WorkExperience[{{@index}}]" class="row">
+                <div id="ListItem:LearnerInfo.WorkExperience[{{@index}}]" class="row unbroken">
 
                     <div class="titles col-xs-12 col-md-4">
                         <span class="PeriodRange">
@@ -199,8 +199,8 @@
                 </div>
                 {{/each}}
             </section>
-            <section class="unbroken">
-                <div id="Education" class="row">
+            <section class="">
+                <div id="Education" class="row unbroken">
                     <!--<dd class="line"></dd>-->
                     <div class="titles col-xs-12 col-md-4">
                         <span class=" title ">ISTRUZIONE E FORMAZIONE</span>
@@ -211,7 +211,7 @@
                 {{#each Education}}
                 <div id="Education" class="row education">
 
-                    <div class="titles col-xs-12 col-md-4">
+                    <div class="titles col-xs-12 col-md-4 unbroken">
                         {{#Period}}
                         <span class="PeriodRange ">
                                 <span class="period ">{{formatDate From}}</span>
@@ -251,7 +251,7 @@
                 </div>
                 {{/each}}
             </section>
-            <section>
+            <section class="unbroken">
                 <!--</div>-->
                 {{#Skills}}
                 <div class="row">
@@ -324,14 +324,14 @@
                                     <th id="nodnd-1-ProficiencyLevel.Understanding " colspan="2
                             " align="center ">COMPRENSIONE</th>
                                     <th id="nodnd-1-ProficiencyLevel.Speaking " colspan="2 " align="center ">PARLATO</th>
-                                    <th id="nodnd-1-ProficiencyLevel.Writing " align="center ">PRODUZIONE SCRITTA</th>
+                                    <th id="nodnd-1-ProficiencyLevel.Writing " align="center ">SCRITTO</th>
                                 </tr>
                                 <tr id="nodnd-2 ">
                                     <th id="nodnd-2-no-border " class="no-border ">&nbsp;</th>
                                     <th id="nodnd-2-Listening " class="Listening ">Ascolto</th>
                                     <th id="nodnd-2-Reading " class="Reading ">Lettura</th>
                                     <th id="nodnd-2-SpokenInteraction " class="SpokenInteraction ">Interazione</th>
-                                    <th id="nodnd-2-SpokenProduction " class="SpokenProduction ">Produzione orale</th>
+                                    <th id="nodnd-2-SpokenProduction " class="SpokenProduction ">orale</th>
                                     <th id="nodnd-2-Writing " class="Writing ">&nbsp;</th>
                                 </tr>
                             </thead>
@@ -382,8 +382,8 @@
 
                 {{/Linguistic}} {{/Skills}}
             </section>
-            <section class="unbroken">
-                <div id="Achievement " class="row">
+            <section>
+                <div id="Achievement " class="row unbroken">
                     <div class="titles col-xs-12 col-md-4">
                         <span class="title ">ULTERIORI INFORMAZIONI</span>
                     </div>
