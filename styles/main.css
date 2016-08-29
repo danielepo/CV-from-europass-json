@@ -991,22 +991,6 @@ div.PersonName .FirstName {
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
-    div.PersonName .Surname,
-    div.PersonName .FirstName {
-        font-size: 1em;
-    }
-    .PersonalBasic,
-    .PersonalDetails {
-        display: block;
-    }
-    img {
-        width: 60%;
-        position: absolute;
-        right: 0px;
-    }
-}
-
 @media (min-width: 1000px) {
     .effective-content-area {
         width: 70%;
@@ -1014,6 +998,9 @@ div.PersonName .FirstName {
 }
 
 @media (min-width: 992px) {
+    .effective-content-area {
+        width: 85%;
+    }
     .hide-on-device {
         display: block !important;
     }
@@ -1080,24 +1067,17 @@ div.PersonName .FirstName {
     .value.PersonName span.Surname {
         font-size: larger;
     }
-    .value{
+    .value {
         font-size: 0.9em !important;
     }
-
-    @page  
-    { 
-        size: auto;   /* auto is the initial value */ 
-
-        /* this affects the margin in the printer settings */ 
-        margin: 25mm 25mm 25mm 25mm;  
-    } 
-
-    .effective-content-area
-    { 
-        /* this affects the margin on the content before sending to printer */ 
-        margin: 0px;  
+    @page {
+        size: auto;
+        margin: 25mm 25mm 25mm 25mm;
     }
-    .row{
+    .effective-content-area {
+        margin: 0px;
+    }
+    .row {
         margin-top: 5px;
     }
     .PersonalBasic,
@@ -1106,7 +1086,7 @@ div.PersonName .FirstName {
     }
     .titles .title {
         font-size: initial;
-        color:#2a7ab9;
+        color: #2a7ab9;
     }
     .languageDesc {
         font-size: initial;
@@ -1129,12 +1109,12 @@ div.PersonName .FirstName {
     .row .titles {
         text-align: left;
     }
-  .row .line {
-    height: 0px;
+    .row .line {
+        height: 0px;
     }
-    .value > p{
-            margin: 0 0 5px;
-            padding: 0;
+    .value > p {
+        margin: 0 0 5px;
+        padding: 0;
     }
     img {
         vertical-align: middle;
@@ -1147,7 +1127,6 @@ div.PersonName .FirstName {
     div.languages {
         display: none
     }
-    
     .unbroken {
         page-break-inside: avoid;
     }
